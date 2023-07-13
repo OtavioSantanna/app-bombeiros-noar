@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `usuario_socorrista` (
-  `id_socorrista` int(5) NOT NULL,
+  `matricula` int(5) NOT NULL,
   `nome_socorrista` varchar(45) NOT NULL,
   `senha` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
