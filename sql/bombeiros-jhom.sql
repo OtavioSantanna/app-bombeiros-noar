@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Jul-2023 às 12:57
+-- Tempo de geração: 13-Jul-2023 às 14:22
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -24,11 +24,31 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `admin`
+--
+
+CREATE TABLE `admin` (
+  `matricula` int(5) NOT NULL,
+  `nome` varchar(80) NOT NULL,
+  `senha` varchar(45) NOT NULL,
+  `nivel` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `admin`
+--
+
+INSERT INTO `admin` (`matricula`, `nome`, `senha`, `nivel`) VALUES
+(98765, 'Maicol Peterson', 'Maicol2002', 3);
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `usuario_socorrista`
 --
 
 CREATE TABLE `usuario_socorrista` (
-  `id_socorrista` int(5) NOT NULL,
+  `matricula` int(5) NOT NULL,
   `nome_socorrista` varchar(45) NOT NULL,
   `senha` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -46,6 +66,12 @@ INSERT INTO `usuario_socorrista` (`matricula`, `nome_socorrista`, `senha`) VALUE
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices para tabela `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`matricula`);
 
 --
 -- Índices para tabela `usuario_socorrista`

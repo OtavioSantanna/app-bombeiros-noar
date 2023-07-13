@@ -6,13 +6,13 @@
     $matricula = $_POST["matricula"];
     $senha = $_POST["senha"];
 
-    $validar = $pdo->prepare("SELECT * FROM usuario_socorrista WHERE matricula = :matricula AND senha = :senha");
+    $validar = $pdo->prepare("SELECT * FROM admin WHERE matricula = :matricula AND senha = :senha");
     $validar->bindParam(':matricula', $matricula);
     $validar->bindParam(':senha', $senha);
     $validar->execute();
 
     $pegar_id = $validar->fetch(PDO::FETCH_ASSOC);
-    $id_socorrista = $pegar_id['id_socorrista'];
+    $id_admin = $pegar_id['matricula'];
 
     if($validar->rowCount() == 0)
     {
