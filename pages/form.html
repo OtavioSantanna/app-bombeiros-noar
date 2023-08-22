@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de Atendimento</title>
+    <style>
+        body{
+            background-color: white;
+            padding: 0%;
+            margin: 0%;
+        }
+        .center
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+        }
+        .header
+        {
+            background-color: darkblue;
+            width: 100%;
+            height: 60px;
+            margin: 0%;
+            display: flex;
+            position: fixed;
+            flex-direction: row;
+            justify-content: space-between;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+            top: 0%;
+        }
+        .pic_menu_sq
+        {
+            width: 60px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+        }
+        .pic
+        {
+            background-color: lightgray;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+        }
+        .menu_bt
+        {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .menu_dash
+        {
+            width: 100%;
+            height: 3px;
+            background-color: white;
+            border-radius: 3px;
+        }
+        .logo_sq
+        {
+            width: 90px;
+            height: 90px;
+            margin-top: 10px;
+            background-color: darkblue;
+            border-radius: 50%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        }
+        .logo
+        {
+            width: 85px;
+        }
+        .form
+        {
+            background-color: darkblue;
+            width: 90%;
+            height: 50px;
+            margin-left: 5%;
+            margin-top: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            border-style: none;
+            border-width: 3px;
+            border-color: rgb(83, 189, 13);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        }
+        .form:active
+        {
+            background-color: blue;
+        }
+        .forms
+        {
+            width: 100%;
+            height: 100%;
+            margin: 0%;
+        }
+        .form_tt
+        {
+            color: white;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            width: 100%;
+        }
+        .forms_buttons
+        {
+            width: 90%;
+            height: 50px;
+            margin-left: 5%;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .button
+        {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(83, 189, 13);
+            border-radius: 5px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        }
+        .button:active
+        {
+            background-color: rgb(45, 99, 8);
+        }
+        .right
+        {
+            width: 20px;
+            margin-right: 5px;
+        }
+        .tittle_sq
+        {
+            height: 150px;
+            width: 100%;
+        }
+        .tittle
+        {
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: darkblue;
+            margin-top: 130px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="pic_menu_sq">
+            <div class="menu_bt">
+                <div class="menu_dash"></div>
+                <div class="menu_dash"></div>
+                <div class="menu_dash"></div>
+            </div>
+        </div>
+        <div class="logo_sq center">
+            <img src="logo_pequena.png" class="logo">
+        </div>
+        <div class="pic_menu_sq">
+            <div class="pic"></div>
+        </div>
+
+        
+    </div>
+    <div class="tittle_sq center">
+        <p class="tittle">FOLHA DE ATENDIMENTO</p>
+    </div>
+    <div class="forms">
+        <div class="form center"><p class="form_tt">CABEÇALHO<p>
+
+        </div>
+        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
+        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
+        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
+        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
+        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
+        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
+        <div class="form center"><p class="form_tt">CABEÇALHO</p><img src="certo.png" class="right"></p></div>
+        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
+        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
+        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
+        <div class="forms_buttons">
+            <div class="button center"><p class="form_tt">ENVIAR</p></div>
+        </div>
+    </div>
+
+</body>
+</html>
