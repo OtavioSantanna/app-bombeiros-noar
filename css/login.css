@@ -105,7 +105,7 @@ body{
   font-family: 'Nunito', sans-serif;
   font-size: larger;
   font-weight: bold;
-  background-color: rgb(33, 216, 57);
+  background-color: rgb(15, 182, 37);
   color: white;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -114,5 +114,5 @@ body{
 }
 .bt_entrar:active
 {
-  background-color: rgb(157, 255, 170);
+  background-color: rgb(45, 99, 8);
 }
