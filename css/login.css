@@ -1,8 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-
-* {
-  padding: 0;
-  margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+body{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
 }
-
-
+.main
+{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.form
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.input
+{
+  width: 100%;
+  border: none;
+  height: 40px;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 5px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  background-color: rgb(231, 231, 231);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  padding: 5%;
+  outline: 0;
+}
+.input:focus
+{
+  border: 2px solid gray;
+}
+.checkbox_div {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: gray;
+}
+.checkbox {
+  display: none; /* Esconde a checkbox padrão */
+}
+.checkbox_label {
+  position: relative;
+  padding-left: 40px; /* Espaço para a "checkbox" personalizada */
+  cursor: pointer;
+}
+.checkbox_label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.checkbox:checked + .checkbox_label:before {
+  background-color: gray;
+  content: "✔";
+  color: white;
+}
+.bt_entrar
+{
+  width: 100%;
+  border: none;
+  height: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-size: large;
+  background-color: rgb(125, 209, 0);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.bt_entrar:active
+{
+  background-color: yellowgreen;
+}
