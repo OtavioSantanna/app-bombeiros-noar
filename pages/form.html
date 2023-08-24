@@ -29,23 +29,135 @@
         <p class="tittle">FOLHA DE ATENDIMENTO</p>
     </div>
     <div class="forms">
-        <div class="form center"><p class="form_tt">CABEÇALHO<p>
+        <div class="form center" onclick="abrirBloco(1)" >
+            <p class="form_tt">CABEÇALHO</p>
+            <div class="bloco" id="1" onclick="blocoClicado(event)">
+                <div class="checkbox_div">
+                    <input type="checkbox">Coisa 1
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">Coisa 1
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">Coisa 1
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">Coisa 1
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">Coisa 1
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">Coisa 1
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">Coisa 1
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">Coisa 1
+                </div>
 
+            </div>
         </div>
-        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
-        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
-        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
-        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
-        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
-        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
-        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
-        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
-        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
-        <div class="form center"><p class="form_tt">CABEÇALHO</p></div>
+        <div class="form center" onclick="abrirBloco(2)">
+            <p class="form_tt">TIPO DE OCORRÊNCIA (PRÉ HOSPITALAR)</p>
+            <div class="bloco" id="2"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(3)">
+            <p class="form_tt">AVALIAÇÃO DO PACIENTE (GLASGOW)</p>
+            <div class="bloco" id="3"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(4)">
+            <p class="form_tt">SINAIS VITAIS</p>
+            <div class="bloco" id="4"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(5)">
+            <p class="form_tt">PROBLEMAS ENCONTRADOS SUSPEITOS</p>
+            <div class="bloco" id="5"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(6)">
+            <p class="form_tt">LOCALIZAÇÃO DOS TRAUMAS</p>
+            <div class="bloco" id="6"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(7)">
+            <p class="form_tt">SINAIS E SINTOMAS</p>
+            <div class="bloco" id="7"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(8)">
+            <p class="form_tt">FORMA DE CONDUÇÃO</p>
+            <div class="bloco" id="8"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(9)">
+            <p class="form_tt">DECISÃO TRANSPORTE</p>
+            <div class="bloco" id="9"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(10)">
+            <p class="form_tt">VÍTIMA ERA</p>
+            <div class="bloco" id="10"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(11)">
+            <p class="form_tt">OBJETOS RECOLHIDOS</p>
+            <div class="bloco" id="11"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(12)">
+            <p class="form_tt">PROCEDIMENTOS EFETUADOS</p>
+            <div class="bloco" id="12"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(13)">
+            <p class="form_tt">MATERIAIS UTILIZADOS DESCARTÁVEL</p>
+            <div class="bloco" id="13"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(14)">
+            <p class="form_tt">MATERIAIS UTILIZADOS DEIXADO NO HOSPITAL</p>
+            <div class="bloco" id="14"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(15)">
+            <p class="form_tt">TERMO DE RECUSA DE ATENDIMENTO E/OU TRANSPORTE</p>
+            <div class="bloco" id="15"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(16)">
+            <p class="form_tt">OBSERVAÇÕES IMPORTANTES</p>
+            <div class="bloco" id="16"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(17)">
+            <p class="form_tt">ANAMNESE DA EMERGÊNCIA MÉDICA</p>
+            <div class="bloco" id="17"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(18)">
+            <p class="form_tt">ANAMNESE GESTACIONAL</p>
+            <div class="bloco" id="18"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(19)">
+            <p class="form_tt">AVALIAÇÃO DA CINEMÁTICA</p>
+            <div class="bloco" id="19"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(20)">
+            <p class="form_tt">RESPONSÁVEL PELO PREENCHIMENTO</p>
+            <div class="bloco" id="20"></div>
+        </div>
         <div class="forms_buttons">
             <div class="button center"><p class="form_tt">ENVIAR</p></div>
         </div>
     </div>
 
 </body>
+<script>
+    function abrirBloco(x)
+    {
+        var bloco  = document.getElementById(x)
+        if (bloco.style.display === "flex") {
+            bloco.style.display = "none";
+        } 
+        else {
+            bloco.style.display = "flex";
+        }
+    }
+
+    function blocoClicado(event) {
+        // Impede a propagação do evento de clique para a div form
+        event.stopPropagation();
+
+
+    }
+</script>
 </html>
