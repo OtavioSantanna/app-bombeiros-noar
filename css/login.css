@@ -69,34 +69,11 @@ body{
   color: gray;
 }
 .checkbox {
-  display: none; /* Esconde a checkbox padrão */
-}
-.checkbox_label {
-  position: relative;
-  padding-left: 40px; /* Espaço para a "checkbox" personalizada */
-  cursor: pointer;
-}
-.checkbox_label:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid gray;
-  border-radius: 5px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
+  height: 100px;
+  width: 90px; 
 }
-.checkbox:checked + .checkbox_label:before {
-  background-color: gray;
-  content: "✔";
-  color: white;
-}
+
 .bt_entrar
 {
   width: 100%;
