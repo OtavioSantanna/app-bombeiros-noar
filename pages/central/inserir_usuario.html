@@ -7,20 +7,24 @@
     <title>Inserir usuario</title>
 </head>
 <body>
-    <form method="post" id="form1">
+    <form method="post" action="../../php/inserts/inserir_usuario.php" id="form1">
         Matricula: 
         <input type="number" id="matricula" name="matricula">
         Nome:
         <input type="text" id="nome" name="nome">
         Senha:
-        <input type="password" id="senha" name="senha">
+        <input type="text" id="senha" name="senha">
         CEP:
         <input type="number" id="cep" name="cep">
         Email:
         <input type="text" id="email" name="email">
-        Admin:
-        <input type="radio" id="admin" name="admin">
-        
+        Telefone:
+        <input type="number" id="telefone" name="telefone">
+        Cargo:
+        <select name="cargo" id="cargo">
+            <option value="Motorista">Motorista</option>
+            <option value="Socorrista">Socorrista</option>
+        </select>
         <br>
         <input type="button" name="enviar" value="enviar" onclick="Mensagem();">
     </form>
