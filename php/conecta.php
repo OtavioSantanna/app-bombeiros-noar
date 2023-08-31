@@ -4,7 +4,7 @@
 
   // CONEXÃO COM A BASE DE DADOS: verifique sempre o dbname
   try{
-    $pdo = new PDO("mysql:dbname=bombeiros_johm;host=localhost;charset=utf8","root","");
+    $pdo = new PDO("mysql:dbname=bombeiros-jhom;host=localhost;charset=utf8","root","");
   }
   catch(PDOException $erro)
   {

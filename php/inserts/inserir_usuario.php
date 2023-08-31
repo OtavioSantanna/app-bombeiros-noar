@@ -1,6 +1,5 @@
 <?php
-    session_start();
-    include("..conecta.php");
+    include("../conecta.php");
     
     $matricula = ["matricula"];
     $nome = ["nome"];
@@ -11,13 +10,15 @@
     $cargo = ["cargo"];
     $admin = ["admin"];
 
-    $sql = $pdo->prepare("INSERT INTO usuarios_cadastrados 
-    (matricula, nome, senha, cargo) VALUES (?,?,?,?);");
+    $sql = $pdo->prepare("INSERT INTO usuarios
+    (matricula, nome, senha) VALUES (?,?,?,?);");
 
-    $sql->bindParam(1, $matricula);
-    $sql->bindParam(2, $nome);
-    $sql->bindParam(3, $senha);
-    $sql->bindParam(4, $admin);
+$sql->bindParam(1, $matricula);
+$sql->bindParam(2, $nome);
+$sql->bindParam(3, $senha);
+$sql->bindParam(4, $admin);
+
+$sql->execute();
 
     $executar = $sql->execute();
 
