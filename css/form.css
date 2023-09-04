@@ -92,7 +92,6 @@ body{
     font-size: medium;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    width: 100%;
 }
 .forms_buttons{
     width: 90%;
@@ -229,4 +228,23 @@ input[type="radio"] {
     border-top: none;
     border-left: none;
     border-right: none;
+}
+.check_div{
+    display: flex;
+    background-color: aquamarine;
+    height: 100%;
+    width: 50px;
+}
+.check{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(15, 182, 37);
+    border-radius: 50%;
+    margin-left: 80%;
+}
+.tt_row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
