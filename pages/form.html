@@ -30,132 +30,191 @@
     </div>
     <div class="forms">
         <div class="form center" onclick="abrirBloco(1)" >
-            <div class="tt_row center">
+            <button class="tt_row center">
                 <p class="form_tt">CABEÇALHO</p>
                 <div class="check_div">
                     <div class="check"></div>
                 </div>
-            </div>
+            </button>
             <div class="bloco" id="1" onclick="blocoClicado(event)">
-                <div class="input_div">
-                    Data:<input type="date" class="input_data">
+                <div class="input_data_div">
+                    DATA:<input type="date" class="input_data">
                 </div>
                 <div class="checkbox_div">
-                    Sexo: <input type="radio">M <input type="radio">F
+                    SEXO: <input type="radio" name="f">M <input type="radio" name="f">F
                 </div>
                 <div class="input_div">
-                    Nome do hospital:<input type="text" class="input_text">
+                    NOME DO HOSPITAL:<input type="text" class="input_text">
                 </div>
                 <div class="input_div">
-                    Nome:<input type="text" class="input_text">
+                    NOME:<input type="text" class="input_text">
                 </div>
                 <div class="input_div">
-                    Idade:<input type="number" class="input_number">
+                    IDADE:<input type="number" class="input_number">
+                </div>
+                <div class="input_div">
+                    RG/CPF PACIENTE:<input type="text" class="input_text">
+                </div>
+                <div class="input_div">
+                    FONE:<input type="text" class="input_text">
+                </div>
+                <div class="input_div">
+                    ACOMPANHANTE:<input type="text" class="input_text">
+                </div>
+                <div class="input_div">
+                    IDADE (ACOMPANHANTE):<input type="text" class="input_text">
+                </div>
+                <div class="input_div">
+                    LOCAL DA OCORRÊNCIA:<input type="text" class="input_text">
                 </div>
 
             </div>
         </div>
         <div class="form center" onclick="abrirBloco(2)">
-            <p class="form_tt">TIPO DE OCORRÊNCIA (PRÉ HOSPITALAR)</p>
-            <div class="bloco" id="2">
+            <button class="tt_row center">
+                <p class="form_tt">TIPO DE OCORRÊNCIA (PRÉ HOSPITALAR)</p>
+                <div class="check_div">
+                    <div class="check"></div>
+                </div>
+            </button>
+            <div class="bloco" id="2" onclick="blocoClicado(event)">
                 <div class="checkbox_div">
-                    <input type="checkbox">Coisa 1
+                    <input type="checkbox">CAUSADO POR ANIMAIS
                 </div>
                 <div class="checkbox_div">
-                    <input type="checkbox">Coisa 1
+                    <input type="checkbox">COM MEIO DE TRANSPORTE
                 </div>
                 <div class="checkbox_div">
-                    <input type="checkbox">Coisa 1
+                    <input type="checkbox">DESMORONAMENTO / DESLIZAMENTO
                 </div>
                 <div class="checkbox_div">
-                    <input type="checkbox">Coisa 1
+                    <input type="checkbox">EMERGÊNCIA MÉDICA
                 </div>
                 <div class="checkbox_div">
-                    <input type="checkbox">Coisa 1
+                    <input type="checkbox">QUEDA DE ALTURA 2M
                 </div>
                 <div class="checkbox_div">
-                    <input type="checkbox">Coisa 1
+                    <input type="checkbox">QUEDA PRÓPRIA ALTURA
                 </div>
                 <div class="checkbox_div">
-                    <input type="checkbox">Coisa 1
+                    <input type="checkbox">QUEDA BISCICLETA
                 </div>
                 <div class="checkbox_div">
-                    <input type="checkbox">Coisa 1
+                    <input type="checkbox">QUEDA MOTO
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">QUEDA NÍVEL <2M
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">TENTATIVA DE SUICÍDIO
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">AFOGAMENTO
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">AGRESSÃO
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">ATROPELAMENTO
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">CHOUE ELÉTRICO
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">DESABAMENTO
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">DOMÉSTICO
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">ESPORTIVO
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">INTOXICAÇÃO
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">TRABALHO
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox">TRANSFERÊNCIA
+                </div>
+                <div class="checkbox_div">
+                    <input type="checkbox"><input type="text">
                 </div>
             </div>
         </div>
         <div class="form center" onclick="abrirBloco(3)">
             <p class="form_tt">AVALIAÇÃO DO PACIENTE (GLASGOW)</p>
             
-            <div class="bloco" id="3"></div>
+            <div class="bloco" id="3" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(4)">
             <p class="form_tt">SINAIS VITAIS</p>
-            <div class="bloco" id="4"></div>
+            <div class="bloco" id="4" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(5)">
             <p class="form_tt">PROBLEMAS ENCONTRADOS SUSPEITOS</p>
-            <div class="bloco" id="5"></div>
+            <div class="bloco" id="5" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(6)">
             <p class="form_tt">LOCALIZAÇÃO DOS TRAUMAS</p>
-            <div class="bloco" id="6"></div>
+            <div class="bloco" id="6" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(7)">
             <p class="form_tt">SINAIS E SINTOMAS</p>
-            <div class="bloco" id="7"></div>
+            <div class="bloco" id="7" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(8)">
             <p class="form_tt">FORMA DE CONDUÇÃO</p>
-            <div class="bloco" id="8"></div>
+            <div class="bloco" id="8" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(9)">
             <p class="form_tt">DECISÃO TRANSPORTE</p>
-            <div class="bloco" id="9"></div>
+            <div class="bloco" id="9" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(10)">
             <p class="form_tt">VÍTIMA ERA</p>
-            <div class="bloco" id="10"></div>
+            <div class="bloco" id="10" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(11)">
             <p class="form_tt">OBJETOS RECOLHIDOS</p>
-            <div class="bloco" id="11"></div>
+            <div class="bloco" id="11" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(12)">
             <p class="form_tt">PROCEDIMENTOS EFETUADOS</p>
-            <div class="bloco" id="12"></div>
+            <div class="bloco" id="12" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(13)">
             <p class="form_tt">MATERIAIS UTILIZADOS DESCARTÁVEL</p>
-            <div class="bloco" id="13"></div>
+            <div class="bloco" id="13" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(14)">
             <p class="form_tt">MATERIAIS UTILIZADOS DEIXADO NO HOSPITAL</p>
-            <div class="bloco" id="14"></div>
+            <div class="bloco" id="14" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(15)">
             <p class="form_tt">TERMO DE RECUSA DE ATENDIMENTO E/OU TRANSPORTE</p>
-            <div class="bloco" id="15"></div>
+            <div class="bloco" id="15" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(16)">
             <p class="form_tt">OBSERVAÇÕES IMPORTANTES</p>
-            <div class="bloco" id="16"></div>
+            <div class="bloco" id="16" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(17)">
             <p class="form_tt">ANAMNESE DA EMERGÊNCIA MÉDICA</p>
-            <div class="bloco" id="17"></div>
+            <div class="bloco" id="17" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(18)">
             <p class="form_tt">ANAMNESE GESTACIONAL</p>
-            <div class="bloco" id="18"></div>
+            <div class="bloco" id="18" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(19)">
             <p class="form_tt">AVALIAÇÃO DA CINEMÁTICA</p>
-            <div class="bloco" id="19"></div>
+            <div class="bloco" id="19" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(20)">
             <p class="form_tt">RESPONSÁVEL PELO PREENCHIMENTO</p>
-            <div class="bloco" id="20"></div>
+            <div class="bloco" id="20" onclick="blocoClicado(event)"></div>
         </div>
         <div class="forms_buttons">
             <div class="button center"><p class="form_tt">ENVIAR</p></div>
