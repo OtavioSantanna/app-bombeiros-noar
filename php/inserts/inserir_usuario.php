@@ -33,5 +33,7 @@
 
     $executar = $sql->execute();
 
-    header('Location: ../../pages/central/inserir_usuario.html');
+    /*header('Location: ../../pages/central/inserir_usuario.html');
+    ob_end_flush(); // Encerra o buffer de saída e envia a saída para o navegador*/
+
 ?>
