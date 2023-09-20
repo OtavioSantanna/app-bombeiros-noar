@@ -264,7 +264,7 @@ input[type="radio"] {
     font-size: large;
     color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-    display: flex;
+    display: none;
 }
 .tt_row{
     display: flex;
@@ -274,4 +274,51 @@ input[type="radio"] {
     height: 100%;
     background-color: transparent;
     border: none;
+}
+.gg_tt
+{
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    color: darkblue;
+    size: medium;
+    font-weight: bold;
+}
+.md5a_tt
+{
+    background-color: darkblue;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    min-height: 30px;
+    margin-bottom: 0%;
+    
+
+}
+.md5a_tp_div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    min-height: auto;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    border-bottom: solid 2px darkblue;
+}
+.c{
+    display: flex;
+    align-items: center;
+}
+.ao{
+    background-color: lightgray;
+}
+.md5a_2_tt
+{
+
 }

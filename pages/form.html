@@ -39,7 +39,7 @@
             </button>
             <div class="bloco" id="1" onclick="blocoClicado(event)">
                 <div class="input_data_div">
-                    DATA:<input type="date" class="input_data">
+                    DATA:<input type="date" class="input_data" >
                 </div>
                 <div class="checkbox_div">
                     SEXO: <input type="radio" name="f">M <input type="radio" name="f">F
@@ -148,7 +148,79 @@
         <div class="form center" onclick="abrirBloco(3)">
             <p class="form_tt">AVALIAÇÃO DO PACIENTE (GLASGOW)</p>
             
-            <div class="bloco" id="3" onclick="blocoClicado(event)"></div>
+            <div class="bloco" id="3" onclick="blocoClicado(event)">
+            <p class="gg_tt center">NÍVEL DE CONSCIÊNCIA</p>
+            <div class="md5a">
+                <p class="md5a_tt center">MENORES DE 5 ANOS</p>
+                <div class="ao">
+                    <p class="md5a_2_tt">ABERTURA OCULAR</p>
+                    <div class="md5a_tp_div">
+                        ESPONTÂNEA <div class="c"><input type="checkbox"> 4</div>
+                    </div>
+                    <div class="md5a_tp_div">
+                        COMANDO VERBAL <div class="c"><input type="checkbox"> 3</div>
+                    </div>
+                    <div class="md5a_tp_div">
+                        ESTÍMULO DOLOROSO <div class="c"><input type="checkbox"> 2</div>
+                    </div>
+                    <div class="md5a_tp_div">
+                        NENHUMA <div class="c"><input type="checkbox"> 1</div>
+                    </div>
+
+                </div>
+                <div class="rv">
+                    <p>RESPOSTA VERBAL</p>
+                    <div class="md5a_tp_div">
+                        PALAVRAS E FRASES APROPRIADAS <input type="checkbox"> 5
+                    </div>
+                    <div class="md5a_tp_div">
+                        PALAVRAS INAPROPRIADAS <input type="checkbox"> 4
+                    </div>
+                    <div class="md5a_tp_div">
+                        CHORO PERSISTENTE OU GRITOS <input type="checkbox"> 3
+                    </div>
+                    <div class="md5a_tp_div">
+                        SONS INCOMPREENSÍVEIS <input type="checkbox"> 2
+                    </div>
+                    <div class="md5a_tp_div">
+                        NENHUMA RESPOSTA VERBAL <input type="checkbox"> 1
+                    </div>
+                </div>
+                <div class="rm">
+                    <p>RESPOSTA MOTORA</p>
+                    <div class="md5a_tp_div">
+                        OBEDECE PRONTAMENTE <input type="checkbox"> 5
+                    </div>
+                    <div class="md5a_tp_div">
+                        LOCALIZA DOR OU ESTÍMULA TÁTIL <input type="checkbox"> 5
+                    </div>
+                    <div class="md5a_tp_div">
+                        RETIRADA DO SEGMENTO ESTIMULADO <input type="checkbox"> 4
+                    </div>
+                    <div class="md5a_tp_div">
+                        FLEXÃO ANORMAL (DECORTICAÇÃO) <input type="checkbox"> 3
+                    </div>
+                    <div class="md5a_tp_div">
+                        EXTENÇÃO ANORMAL (DECEREBRAÇÃO) <input type="checkbox"> 2
+                    </div>
+                    <div class="md5a_tp_div">
+                        AUSÊNCIA <input type="checkbox"> 3
+                    </div>
+                </div>   
+            </div>
+            <div class="md5a">
+                <p>MAIORES DE 5 ANOS</p>
+                <div>
+                    <p>ABERTURA OCULAR</p>
+                </div>
+                <div>
+                    <p>RESPOSTA VERBAL</p>
+                </div>
+                <div>
+                    <p>RESPOSTA MOTORA</p>
+                </div> 
+            </div>
+            </div>
         </div>
         <div class="form center" onclick="abrirBloco(4)">
             <p class="form_tt">SINAIS VITAIS</p>
@@ -242,5 +314,6 @@
 
 
     }
+
 </script>
 </html>
