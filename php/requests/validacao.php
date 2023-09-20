@@ -1,12 +1,12 @@
 <?php
     //Inicia a seção
     session_start();
-    include("conecta.php");
+    include("../conecta.php");
 
     $matricula = $_POST["matricula"];
     $senha = $_POST["senha"];
 
-    $validar = $pdo->prepare("SELECT * FROM usuario_socorrista WHERE matricula = :matricula AND senha = :senha");
+    $validar = $pdo->prepare("SELECT * FROM usuarios WHERE matricula = :matricula AND senha = :senha");
     $validar->bindParam(':matricula', $matricula);
     $validar->bindParam(':senha', $senha);
     $validar->execute();
@@ -29,6 +29,6 @@
         $_SESSION["usuario"] = $usuario_info["usuario"];
         $_SESSION["matricula"] = $matricula;
         $_SESSION["id_socorrista"] = $id_socorrista;
-        header('Location: ../pages/mainPage.php');
+        header('Location: ../../pages/medico/mainPage.php');
     }
 ?>

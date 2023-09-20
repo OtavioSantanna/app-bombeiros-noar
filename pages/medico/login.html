@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/login.css">
+  <link rel="stylesheet" href="../../css/socorrista/login.css">
   <title>Login</title>
 </head>
 <body>
-  <main>
-    <h>Login</h>
-    <form class="form" action="../php/validacao.php" method="post">
-      <input type="text" name="matricula" placeholder="matricula">
-      <input type="password" name="senha" placeholder="senha">
-      <button type="submit">Entrar</button>
-    </form>
+  <main class="main">
+    <img src="../../images/logo_pequena.png" class="logo">
+    <h class="h">ENTRAR</h> 
+    <form action="../../php/requests/validacao.php" method="post" class="form">
+      <input type="text" name="matricula" placeholder="Matrícula..." class="input">
+      <input type="password" name="senha" placeholder="Senha..." class="input">
+      <!--<div class="checkbox_div">
+          <input type="checkbox" name="lembrar" id="lembrar" class="checkbox">
+          <label for="lembrar" class="checkbox_label">Lembrar usuário</label>
+      </div>-->
+      <button type="submit" class="bt_entrar">Entrar</button>
+  </form>
   </main>
   <footer>
 

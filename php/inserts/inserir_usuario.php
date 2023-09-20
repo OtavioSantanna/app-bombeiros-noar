@@ -11,8 +11,7 @@
     $idade = $_POST["idade"];
     $num_casa = $_POST["num_casa"];
 
-    $sql = $pdo->prepare("INSERT INTO usuarios
-    (matricula, nome, senha) VALUES (?,?,?);");
+    $sql = $pdo->prepare("INSERT into usuarios (matricula, nome, senha) VALUES (?, ?, ?);");
 
     $sql->bindParam(1, $matricula);
     $sql->bindParam(2, $nome);
