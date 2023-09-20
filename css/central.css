@@ -1,3 +1,10 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    overflow: hidden;
+}
 .container
 {
     width: 100%;
@@ -5,8 +12,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin: 50px;
-    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
     color: #000;
     font-family: Nunito Sans;
     font-size: 30px;
@@ -14,9 +22,6 @@
     font-weight: 700;
     line-height: normal;
 
-}
-.fundo{
-    padding: 0%;
 }
 .header{
     width: 100%;
@@ -28,6 +33,7 @@
 {
     display: flex;
     flex-direction: row;
+    margin: 8px;
 }
 .column
 {
@@ -36,6 +42,7 @@
     justify-content: center;
     align-content: center;
     color: white;
+    margin: 8px;
 }
 .titulo
 {
