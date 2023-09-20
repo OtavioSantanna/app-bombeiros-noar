@@ -290,7 +290,7 @@ input[type="radio"] {
     font-family: 'Nunito', sans-serif;
     min-height: 30px;
     margin-bottom: 0%;
-    
+
 
 }
 .md5a_tp_div
@@ -299,7 +299,6 @@ input[type="radio"] {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
     color: black;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
@@ -320,5 +319,12 @@ input[type="radio"] {
 }
 .md5a_2_tt
 {
-
+    height: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    margin: 0%;
+    border-bottom: solid 2px darkblue;
+}
+.rm{
+    background-color: lightgray;
 }
