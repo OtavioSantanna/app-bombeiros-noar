@@ -57,13 +57,13 @@
                     RG/CPF PACIENTE:<input type="text" class="input_text">
                 </div>
                 <div class="input_div">
-                    FONE:<input type="text" class="input_text">
+                    FONE:<input type="number" class="input_number">
                 </div>
                 <div class="input_div">
                     ACOMPANHANTE:<input type="text" class="input_text">
                 </div>
                 <div class="input_div">
-                    IDADE (ACOMPANHANTE):<input type="text" class="input_text">
+                    IDADE (ACOMPANHANTE):<input type="number" class="input_number">
                 </div>
                 <div class="input_div">
                     LOCAL DA OCORRÊNCIA:<input type="text" class="input_text">
@@ -141,96 +141,164 @@
                     <input type="checkbox">TRANSFERÊNCIA
                 </div>
                 <div class="checkbox_div">
-                    <input type="checkbox"><input type="text">
+                    <input type="checkbox"><input type="text" class="input_text">
                 </div>
             </div>
         </div>
         <div class="form center" onclick="abrirBloco(3)">
-            <p class="form_tt">AVALIAÇÃO DO PACIENTE (GLASGOW)</p>
-            
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">AVALIAÇÃO DO PACIENTE (GLASGOW)</p>
+                <div>
+                    <div class="check center">✔</div>
+                </div>
+            </button> 
             <div class="bloco" id="3" onclick="blocoClicado(event)">
-            <p class="gg_tt center">NÍVEL DE CONSCIÊNCIA</p>
-            <div class="md5a">
-                <p class="md5a_tt center">MENORES DE 5 ANOS</p>
-                <div class="ao">
-                    <p class="md5a_2_tt center">ABERTURA OCULAR</p>
-                    <div class="md5a_tp_div">
-                        ESPONTÂNEA <div class="c"><input type="checkbox"> 4</div>
-                    </div>
-                    <div class="md5a_tp_div">
-                        COMANDO VERBAL <div class="c"><input type="checkbox"> 3</div>
-                    </div>
-                    <div class="md5a_tp_div">
-                        ESTÍMULO DOLOROSO <div class="c"><input type="checkbox"> 2</div>
-                    </div>
-                    <div class="md5a_tp_div">
-                        NENHUMA <div class="c"><input type="checkbox"> 1</div>
-                    </div>
+                <p class="gg_tt center">NÍVEL DE CONSCIÊNCIA</p>
+                <div class="md5a">
+                    <p class="md5a_tt center">MENORES DE 5 ANOS</p>
+                    <div class="ao">
+                        <p class="md5a_2_tt center">ABERTURA OCULAR</p>
+                        <div class="md5a_tp_div">
+                            ESPONTÂNEA <div class="c"><input type="checkbox"> 4</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            COMANDO VERBAL <div class="c"><input type="checkbox"> 3</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            ESTÍMULO DOLOROSO <div class="c"><input type="checkbox"> 2</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            NENHUMA <div class="c"><input type="checkbox"> 1</div>
+                        </div>
 
+                    </div>
+                    <div class="rv">
+                        <p class="md5a_2_tt center">RESPOSTA VERBAL</p>
+                        <div class="md5a_tp_div">
+                            PALAVRAS E FRASES APROPRIADAS <div class="c"><input type="checkbox"> 5</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            PALAVRAS INAPROPRIADAS <div class="c"><input type="checkbox"> 4</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            CHORO PERSISTENTE OU GRITOS <div class="c"><input type="checkbox"> 3</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            SONS INCOMPREENSÍVEIS <div class="c"><input type="checkbox"> 2</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            NENHUMA RESPOSTA VERBAL <div class="c"><input type="checkbox"> 1</div>
+                        </div>
+                    </div>
+                    <div class="rm">
+                        <p class="md5a_2_tt center">RESPOSTA MOTORA</p>
+                        <div class="md5a_tp_div">
+                            OBEDECE PRONTAMENTE <div class="c"><input type="checkbox"> 5</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            LOCALIZA DOR OU ESTÍMULA TÁTIL <div class="c"><input type="checkbox"> 5</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            RETIRADA DO SEGMENTO ESTIMULADO <div class="c"><input type="checkbox"> 4</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            FLEXÃO ANORMAL (DECORTICAÇÃO) <div class="c"><input type="checkbox"> 3</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            EXTENÇÃO ANORMAL (DECEREBRAÇÃO) <div class="c"><input type="checkbox"> 2</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            AUSÊNCIA (PARALISIA FLÁCIDA HIPOTÔNIA)<div class="c"><input type="checkbox"> 3</div>
+                        </div>
+                    </div>   
                 </div>
-                <div class="rv">
-                    <p class="md5a_2_tt center">RESPOSTA VERBAL</p>
-                    <div class="md5a_tp_div">
-                        PALAVRAS E FRASES APROPRIADAS <div class="c"><input type="checkbox"> 5</div>
+                <div class="md5a">
+                    <p class="md5a_tt center">MAIORES DE 5 ANOS</p>
+                    <div class="ao">
+                        <p class="md5a_2_tt center">ABERTURA OCULAR</p>
+                        <div class="md5a_tp_div">
+                            ESPONTÂNEA <div class="c"><input type="checkbox"> 4</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            COMANDO VERBAL <div class="c"><input type="checkbox"> 3</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            ESTÍMULO DOLOROSO <div class="c"><input type="checkbox"> 2</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            NENHUMA <div class="c"><input type="checkbox"> 1</div>
+                        </div>
+
                     </div>
-                    <div class="md5a_tp_div">
-                        PALAVRAS INAPROPRIADAS <div class="c"><input type="checkbox"> 4</div>
+                    <div class="rv">
+                        <p class="md5a_2_tt center">RESPOSTA VERBAL</p>
+                        <div class="md5a_tp_div">
+                            ORIENTADO <div class="c"><input type="checkbox"> 5</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            CONFUSO <div class="c"><input type="checkbox"> 4</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            PALAVRAS INAPROPRIADAS <div class="c"><input type="checkbox"> 3</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            PALAVRAS INCOMPREENSÍVEIS <div class="c"><input type="checkbox"> 2</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            NENHUMA <div class="c"><input type="checkbox"> 1</div>
+                        </div>
                     </div>
-                    <div class="md5a_tp_div">
-                        CHORO PERSISTENTE OU GRITOS <div class="c"><input type="checkbox"> 3</div>
-                    </div>
-                    <div class="md5a_tp_div">
-                        SONS INCOMPREENSÍVEIS <div class="c"><input type="checkbox"> 2</div>
-                    </div>
-                    <div class="md5a_tp_div">
-                        NENHUMA RESPOSTA VERBAL <div class="c"><input type="checkbox"> 1</div>
-                    </div>
+                    <div class="rm">
+                        <p class="md5a_2_tt center">RESPOSTA MOTORA</p>
+                        <div class="md5a_tp_div">
+                            OBEDECE COMANDOS <div class="c"><input type="checkbox"> 5</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            LOCALIZA DOR <div class="c"><input type="checkbox"> 5</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            MOVIMENTO DE RETIRADA <div class="c"><input type="checkbox"> 4</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            FLEXÃO ANORMAL <div class="c"><input type="checkbox"> 3</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            EXTENÇÃO ANORMAL <div class="c"><input type="checkbox"> 2</div>
+                        </div>
+                        <div class="md5a_tp_div">
+                            NENHUMA <div class="c"><input type="checkbox"> 3</div>
+                        </div>
+                    </div>   
                 </div>
-                <div class="rm">
-                    <p class="md5a_2_tt center">RESPOSTA MOTORA</p>
-                    <div class="md5a_tp_div">
-                        OBEDECE PRONTAMENTE <div class="c"><input type="checkbox"> 5</div>
-                    </div>
-                    <div class="md5a_tp_div">
-                        LOCALIZA DOR OU ESTÍMULA TÁTIL <div class="c"><input type="checkbox"> 5</div>
-                    </div>
-                    <div class="md5a_tp_div">
-                        RETIRADA DO SEGMENTO ESTIMULADO <div class="c"><input type="checkbox"> 4</div>
-                    </div>
-                    <div class="md5a_tp_div">
-                        FLEXÃO ANORMAL (DECORTICAÇÃO) <div class="c"><input type="checkbox"> 3</div>
-                    </div>
-                    <div class="md5a_tp_div">
-                        EXTENÇÃO ANORMAL (DECEREBRAÇÃO) <div class="c"><input type="checkbox"> 2</div>
-                    </div>
-                    <div class="md5a_tp_div">
-                        AUSÊNCIA <div class="c"><input type="checkbox"> 3</div>
-                    </div>
-                </div>   
-            </div>
-            <div class="md5a">
-                <p>MAIORES DE 5 ANOS</p>
-                <div>
-                    <p>ABERTURA OCULAR</p>
+                <div class="checkbox_div center">
+                    <p>TOTAL (GCS)(3-15)</p><input type="number" class="input_number input_total_gcs">
                 </div>
-                <div>
-                    <p>RESPOSTA VERBAL</p>
-                </div>
-                <div>
-                    <p>RESPOSTA MOTORA</p>
-                </div> 
-            </div>
             </div>
         </div>
         <div class="form center" onclick="abrirBloco(4)">
-            <p class="form_tt">SINAIS VITAIS</p>
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">SINAIS VITAIS</p>
+                <div>
+                    <div class="check center">✔</div>
+                </div>
+            </button> 
             <div class="bloco" id="4" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(5)">
-            <p class="form_tt">PROBLEMAS ENCONTRADOS SUSPEITOS</p>
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">PROBLEMAS ENCONTRADOS SUSPEITOS</p>
+                <div>
+                    <div class="check center">✔</div>
+                </div>
+            </button> 
+            
             <div class="bloco" id="5" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(6)">
+            
             <p class="form_tt">LOCALIZAÇÃO DOS TRAUMAS</p>
             <div class="bloco" id="6" onclick="blocoClicado(event)"></div>
         </div>
