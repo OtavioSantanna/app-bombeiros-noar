@@ -11,6 +11,19 @@
     $idade = $_POST["idade"];
     $num_casa = $_POST["num_casa"];
 
+    $user_info = []; //Variável para guardar os dados acima no form
+
+    // O trecho abaixo pode estar dentro de um WHILE para guardar a resposta de um SELECT por exemplo
+    // O trecho abaixo pode estar dentro de um WHILE para guardar a resposta de um SELECT por exemplo
+    $resposta = 
+        [
+            "matricula" => $matricula,
+            "nome" => $nome
+        ];
+    array_push($user_info, $resposta);
+    //Até aqui ficaria dentro do WHILE
+    
+
     $sql = $pdo->prepare("INSERT into usuarios (matricula, nome, senha) VALUES (?, ?, ?);");
 
     $sql->bindParam(1, $matricula);
