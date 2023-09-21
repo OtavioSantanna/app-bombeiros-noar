@@ -42,11 +42,11 @@ body
     justify-content: center;
     align-content: center;
     color: white;
-    margin: 8px;
+    margin: 10px;
 }
 .titulo
 {
-width: 224px;
+width: 424px;
 height: 25px;
 flex-shrink: 0;
 color: #F1F1F1;
