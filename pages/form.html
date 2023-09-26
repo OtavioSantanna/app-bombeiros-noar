@@ -105,7 +105,7 @@
                     <input type="checkbox">QUEDA MOTO
                 </div>
                 <div class="checkbox_div">
-                    <input type="checkbox">QUEDA NÍVEL <2M
+                    <input type="checkbox">QUEDA NÍVEL &lt;2M
                 </div>
                 <div class="checkbox_div">
                     <input type="checkbox">TENTATIVA DE SUICÍDIO
@@ -284,7 +284,25 @@
                     <div class="check center">✔</div>
                 </div>
             </button> 
-            <div class="bloco" id="4" onclick="blocoClicado(event)"></div>
+            <div class="bloco" id="4" onclick="blocoClicado(event)">
+                <div class="checkbox_div center">
+                    <p>PRESSÃO ARTEREAL:</p>
+                    <input type="number" class="input_press_artereal">X<input type="number" class="input_press_artereal"><p>mmHg</p>
+                </div>
+                <div class="checkbox_div center">
+                    <p>PULSO:</p><input type="number" class="input_press_artereal">B.C.P.M./RESPIRAÇÃO<input type="number" class="input_press_artereal"><p>M.R.M.</p>
+                </div>
+                <div class="checkbox_div center">
+                    <p>SATURAÇÃO:</p><input type="number" class="input_press_artereal">% /RESPIRAÇÃO<input type="number" class="input_press_artereal"><p>M.R.M.</p>
+                </div>
+                <div class="checkbox_div center">
+                    <p>TEMPERATURA:</p><input type="number" class="input_press_artereal"><p>ºC</p>
+                </div>
+                <div class="checkbox_div center">
+                    <p>PERFUSÃO:</p> &gt;2 SEG &lt;2SEG <p>ºC</p>
+                </div>
+                
+            </div>
         </div>
         <div class="form center" onclick="abrirBloco(5)">
             <button class="tt_row center">
