@@ -332,3 +332,12 @@ input[type="radio"] {
 .input_total_gcs{
     width: 30%;
 }
+.input_press_artereal{
+    border: 2px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 25px;
+    font-size: large;
+    width: 10%;
+}
