@@ -1,5 +1,5 @@
 <?php
-  include("../conecta.php");
+  include('../conecta.php');
   
   $matricula = $_POST["matricula"];
   $nome = $_POST["nome"];
