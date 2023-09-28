@@ -265,6 +265,8 @@ input[type="radio"] {
     font-size: large;
     color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.check1{
     display: none;
 }
 .tt_row{
