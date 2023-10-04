@@ -4,6 +4,7 @@
   $matricula = $_POST["matricula"];
   $nome = $_POST["nome"];
   $senha = $_POST["senha"];
+  $cpf = $_POST["cpf"];
   $cep = $_POST["cep"];
   $email = $_POST["email"];
   $telefone = $_POST["telefone"];
@@ -32,16 +33,17 @@
   
   $executar = $sql->execute();
 
-  $sql = $pdo->prepare("INSERT INTO info_usuarios (matricula, nome, idade, cargo, email, cep, num_casa, telefone) values (?,?,?,?,?,?,?,?)");
+  $sql = $pdo->prepare("INSERT INTO info_usuarios (matricula, nome, cpf, idade, cargo, email, cep, num_casa, telefone) values (?,?,?,?,?,?,?,?,?)");
 
   $sql->bindParam(1, $matricula);
   $sql->bindParam(2, $nome);
-  $sql->bindParam(3, $idade);
-  $sql->bindParam(4, $cargo);
-  $sql->bindParam(5, $email);
-  $sql->bindParam(6, $cep);
-  $sql->bindParam(7, $num_casa);
-  $sql->bindParam(8, $telefone);    
+  $sql->bindParam(3, $cpf);
+  $sql->bindParam(4, $idade);
+  $sql->bindParam(5, $cargo);
+  $sql->bindParam(6, $email);
+  $sql->bindParam(7, $cep);
+  $sql->bindParam(8, $num_casa);
+  $sql->bindParam(9, $telefone);    
 
   $executar = $sql->execute();
   

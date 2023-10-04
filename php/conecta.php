@@ -5,7 +5,7 @@
   // Conexão com o banco de dados utilzando PDO para consultas preparadas:
   try
   {
-      $pdo = new PDO("mysql:dbname=bombeiros_johm;host=localhost;charset=utf8","root","");
+      $pdo = new PDO("mysql:dbname=bombeiros-johm;host=localhost;charset=utf8","root","");
   }
   catch(PDOException $erro)
   {
