@@ -168,10 +168,7 @@ body{
     border-radius: 5px;
     margin-right: 5px;
   }
-  input[type="checkbox"]:checked {
-    
-    background-color: #808080;
-  }
+
 .input_div
 {
     display: flex;
@@ -344,3 +341,58 @@ input[type="radio"] {
     font-size: large;
     width: 10%;
 }
+
+.checkbox_div2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    min-height: auto;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box; 
+  }
+
+  .checkbox_div3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: small;
+    min-height: auto;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box; 
+  }
+
+  .bgcinza{
+    background-color: lightgrey;
+  }
+
+  .subcheckbox_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    min-height: auto;
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box; 
+  }

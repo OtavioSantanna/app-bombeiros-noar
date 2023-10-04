@@ -323,7 +323,82 @@
                 </div>
             </button> 
             
-            <div class="bloco" id="5" onclick="blocoClicado(event)"></div>
+            <div class="bloco" id="5" onclick="blocoClicado(event)">
+                <div class="checkbox_div2 bgcinza">
+                    <input type="checkbox">PSIQUIÁTRICO</input>
+                </div>
+                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                <div class="checkbox_div2">
+                    <input type="checkbox" onclick="abrirPES(subdivPES1)">RESPIRATÓRIO</input>
+                    <div class="subcheckbox_div" id="subdivPES1">
+                        <div class="checkbox_div3">
+                            <input type="checkbox">DPOC</input>
+                        </div>
+                        <div class="checkbox_div3">
+                            <input type="checkbox">INALAÇÃO FUMAÇA</input>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                <div class="checkbox_div2 bgcinza" >
+                    <input type="checkbox" onclick="abrirPES(subdivPES2)">DIABETES</input>
+                    <div class="subcheckbox_div" id="subdivPES2">
+                        <div class="checkbox_div3">
+                            <input type="checkbox">HIPERGLICEMIA</input>
+                        </div>
+                        <div class="checkbox_div3">
+                            <input type="checkbox">HIPOGLICEMIA</input>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                <div class="checkbox_div2">
+                    <input type="checkbox">OUTROS: </input></input><input type="text" class="input_text"></input>
+                </div>
+                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                <div class="checkbox_div2 bgcinza" >
+                    <input type="checkbox" onclick="abrirPES(subdivPES3)">OBSTÉTRICO</input>
+                    <div class="subcheckbox_div" id="subdivPES3">
+                        <div class="checkbox_div3">
+                            <input type="checkbox">PARTO EMERGENCIAL</input>
+                        </div>
+                        <div class="checkbox_div3">
+                            <input type="checkbox">GESTANTE</input>
+                        </div>
+                        <div class="checkbox_div3">
+                            <input type="checkbox">HEMOR, EXCESSIVA</input>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                <div class="checkbox_div2">
+                    <input type="checkbox" onclick="abrirPES(subdivPES4)">TRANSPORTE</input>
+                    <div class="subcheckbox_div" id="subdivPES4">
+                        <div class="checkbox_div3">
+                            <input type="checkbox">AÉREO</input>
+                        </div>
+                        <div class="checkbox_div3">
+                            <input type="checkbox">CLÍNICO</input>
+                        </div>
+                        <div class="checkbox_div3">
+                            <input type="checkbox">EMERGENCIAL</input>
+                        </div>
+                        <div class="checkbox_div3">
+                            <input type="checkbox">PÓS-TRAUMA</input>
+                        </div>
+                        <div class="checkbox_div3">
+                            <input type="checkbox">SAMU</input>
+                        </div>
+                        <div class="checkbox_div3" >
+                            <input type="checkbox">OUTROS:</input></input></input><input type="text" class="input_text" style="width: 40%;"></input>
+                        </div>
+                        <div class="checkbox_div3">
+                            <input type="checkbox">SEM REMOÇÃO</input>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
         <div class="form center" onclick="abrirBloco(6)">
             

@@ -22,6 +22,7 @@ function verificarPreenchimento(formId) {
     var divJabuti = document.getElementById("jabuti_" + formId);
 
     var algumPreenchido = false;
+    var estadoAnterior = divJabuti.style.display === "flex"; // Rastreia o estado anterior
 
     // Verifica se pelo menos um input está preenchido
     for (var i = 0; i < inputs.length; i++) {
@@ -33,22 +34,33 @@ function verificarPreenchimento(formId) {
     }
 
     // Define o estilo da div "jabuti" com base no resultado da verificação
+    console.log("Antes de definir o estilo:", divJabuti.style.display);
+
     if (algumPreenchido) {
         divJabuti.style.display = "flex";
     } else {
         divJabuti.style.display = "none";
     }
+    
+    console.log("Depois de definir o estilo:", divJabuti.style.display);
+
 }
 
-var forms = document.getElementsByClassName("form");
-for (var i = 0; i < forms.length; i++) {
-    var form = forms[i];
-    var inputs = form.getElementsByTagName("input");
-    for (var j = 0; j < inputs.length; j++) {
-        var input = inputs[j];
-        input.addEventListener("input", function() {
-            verificarPreenchimento(form.id);
-        });
+function abrirPES(x){
+    var subdiv = document.getElementById(x);
+
+    console.log("Antes de definir o estilo:", divJabuti.style.display);
+
+
+    if (subdiv.style.display === "flex") {
+        subdiv.style.display = "none";
+    } 
+    else {
+        subdiv.style.display = "flex";
     }
+
+    console.log("Depois de definir o estilo:", divJabuti.style.display);
 }
+
+
 
