@@ -3,6 +3,7 @@ body
     display: flex;
     flex-direction: column;
     margin: 0px;
+    padding: 0px;
     overflow: hidden;
 }
 .container
@@ -46,28 +47,33 @@ header{
     color: white;
     margin: 8px;
 }
-.titulo
-{
-width: 500px;
-height: 25px;
-flex-shrink: 0;
-color: #F1F1F1;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.titulo{
+    width: 500px;
+    height: 25px;
+    flex-shrink: 0;
+    color: #F1F1F1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 .nav-lateral{
-    width: 300px;
+    width: 220px;
     height: 100vh;
     background-color: #224366;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 a{
     color: #FFFFFF;
     text-decoration: none; /* tirou a linha debaixo do texto */
+    width: 100%;
 }
 ul{
     list-style-type: none; /* tirou a bolinha */
+    width: 100%;
+    padding: 0px;
 }
