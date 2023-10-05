@@ -48,8 +48,20 @@
     <input type="number" id="telefone" name="telefone">
     Cargo:
     <select name="cargo" id="cargo">
-      <option value="1">Socorrista</option>
-      <option value="2">Motorista</option>
+      <?php
+        include("../../php/conecta.php");
+        $comando = $pdo->prepare("SELECT * from cargo");
+        $resultado = $comando->execute();
+
+        while($linhas = $comando->fetch()) {
+          $id_cargo = $linhas["id_cargo"];
+          $cargo = $linhas["cargo"];
+
+          echo("
+          <option value='$id_cargo'>$cargo</option>
+          ");
+        }
+      ?>
     </select>
     <br>
     <input type="button" name="enviar" value="Enviar" onclick="Cadastrar();" />
