@@ -40,10 +40,10 @@
             <div class="bloco" id="1" onclick="blocoClicado(event)">
                 <form id="form1">
                     <div class="input_data_div">
-                        DATA:<input type="date" class="input_data" onchange="verificarPreenchimento('form1')">
+                        DATA:<input type="date" id="input_data" class="input_data" onchange="verificarPreenchimento('form1')">
                     </div>
                     <div class="checkbox_div">
-                        SEXO: <input type="radio" name="f">M <input type="radio" name="f">F
+                        SEXO: <input type="radio" name="f" id="radio_m">M <input type="radio" name="f" id="radio_f">F
                     </div>
                     <div class="input_div">
                         NOME DO HOSPITAL:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
@@ -568,11 +568,19 @@
                         </div>
                         <div class="checkbox_div3">
                             <input type="checkbox">MIDRÍSE</input>
-                            <input type="checkbox">ILEGIVEL</input>
+                            <div class="subcheckbox_div">
+                                <div class="checkbox_div3">
+                                    <input type="checkbox">REAGENTE</input>
+                                </div>
+                                <div class="checkbox_div3">
+                                    <input type="checkbox">NÃO REAGENTE</input>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="checkbox_div3">
                             <input type="checkbox">MIÓSE</input>
-                            <input type="checkbox">ILEGIVEL</input>
+                            
                         </div>
                     </div>
                 </div>
@@ -624,7 +632,43 @@
         </div>
         <div class="form center" onclick="abrirBloco(9)">
             <p class="form_tt">DECISÃO TRANSPORTE</p>
-            <div class="bloco" id="9" onclick="blocoClicado(event)"></div>
+            <div class="bloco" id="9" onclick="blocoClicado(event)">
+                <div class="checkbox_div2">
+                    <input type="checkbox">CRÍTICO</input>
+                </div>
+                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                <div class="checkbox_div2">
+                    <input type="checkbox">INSTÁVEL</input>
+                </div>
+                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                <div class="checkbox_div2">
+                    <input type="checkbox">POTENCIALMENTE INSTÁVEL</input>
+                </div>
+                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                <div class="checkbox_div2">
+                    <input type="checkbox">ESTÁVEL</input>
+                </div>
+                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                <p class="gg_tt center">EQUIPE DE ATENDIMENTO</p>
+                <div class="input_div">
+                    MOTORISTA:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                </div>
+                <div class="input_div">
+                    SOCORRISTA 1:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                </div>
+                <div class="input_div">
+                    SOCORRISTA 2:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                </div>
+                <div class="input_div">
+                    SOCORRISTA 3:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                </div>
+                <div class="input_div">
+                    DEMANDANTE:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                </div>
+                <div class="input_div">
+                    EQUIPE:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                </div>
+            </div>
         </div>
         <div class="form center" onclick="abrirBloco(10)">
             <button class="tt_row center">
@@ -714,6 +758,44 @@
         <div class="form center" onclick="abrirBloco(20)">
             <p class="form_tt">RESPONSÁVEL PELO PREENCHIMENTO</p>
             <div class="bloco" id="20" onclick="blocoClicado(event)"></div>
+        </div>
+                <div class="form center" onclick="abrirBloco(21)" >
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">OCORRÊNCIA</p>
+                <div>
+                    <div class="check center" id="jabuti_form21">✔</div>
+                </div>
+            </button>
+            <div class="bloco" id="21" onclick="blocoClicado(event)">
+                <form id="form21">
+                    <div class="input_div">
+                        NÚMERO USB:<input type="number" class="input_number" onchange="verificarPreenchimento('form21')">
+                    </div>
+                    <div class="input_div">
+                        NÚMERO DA OCORRÊNCIA:<input type="number" class="input_number" onchange="verificarPreenchimento('form21')">
+                    </div>
+                    <div class="input_div">
+                        IDADE:<input type="number" class="input_number">
+                    </div>
+                    <div class="input_div">
+                        RG/CPF PACIENTE:<input type="text" class="input_text">
+                    </div>
+                    <div class="input_div">
+                        FONE:<input type="number" class="input_number">
+                    </div>
+                    <div class="input_div">
+                        ACOMPANHANTE:<input type="text" class="input_text">
+                    </div>
+                    <div class="input_div">
+                        IDADE (ACOMPANHANTE):<input type="number" class="input_number">
+                    </div>
+                    <div class="input_div">
+                        LOCAL DA OCORRÊNCIA:<input type="text" class="input_text">
+                    </div>
+                </form>
+
+            </div>
         </div>
         <div class="forms_buttons">
             <div class="button center"><p class="form_tt">ENVIAR</p></div>
