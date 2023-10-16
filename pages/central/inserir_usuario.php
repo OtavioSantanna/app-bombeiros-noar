@@ -17,7 +17,7 @@
 
       $.ajax({
         type: "POST",
-        url: "../../php/inserts/inserir_usuario.php",
+        url: "../../php/inserts/insert-usuario.php",
         data: dados,
         dataType: 'json',
 
@@ -29,7 +29,7 @@
       })
     }
   </script>
-  <form method="post" action="../../php/inserts/inserir_usuario.php" id="form1">
+  <form method="post" id="form1">
     Matricula: 
     <input type="number" id="matricula" name="matricula">
     Nome:
@@ -57,7 +57,7 @@
 
         while($linhas = $comando->fetch()) {
           $id_cargo = $linhas["id_cargo"];
-          $cargo = $linhas["cargo"];
+          $cargo = $linhas["nome_cargo"];
 
           echo("
           <option value='$id_cargo'>$cargo</option>

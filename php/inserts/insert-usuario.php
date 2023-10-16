@@ -12,6 +12,7 @@
   $idade = $_POST["idade"];
   $num_casa = $_POST["num_casa"];
 
+  $criptografada = md5($senha);
   $user_info = []; //Variável para guardar os dados acima no form
 
   // O trecho abaixo pode estar dentro de um WHILE para guardar a resposta de um SELECT por exemplo
@@ -25,15 +26,15 @@
   //Até aqui ficaria dentro do WHILE
   
   try {
-  $sql = $pdo->prepare("INSERT into usuarios (matricula, nome, senha) VALUES (?, ?, ?);");
+  $sql = $pdo->prepare("INSERT into usuario (matricula, nome, senha) VALUES (?, ?, ?);");
 
   $sql->bindParam(1, $matricula);
   $sql->bindParam(2, $nome);
-  $sql->bindParam(3, $senha);
+  $sql->bindParam(3, $criptografada);
   
   $executar = $sql->execute();
 
-  $sql = $pdo->prepare("INSERT INTO info_usuarios (matricula, nome, cpf, idade, cargo, email, cep, num_casa, telefone) values (?,?,?,?,?,?,?,?,?)");
+  $sql = $pdo->prepare("INSERT INTO info_usuario (matricula, nome, cpf, idade, cargo, email, cep, num_casa, telefone) values (?,?,?,?,?,?,?,?,?)");
 
   $sql->bindParam(1, $matricula);
   $sql->bindParam(2, $nome);
