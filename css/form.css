@@ -68,7 +68,7 @@ body{
     min-height: 50px;
     margin-left: 5%;
     margin-top: 15px;
-    border-radius: 5px;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -138,7 +138,7 @@ body{
     min-height: 60px;
     background-color: white;
     border: 3px solid darkblue;
-    border-radius: 5px;
+    border-radius: 8px;
     box-sizing: border-box;
     display: none;
     flex-direction: column;
@@ -426,4 +426,39 @@ input[type="radio"] {
     .textarea_obj{
         max-width: 100%;
         box-sizing: border-box;
+    }
+
+    .input_obj_none{
+        display: none;
+    }
+    .input_imagem_obj_label{
+        display: flex;
+        flex-direction:column;
+        margin: 5px;
+        margin-top: 15px;
+        width: auto;
+        min-height: 60px;
+        background-color: lightgray;
+        border-radius: 8px;
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+
+    }
+    .imagem_obj{
+        width: 100%;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .img_div_obj{
+        width: auto;
+        box-sizing: border-box;
+        margin: 5px;
+    }
+
+    .img_obj_tt{
+        width: 100%;
+        text-align: center;
     }

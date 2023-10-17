@@ -70,5 +70,18 @@ function abrirPES(x){
     //console.log("Depois de definir o estilo:", divJabuti.style.display);
 }
 
+const imagemInput = document.getElementById("imagemInput");
+const imagemExibida = document.getElementById("imagemExibida");
 
+imagemInput.addEventListener("change", function () {
+    const file = imagemInput.files[0];
+    if (file) {
+        const fileURL = URL.createObjectURL(file);
+        imagemExibida.src = fileURL;
+        imagemExibida.style.display="flex";
+    } else {
+        imagemExibida.src = "";
+        imagemExibida.style.display="none";
+    }
+});
 
