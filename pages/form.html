@@ -38,7 +38,7 @@
                 </div>
             </button>
             <div class="bloco" id="1" onclick="blocoClicado(event)">
-                <form id="form1">
+                <form id="form1" name="form1">
                     <div class="input_data_div">
                         DATA:<input type="date" id="input_data" class="input_data" onchange="verificarPreenchimento('form1')">
                     </div>
@@ -82,7 +82,7 @@
                 </div>
             </button>
             <div class="bloco" id="2" onclick="blocoClicado(event)">
-                <form id="form2">
+                <form id="form2" name="form2">
                     <div class="checkbox_div">
                         <input type="checkbox" onchange="verificarPreenchimento('form2')">CAUSADO POR ANIMAIS</input>
                     </div>
@@ -160,7 +160,7 @@
             </button> 
             <div class="bloco" id="3" onclick="blocoClicado(event)">
                 <p class="gg_tt center">NÍVEL DE CONSCIÊNCIA</p>
-                <form id="form3">
+                <form id="form3" name="form3">
                     <div class="md5a">
                         <p class="md5a_tt center">MENORES DE 5 ANOS</p>
                         <div class="ao">
@@ -293,7 +293,7 @@
                 </div>
             </button> 
             <div class="bloco" id="4" onclick="blocoClicado(event)">
-                <form>
+                <form id="form4" name="form4">
                     <div class="checkbox_div center">
                         <p>PRESSÃO ARTERIAL:</p>
                         <input type="number" class="input_press_artereal">X<input type="number" class="input_press_artereal"><p>mmHg</p>
@@ -324,80 +324,81 @@
             </button> 
             
             <div class="bloco" id="5" onclick="blocoClicado(event)">
-                <div class="checkbox_div2 bgcinza">
-                    <input type="checkbox">PSIQUIÁTRICO</input>
-                </div>
-                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
-                <div class="checkbox_div2">
-                    <input type="checkbox" onclick="abrirPES(subdivPES1)">RESPIRATÓRIO</input>
-                    <div class="subcheckbox_div" id="subdivPES1">
-                        <div class="checkbox_div3">
-                            <input type="checkbox">DPOC</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">INALAÇÃO FUMAÇA</input>
+                <form id="form5" name="form5">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox">PSIQUIÁTRICO</input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox" onclick="abrirPES(subdivPES1)">RESPIRATÓRIO</input>
+                        <div class="subcheckbox_div" id="subdivPES1">
+                            <div class="checkbox_div3">
+                                <input type="checkbox">DPOC</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">INALAÇÃO FUMAÇA</input>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
-                <div class="checkbox_div2 bgcinza" >
-                    <input type="checkbox" onclick="abrirPES(subdivPES2)">DIABETES</input>
-                    <div class="subcheckbox_div" id="subdivPES2">
-                        <div class="checkbox_div3">
-                            <input type="checkbox">HIPERGLICEMIA</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">HIPOGLICEMIA</input>
-                        </div>
-                    </div>
-                </div>
-                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
-                <div class="checkbox_div2">
-                    <input type="checkbox">OUTROS: </input></input><input type="text" class="input_text"></input>
-                </div>
-                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
-                <div class="checkbox_div2 bgcinza" >
-                    <input type="checkbox" onclick="abrirPES(subdivPES3)">OBSTÉTRICO</input>
-                    <div class="subcheckbox_div" id="subdivPES3">
-                        <div class="checkbox_div3">
-                            <input type="checkbox">PARTO EMERGENCIAL</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">GESTANTE</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">HEMOR, EXCESSIVA</input>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza" >
+                        <input type="checkbox" onclick="abrirPES(subdivPES2)">DIABETES</input>
+                        <div class="subcheckbox_div" id="subdivPES2">
+                            <div class="checkbox_div3">
+                                <input type="checkbox">HIPERGLICEMIA</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">HIPOGLICEMIA</input>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
-                <div class="checkbox_div2">
-                    <input type="checkbox" onclick="abrirPES(subdivPES4)">TRANSPORTE</input>
-                    <div class="subcheckbox_div" id="subdivPES4">
-                        <div class="checkbox_div3">
-                            <input type="checkbox">AÉREO</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">CLÍNICO</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">EMERGENCIAL</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">PÓS-TRAUMA</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">SAMU</input>
-                        </div>
-                        <div class="checkbox_div3" >
-                            <input type="checkbox">OUTROS:</input></input></input><input type="text" class="input_text" style="width: 40%;"></input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">SEM REMOÇÃO</input>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox">OUTROS: </input></input><input type="text" class="input_text"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza" >
+                        <input type="checkbox" onclick="abrirPES(subdivPES3)">OBSTÉTRICO</input>
+                        <div class="subcheckbox_div" id="subdivPES3">
+                            <div class="checkbox_div3">
+                                <input type="checkbox">PARTO EMERGENCIAL</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">GESTANTE</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">HEMOR, EXCESSIVA</input>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox" onclick="abrirPES(subdivPES4)">TRANSPORTE</input>
+                        <div class="subcheckbox_div" id="subdivPES4">
+                            <div class="checkbox_div3">
+                                <input type="checkbox">AÉREO</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">CLÍNICO</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">EMERGENCIAL</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">PÓS-TRAUMA</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">SAMU</input>
+                            </div>
+                            <div class="checkbox_div3" >
+                                <input type="checkbox">OUTROS:</input></input></input><input type="text" class="input_text" style="width: 40%;"></input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">SEM REMOÇÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="form center" onclick="abrirBloco(6)">
@@ -409,7 +410,9 @@
                 </div>
             </button> 
             
-            <div class="bloco" id="6" onclick="blocoClicado(event)"></div>
+            <div class="bloco" id="6" onclick="blocoClicado(event)">
+                <form id="form6" name="form6"></form>
+            </div>
         </div>
         <div class="form center" onclick="abrirBloco(7)">
             <button class="tt_row center">
@@ -420,194 +423,197 @@
                 </div>
             </button> 
             <div class="bloco" id="7" onclick="blocoClicado(event)">
-                <div class="checkbox_div">
-                    <input type="checkbox">ABDOMEN SENSÍVEL OU RÍGIDO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">AFUNDAMENTO DE CRÂNIO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">AGITAÇÃO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">AMNÉSIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">ANGINA DE PEITO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">APNÉIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">BRADICARDIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">BRADIPNEIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">BRONCOASPIRANDO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">CEFALEIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">CIANOSE</input>
-                    <div class="subcheckbox_div" id="subdivPES2">
-                        <div class="checkbox_div3">
-                            <input type="checkbox">LÁBIOS</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">EXTREMIDADE</input>
-                        </div>
+                <form id="form7" name="form8">
+                    <div class="checkbox_div">
+                        <input type="checkbox">ABDOMEN SENSÍVEL OU RÍGIDO</input>
                     </div>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">CONVULSÃO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">DECORTICAÇÃO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">DEFORMIDADE</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">DESCEREBRAÇÃO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">DESMAIO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">DESVIO DE TRAQUÉIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">DISPNÉIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">DOR LOCAL</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">EDEMA</input>
-                    <div class="subcheckbox_div" id="subdivPES2">
-                        <div class="checkbox_div3">
-                            <input type="checkbox">GENERALIZADO</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">LOCALIZADO</input>
-                        </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">AFUNDAMENTO DE CRÂNIO</input>
                     </div>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">ENFISEMA SUBCUTÂNEO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">ÊSTASE DE JUGULAR</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">FACE PÁLIDA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">HEMORRAGIA</input>
-                    <div class="subcheckbox_div" id="subdivPES2">
-                        <div class="checkbox_div3">
-                            <input type="checkbox">INTERNA</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">EXTERNA</input>
-                        </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">AGITAÇÃO</input>
                     </div>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">HIPERTENSÃO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">HIPOTENSÃO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">NÁUSEAS E VÔMITO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">NASORAGIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">ÓBITO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">OTORRÉIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">OTORRAGIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">OVACE</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">PARADA</input>
-                    <div class="subcheckbox_div" id="subdivPES2">
-                        <div class="checkbox_div3">
-                            <input type="checkbox">CARDÍACA</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">RESPIRATÓRIA</input>
-                        </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">AMNÉSIA</input>
                     </div>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">PRIAPISMO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">PRURIDO NA PELE</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">PUPILAS</input>
-                    <div class="subcheckbox_div" id="subdivPES2">
-                        <div class="checkbox_div3">
-                            <input type="checkbox">ANISOCÓRICAS</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">ISOCÓRICAS</input>
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">MIDRÍSE</input>
-                            <div class="subcheckbox_div">
-                                <div class="checkbox_div3">
-                                    <input type="checkbox">REAGENTE</input>
-                                </div>
-                                <div class="checkbox_div3">
-                                    <input type="checkbox">NÃO REAGENTE</input>
-                                </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">ANGINA DE PEITO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">APNÉIA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">BRADICARDIA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">BRADIPNEIA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">BRONCOASPIRANDO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">CEFALEIA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">CIANOSE</input>
+                        <div class="subcheckbox_div" id="subdivPES2">
+                            <div class="checkbox_div3">
+                                <input type="checkbox">LÁBIOS</input>
                             </div>
-
-                        </div>
-                        <div class="checkbox_div3">
-                            <input type="checkbox">MIÓSE</input>
-                            
+                            <div class="checkbox_div3">
+                                <input type="checkbox">EXTREMIDADE</input>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">SEDE</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">SINAL DE BATTLE</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">SINAL DE GUAXINIM</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">SUDORESE</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">TAQUIPNÉIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">TAQUICARDIA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">TONTURA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox"></input><input type="text" class="input_text"></input>
-                </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">CONVULSÃO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">DECORTICAÇÃO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">DEFORMIDADE</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">DESCEREBRAÇÃO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">DESMAIO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">DESVIO DE TRAQUÉIA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">DISPNÉIA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">DOR LOCAL</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">EDEMA</input>
+                        <div class="subcheckbox_div" id="subdivPES2">
+                            <div class="checkbox_div3">
+                                <input type="checkbox">GENERALIZADO</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">LOCALIZADO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">ENFISEMA SUBCUTÂNEO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">ÊSTASE DE JUGULAR</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">FACE PÁLIDA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">HEMORRAGIA</input>
+                        <div class="subcheckbox_div" id="subdivPES2">
+                            <div class="checkbox_div3">
+                                <input type="checkbox">INTERNA</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">EXTERNA</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">HIPERTENSÃO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">HIPOTENSÃO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">NÁUSEAS E VÔMITO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">NASORAGIA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">ÓBITO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">OTORRÉIA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">OTORRAGIA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">OVACE</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">PARADA</input>
+                        <div class="subcheckbox_div" id="subdivPES2">
+                            <div class="checkbox_div3">
+                                <input type="checkbox">CARDÍACA</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">RESPIRATÓRIA</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">PRIAPISMO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">PRURIDO NA PELE</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">PUPILAS</input>
+                        <div class="subcheckbox_div" id="subdivPES2">
+                            <div class="checkbox_div3">
+                                <input type="checkbox">ANISOCÓRICAS</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">ISOCÓRICAS</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">MIDRÍSE</input>
+                                <div class="subcheckbox_div">
+                                    <div class="checkbox_div3">
+                                        <input type="checkbox">REAGENTE</input>
+                                    </div>
+                                    <div class="checkbox_div3">
+                                        <input type="checkbox">NÃO REAGENTE</input>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox">MIÓSE</input>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">SEDE</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">SINAL DE BATTLE</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">SINAL DE GUAXINIM</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">SUDORESE</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">TAQUIPNÉIA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">TAQUICARDIA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox">TONTURA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox"></input><input type="text" class="input_text"></input>
+                    </div>
+                </form>
+ 
             </div>
         </div>
         <div class="form center" onclick="abrirBloco(8)">
