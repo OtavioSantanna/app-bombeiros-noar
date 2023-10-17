@@ -1,0 +1,92 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.header{
+    width: 100%;
+    height: 120px;
+    flex-shrink: 0;
+    background-color: #001D3D;
+}
+.logo
+{
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+.column
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin: 10px;
+}
+.container
+{
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.titulo
+{
+    display: flex;
+    justify-content: center;
+}
+.opcao
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.meio
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Adicione este bloco de código no seu arquivo ../css/cadastro.css */
+
+/* Estilizando os inputs */
+input[type="text"],
+input[type="number"],
+select {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilizando o botão */
+input[type="button"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Estilizando o select */
+select {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilizando o label */
+label {
+  font-weight: bold;
+}
