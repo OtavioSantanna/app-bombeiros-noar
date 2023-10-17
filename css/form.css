@@ -422,3 +422,8 @@ input[type="radio"] {
         height: 80px;
         margin: 10px;
     }
+
+    .textarea_obj{
+        max-width: 100%;
+        box-sizing: border-box;
+    }
