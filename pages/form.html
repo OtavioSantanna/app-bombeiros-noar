@@ -39,6 +39,7 @@
             </button>
             <div class="bloco" id="1" onclick="blocoClicado(event)">
                 <form id="form1" name="form1">
+                    <input type="hidden" name="tabela" value="tabela1">
                     <div class="input_data_div">
                         DATA:<input type="date" id="input_data" class="input_data" onchange="verificarPreenchimento('form1')">
                     </div>
@@ -144,7 +145,7 @@
                         <input type="checkbox" onchange="verificarPreenchimento('form2')">TRANSFERÊNCIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox"></input><input type="text" class="input_text"></input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form2')"></input><input type="text" class="input_text"></input>
                     </div>
                 </form>
 
@@ -639,42 +640,44 @@
         <div class="form center" onclick="abrirBloco(9)">
             <p class="form_tt">DECISÃO TRANSPORTE</p>
             <div class="bloco" id="9" onclick="blocoClicado(event)">
-                <div class="checkbox_div2">
-                    <input type="checkbox">CRÍTICO</input><img src="../img/2.png" class="img_transporte">
+                <form id="form9" name="form9">
+                    <div class="checkbox_div2">
+                        <input type="checkbox">CRÍTICO</input><img src="../img/2.png" class="img_transporte">
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox">INSTÁVEL</input><img src="../img/4.png" class="img_transporte">
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox">POTENCIALMENTE INSTÁVEL</input><img src="../img/3.png" class="img_transporte">
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox">ESTÁVEL</input><img src="../img/1.png" class="img_transporte">
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <p class="gg_tt center">EQUIPE DE ATENDIMENTO</p>
+                    <div class="input_div">
+                        MOTORISTA:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                    </div>
+                    <div class="input_div">
+                        SOCORRISTA 1:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                    </div>
+                    <div class="input_div">
+                        SOCORRISTA 2:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                    </div>
+                    <div class="input_div">
+                        SOCORRISTA 3:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                    </div>
+                    <div class="input_div">
+                        DEMANDANTE:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                    </div>
+                    <div class="input_div">
+                        EQUIPE:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
+                    </div>
                 </div>
-                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
-                <div class="checkbox_div2">
-                    <input type="checkbox">INSTÁVEL</input><img src="../img/4.png" class="img_transporte">
-                </div>
-                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
-                <div class="checkbox_div2">
-                    <input type="checkbox">POTENCIALMENTE INSTÁVEL</input><img src="../img/3.png" class="img_transporte">
-                </div>
-                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
-                <div class="checkbox_div2">
-                    <input type="checkbox">ESTÁVEL</input><img src="../img/1.png" class="img_transporte">
-                </div>
-                <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
-                <p class="gg_tt center">EQUIPE DE ATENDIMENTO</p>
-                <div class="input_div">
-                    MOTORISTA:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
-                </div>
-                <div class="input_div">
-                    SOCORRISTA 1:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
-                </div>
-                <div class="input_div">
-                    SOCORRISTA 2:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
-                </div>
-                <div class="input_div">
-                    SOCORRISTA 3:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
-                </div>
-                <div class="input_div">
-                    DEMANDANTE:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
-                </div>
-                <div class="input_div">
-                    EQUIPE:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
-                </div>
-            </div>
+                </form>
         </div>
         <div class="form center" onclick="abrirBloco(10)">
             <button class="tt_row center">
@@ -726,7 +729,17 @@
                 </div>
             </button> 
             <div class="bloco" id="11" onclick="blocoClicado(event)">
-                <textarea class="textarea_obj"></textarea>
+                <form id="form11" name="form11">
+                    <select>
+                        <option value="">Selecione objeto</option>
+                        <option value="Carteira">Carteira</option>
+                        <option value="Documento(s)">Documento(s)</option>
+                        <option value="Celular">Celular</option>
+                        <option value="Mochila">Mochila</option>
+                    </select>
+                    <textarea class="textarea_obj"></textarea>
+                </form>
+
             </div>
         </div>
         <div class="form center" onclick="abrirBloco(12)">
