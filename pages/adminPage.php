@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/cadastro.css">
+  <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
   <title>Inserir usuário</title>
 </head>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -13,9 +14,9 @@
             <div class="logo">
                 <img src="../public/logo.png" width="100px" height="100px">
                 <div class="column">
-                    <div class="titulo">Núcleo de Operações Aéreas e Resgate</div>
-                    <div class="sub">Assoc. de Serviços Sociais</div>
-                    <div class="sub2">Voluntários</div>
+                    <div class="noar">Núcleo de Operações Aéreas e Resgate</div>
+                    <div class="noar2">Assoc. de Serviços Sociais</div>
+                    <div class="noar2">Voluntários</div>
                 </div>
             </div>
         </div>
@@ -43,7 +44,7 @@
         <form method="post" action="../../php/inserts/inserir_usuario.php" id="form1">
             <div class="opcao">
                 <div class="meio">
-                    Matricula: 
+                    Matrícula: 
                     <div class="caixa"><input type="number" id="matricula" name="matricula"></div>
                     Nome:
                     <div class="caixa"><input type="text" id="nome" name="nome"></div>
@@ -55,9 +56,9 @@
                     <div class="caixa"><input type="number" id="cep" name="cep"></div>
                 </div>
                 <div class="meio">
-                    Numero da Casa:
+                    Número da Casa:
                     <div class="caixa"><input type="number" id="num_casa" name="num_casa"></div>
-                    Email:
+                    E-mail:
                     <div class="caixa"><input type="text" id="email" name="email"></div>
                     Idade:
                     <div class="caixa"><input type="number" id="idade" name="idade"></div>
