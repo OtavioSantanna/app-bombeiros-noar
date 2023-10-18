@@ -731,14 +731,14 @@
           <div class="bloco" id="11" onclick="blocoClicado(event)">
               <form id="form11" name="form11">
                 <label for="imagemInput" class="input_imagem_obj_label">
-                  <p class="img_obj_tt">ADICIONAR IMAGEM</p>
+                  <p class="img_obj_tt" id="tt_add">ADICIONAR IMAGEM +</p>
                   <div id="imagemDiv" class="img_div_obj">
                     <img id="imagemExibida" src="" alt="Imagem Exibida" class="imagem_obj">
                   </div>
 
                 </label>
                 <input type="file" id="imagemInput" name="imagem" accept="image/*" class="input_obj_none">
-
+                <p class="img_obj_remover center" id="button_remover" onclick="removerImagemObj()">REMOVER</p>
               
               </form>
 
