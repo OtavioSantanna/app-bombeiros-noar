@@ -27,79 +27,36 @@ function verificarPreenchimento(formId) {
     // Verifica se pelo menos um input está preenchido
     for (var i = 0; i < inputs.length; i++) {
         var input = inputs[i];
-        if(input.id!="radio_m" && input.id != "radio_f")
-        {
-            if (input.value.trim() !== "") {
-            
+        if (input.id !== "radio_m" && input.id !== "radio_f") {
+            if (input.type === "checkbox") {
+                if (input.checked) {
                     algumPreenchido = true;
-                    console.log(inputs[i],input.value)
-                
-                
-            
-                break; // Sai do loop assim que um input for preenchido
+                    console.log(inputs[i], "Checkbox marcada");
+                    break; // Sai do loop assim que uma caixa de seleção for marcada
+                } 
+                // Acrescente aqui qualquer outro tipo de input que deseja verificar
+            } else if (input.type === "text" || input.type === "date" || input.type === "file") {
+                if (input.type === "file" && input.files.length > 0) {
+                    algumPreenchido = true;
+                } else if (input.value.trim() !== "") {
+                    algumPreenchido = true;
+                    console.log(inputs[i], input.value);
+                }
+                if (algumPreenchido) {
+                    break; // Sai do loop assim que um input for preenchido
+                }
             }
         }
     }
 
     // Define o estilo da div "jabuti" com base no resultado da verificação
-    //console.log("Antes de definir o estilo:", divJabuti.style.display);
-
     if (algumPreenchido) {
         divJabuti.style.display = "flex";
     } else {
         divJabuti.style.display = "none";
     }
-    
-    //console.log("Depois de definir o estilo:", divJabuti.style.display);
-
 }
 
-function abrirPES(x){
-    var subdiv = document.getElementById(x);
-
-    //console.log("Antes de definir o estilo:", divJabuti.style.display);
 
 
-    if (subdiv.style.display === "flex") {
-        subdiv.style.display = "none";
-    } 
-    else {
-        subdiv.style.display = "flex";
-    }
-
-    //console.log("Depois de definir o estilo:", divJabuti.style.display);
-}
-
-const imagemInput = document.getElementById("imagemInput");
-const imagemExibida = document.getElementById("imagemExibida");
-var titulo = document.getElementById("tt_add");
-var remover = document.getElementById("button_remover");
-remover.style.display = "none";
-
-
-
-imagemInput.addEventListener("change", function () {
-    const file = imagemInput.files[0];
-    if (file) {
-        const fileURL = URL.createObjectURL(file);
-        imagemExibida.src = fileURL;
-        imagemExibida.style.display="flex";
-        titulo.innerHTML = "TROCAR IMAGEM";
-        remover.style.display = "flex";
-    } else {
-        imagemExibida.src = "";
-        imagemExibida.style.display="none";
-        titulo.innerHTML = "ADICIONAR IMAGEM +";
-        remover.style.display = "none";
-    }
-});
-
-function removerImagemObj() {
-    imagemInput.value="";
-    imagemExibida.src = "";
-    imagemExibida.style.display="none";
-    titulo.innerHTML = "ADICIONAR IMAGEM +";
-    remover.style.display = "none";
-    console.log(imagemExibida.src)
-}
 
