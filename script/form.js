@@ -58,5 +58,36 @@ function verificarPreenchimento(formId) {
 }
 
 
+gcs.style.display="none";
+function md5a(){
+    
+    var idade = document.getElementById("idade");
+    var menores = document.getElementById("menoresd5a");
+    var maiores = document.getElementById("maioresd5a");
+    var gcs = document.getElementById("gcs");
+    var avisoIdade = document.getElementById("avisoIdade");
+
+    if(idade.value != ""){
+        if(idade.value <= 5){
+            menores.style.display="flex";
+            maiores.style.display="none";
+            gcs.style.display="flex";
+            avisoIdade.style.display="none";
+        }else{
+            menores.style.display="none";
+            maiores.style.display="flex";
+            gcs.style.display="flex";
+            avisoIdade.style.display="none";
+        }
+    }else{
+        menores.style.display="none";
+        maiores.style.display="none";
+        gcs.style.display="none";
+        avisoIdade.style.display="flex";
+    }
+
+}
+
+
 
 

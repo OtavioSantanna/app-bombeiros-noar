@@ -28,7 +28,7 @@
   <div class="title_sq center">
       <p class="title">FOLHA DE ATENDIMENTO</p>
   </div>
-  <div class="forms">
+  <div class="forms center">
       <div class="form center" onclick="abrirBloco(1)" >
           <button class="tt_row center">
               <div></div>
@@ -53,7 +53,7 @@
                       NOME:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
                   </div>
                   <div class="input_div">
-                      IDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form1')">
+                      IDADE:<input type="number" class="input_number" id="idade" onchange="verificarPreenchimento('form1');  md5a()">
                   </div>
                   <div class="input_div">
                       RG/CPF PACIENTE:<input type="text" class="input_text" onchange="verificarPreenchimento('form1')">
@@ -162,7 +162,8 @@
           <div class="bloco" id="3" onclick="blocoClicado(event)">
               <p class="gg_tt center">NÍVEL DE CONSCIÊNCIA</p>
               <form id="form3" name="form3">
-                  <div class="md5a">
+                <p class="selec_idade center" id="avisoIdade">INFORME A IDADE APROXIMADA DA VÍTIMA</p>
+                  <div class="md5a menores" id="menoresd5a">
                       <p class="md5a_tt center">MENORES DE 5 ANOS</p>
                       <div class="ao">
                           <p class="md5a_2_tt center">ABERTURA OCULAR</p>
@@ -220,7 +221,7 @@
                           </div>
                       </div>   
                   </div>
-                  <div class="md5a">
+                  <div class="md5a maiores" id="maioresd5a">
                       <p class="md5a_tt center">MAIORES DE 5 ANOS</p>
                       <div class="ao">
                           <p class="md5a_2_tt center">ABERTURA OCULAR</p>
@@ -278,7 +279,7 @@
                           </div>
                       </div>   
                   </div>
-                  <div class="checkbox_div center">
+                  <div class="checkbox_div center" id="gcs">
                       <p>TOTAL (GCS)(3-15)</p><input type="number" class="input_number input_total_gcs">
                   </div>
               </form>
@@ -732,7 +733,7 @@
               <form id="form11" name="form11">
                 <label for="imagemInput" class="input_imagem_obj_label">
                   <p class="img_obj_tt" id="tt_add">ADICIONAR IMAGEM +</p>
-                  <div id="imagemDiv" class="img_div_obj">
+                  <div id="imagemDiv" class="img_div_obj center">
                     <img id="imagemExibida" src="" alt="Imagem Exibida" class="imagem_obj">
                   </div>
 
@@ -814,7 +815,7 @@
 
           </div>
       </div>
-      <div class="forms_buttons">
+      <div class="forms_buttons center">
           <div class="button center"><p class="form_tt">ENVIAR</p></div>
       </div>
   </div>
