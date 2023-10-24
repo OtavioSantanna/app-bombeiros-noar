@@ -422,23 +422,35 @@ input[type="radio"] {
         height: 80px;
         margin: 10px;
     }
+    .textarea_obj_div{
+        display: flex;
+        width: auto;
+        height: min-content;
+        margin: 5px;
+        margin-top: 15px;
 
+    }
     .textarea_obj{
         display: flex;
         flex-direction:column;
-        margin: 5px;
-        margin-top: 15px;
+        padding: 10px;
+        min-height: 150px;
+        resize: vertical;
         width: 100%;
-        min-height: 50px;
+        position: relative;
         background-color: lightgray;
-        border-radius: 8px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 3px;
         border: none;
         font-family: 'Nunito', sans-serif;
         font-size: medium;
         font-weight: bold;
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.3);
         justify-items: center;
-        box-sizing: content-box;
+        box-sizing: content-box border-box;
+        outline: darkblue;
     }
 
     .input_obj_none{

@@ -738,8 +738,10 @@
 
                 </label>
                 <input type="file" id="imagemInput" name="imagem" accept="image/*" class="input_obj_none" onchange="verificarPreenchimento('form11')">
-                <p class="img_obj_remover center" id="button_remover" onclick="removerImagemObj();  verificarPreenchimento('form11')">REMOVER</p>
-              <textarea placeholder="DIGITAR..." class="textarea_obj"></textarea>
+                <p class="img_obj_remover center" id="button_remover" onclick="removerImagemObj();  verificarPreenchimento('form11')">REMOVER IMAGEM ✖</p>
+              <div class="textarea_obj_div">
+                <textarea placeholder="OBJETOS..." class="textarea_obj" onchange="verificarPreenchimento('form11')"></textarea>
+              </div>
               </form>
 
           </div>
