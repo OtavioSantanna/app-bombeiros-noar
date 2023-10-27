@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de Atendimento</title>
+    <link rel="stylesheet" href="../css/folhaoutermo.css">
+</head>
+
+<body>
+    <div class="shadow center" id="menu">
+        <div class="menu" >
+            <a class="form center" href="form.html">
+                <p class="form_tt">FOLHA DE OCORRÊNCIA</p>
+                <div class="bloco" id="20" onclick="blocoClicado(event)"></div>
+            </a>
+            <a class="form center" href="form.html">
+                <p class="form_tt">FOLHA DE OCORRÊNCIA</p>
+                <div class="bloco" id="20" onclick="blocoClicado(event)"></div>
+            </a>
+            <a class="form center" href="form.html">
+                <p class="form_tt">FOLHA DE OCORRÊNCIA</p>
+                <div class="bloco" id="20" onclick="blocoClicado(event)"></div>
+            </a>
+        </div>
+        <div></div>
+    </div>
+    <div class="header">
+        <div class="pic_menu_sq" onclick="menu()">
+            <div class="menu_bt">
+                <div class="menu_dash"></div>
+                <div class="menu_dash"></div>
+                <div class="menu_dash"></div>
+            </div>
+        </div>
+        <div class="logo_sq center">
+            <img src="../img/logo_pequena.png" class="logo">
+        </div>
+        <div class="pic_menu_sq">
+            <div class="pic"></div>
+        </div>
+
+
+    </div>
+    <div class="title_sq center">
+
+    </div>
+    <div class="forms center">
+
+        <div class="form center" href="pagina-de-destino.html">
+            <p class="form_tt">TERMO DE RECUSA</p>
+            <div class="bloco" id="19" onclick="blocoClicado(event)"></div>
+        </div>
+        <a class="form center" href="form.html">
+            <p class="form_tt">FOLHA DE OCORRÊNCIA</p>
+            <div class="bloco" id="20" onclick="blocoClicado(event)"></div>
+        </a>
+
+    </div>
+
+</body>
+<script>
+    function menu(){
+        var menu  = document.getElementById("menu")
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } 
+    else {
+        menu.style.display = "flex";
+    }
+    }
+</script>
+<script src="../script/imagemInput.js"></script>
+
+</html>
