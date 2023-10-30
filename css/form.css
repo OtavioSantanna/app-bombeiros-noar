@@ -474,6 +474,10 @@ input[type="radio"] {
         justify-items: center;
 
     }
+    input_imagem_obj_label:active{
+        background-color: gray;
+    }
+
     .imagem_obj{
         width: 100%;
         max-width: 500px;

@@ -35,7 +35,7 @@ function verificarPreenchimento(formId) {
                     break; // Sai do loop assim que uma caixa de seleção for marcada
                 } 
                 // Acrescente aqui qualquer outro tipo de input que deseja verificar
-            } else if (input.type === "text" || input.type === "date" || input.type === "file" || input.type === "number") {
+            } else if (input.type === "text" || input.type === "date" || input.type === "file" || input.type === "number" || input.tagName === "textarea") {
                 if (input.type === "file" && input.files.length > 0) {
                     algumPreenchido = true;
                 } else if (input.value.trim() !== "") {

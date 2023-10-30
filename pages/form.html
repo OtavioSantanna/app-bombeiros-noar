@@ -825,12 +825,22 @@
             <div class="bloco" id="15" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(16)">
-            <p class="form_tt">OBSERVAÇÕES IMPORTANTES</p>
-            <div class="bloco" id="16" onclick="blocoClicado(event)">
-                <div class="textarea_obj_div">
-                    <textarea placeholder="OBSERVAÇÕES..." class="textarea_obj"
-                        onchange="verificarPreenchimento('form11')"></textarea>
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">OBSERVAÇÕES IMPORTANTES</p>
+                <div>
+                    <div class="check center" id="jabuti_form16">✔</div>
                 </div>
+            </button>
+            
+            <div class="bloco" id="16" onclick="blocoClicado(event)">
+                <form id="form16">
+                    <div class="textarea_obj_div">
+                        <textarea placeholder="OBSERVAÇÕES..." class="textarea_obj"
+                            onchange="verificarPreenchimento('form16')"></textarea>
+                    </div>
+                </form>
+
             </div>
         </div>
         <div class="form center" onclick="abrirBloco(17)">
@@ -846,8 +856,25 @@
             <div class="bloco" id="19" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(20)">
-            <p class="form_tt">RESPONSÁVEL PELO PREENCHIMENTO</p>
-            <div class="bloco" id="20" onclick="blocoClicado(event)"></div>
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">RESPONSÁVEL PELO PREENCHIMENTO</p>
+                <div>
+                    <div class="check center" id="jabuti_form20">✔</div>
+                </div>
+            </button>
+            
+            <div class="bloco" id="20" onclick="blocoClicado(event)">
+            <form id="form20">
+                <div class="input_div">
+                    FICHA:<input type="text" class="input_text" onchange="verificarPreenchimento('form20')">
+                </div>
+                <div class="input_div">
+                    FIBRA<input type="text" class="input_text" onchange="verificarPreenchimento('form20')">
+                </div>
+
+            </form>
+            </div>
         </div>
         <div class="form center" onclick="abrirBloco(21)">
             <button class="tt_row center">
