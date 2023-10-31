@@ -444,7 +444,7 @@ input[type="radio"] {
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 3px;
+        border-bottom-right-radius: 0px;
         border: none;
         font-family: 'Nunito', sans-serif;
         font-size: medium;
@@ -454,7 +454,9 @@ input[type="radio"] {
         box-sizing: content-box border-box;
         outline: darkblue;
     }
-
+    .textarea_obj:focus{
+        outline: 3px solid darkblue;
+    }
     .input_obj_none{
         display: none;
     }
@@ -552,3 +554,53 @@ input[type="radio"] {
         text-align: center;
     }
 
+    /* barra de pesquisa
+    .searchbar{
+        background-color: lightgray;
+        width: 90%;
+        max-width: 700px;
+        height: 50px;
+        margin-top: 15px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        border: none;
+        font-family: 'Nunito', sans-serif;
+
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.3);
+        padding: 0%;
+    }
+    .searchbar_input{
+        width: 60%;
+        height: auto;
+        margin: 0%;
+        border: none;
+        background-color: transparent;
+        box-sizing: border-box;
+        padding: 10px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: medium;
+    }
+    .searchbar_input:focus{
+        outline: 3px solid darkblue;
+    }
+    .searchbar_select{
+        width: 40%;
+        border: none;
+        background-color: transparent;
+        box-sizing: border-box;
+        padding: 10px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: medium;
+    }
+    .searchbar_select:focus{
+        outline: 3px solid darkblue;
+    }
+    */
+    

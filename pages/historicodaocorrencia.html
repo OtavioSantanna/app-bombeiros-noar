@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico da Ocorrência</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="pic_menu_sq">
+            <div class="menu_bt">
+                <div class="menu_dash"></div>
+                <div class="menu_dash"></div>
+                <div class="menu_dash"></div>
+            </div>
+        </div>
+        <div class="logo_sq center">
+            <img src="../img/logo_pequena.png" class="logo">
+        </div>
+        <div class="pic_menu_sq">
+            <div class="pic"></div>
+        </div>
+
+
+    </div>
+    <div class="title_sq center">
+        <p class="title">HISTÓRICO DA OCORRÊNCIA</p>
+    </div>
+    <div class="forms center">
+        <div class="form center" onclick="abrirBloco(12)">
+            <p class="form_tt">PROCEDIMENTOS EFETUADOS</p>
+            <div class="bloco" id="12" onclick="blocoClicado(event)"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(13)">
+            <p class="form_tt">MATERIAIS UTILIZADOS DESCARTÁVEL</p>
+            <div class="bloco" id="13" onclick="blocoClicado(event)"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(14)">
+            <p class="form_tt">MATERIAIS UTILIZADOS DEIXADO NO HOSPITAL</p>
+            <div class="bloco" id="14" onclick="blocoClicado(event)"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(15)">
+            <p class="form_tt">TERMO DE RECUSA DE ATENDIMENTO E/OU TRANSPORTE</p>
+            <div class="bloco" id="15" onclick="blocoClicado(event)"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(16)">
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">OBSERVAÇÕES IMPORTANTES</p>
+                <div>
+                    <div class="check center" id="jabuti_form16">✔</div>
+                </div>
+            </button>
+            
+            <div class="bloco" id="16" onclick="blocoClicado(event)">
+                <form id="form16">
+                    <div class="textarea_obj_div">
+                        <textarea placeholder="OBSERVAÇÕES..." class="textarea_obj"
+                            onchange="verificarPreenchimento('form16')"></textarea>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="form center" onclick="abrirBloco(17)">
+            <p class="form_tt">ANAMNESE DA EMERGÊNCIA MÉDICA</p>
+            <div class="bloco" id="17" onclick="blocoClicado(event)"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(18)">
+            <p class="form_tt">ANAMNESE GESTACIONAL</p>
+            <div class="bloco" id="18" onclick="blocoClicado(event)"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(19)">
+            <p class="form_tt">AVALIAÇÃO DA CINEMÁTICA</p>
+            <div class="bloco" id="19" onclick="blocoClicado(event)"></div>
+        </div>
+        <div class="form center" onclick="abrirBloco(20)">
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">RESPONSÁVEL PELO PREENCHIMENTO</p>
+                <div>
+                    <div class="check center" id="jabuti_form20">✔</div>
+                </div>
+            </button>
+            
+            <div class="bloco" id="20" onclick="blocoClicado(event)">
+            <form id="form20">
+                <div class="input_div">
+                    FICHA:<input type="text" class="input_text" onchange="verificarPreenchimento('form20')">
+                </div>
+                <div class="input_div">
+                    FIBRA<input type="text" class="input_text" onchange="verificarPreenchimento('form20')">
+                </div>
+
+            </form>
+            </div>
+        </div>
+
+        <div class="forms_buttons center">
+            <div class="button center">
+                <p class="form_tt">ENVIAR</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../script/form.js"></script>
+<script src="../script/imagemInput.js"></script>
+
+</html>
