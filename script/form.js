@@ -59,6 +59,7 @@ function verificarPreenchimento(formId) {
 
 
 gcs.style.display="none";
+ndcTt.style.display="none";
 function md5a(){
     
     var idade = document.getElementById("idade");
@@ -66,6 +67,7 @@ function md5a(){
     var maiores = document.getElementById("maioresd5a");
     var gcs = document.getElementById("gcs");
     var avisoIdade = document.getElementById("avisoIdade");
+    var ndcTt = document.getElementById("ndc");
 
     if(idade.value != ""){
         if(idade.value <= 5){
@@ -73,17 +75,20 @@ function md5a(){
             maiores.style.display="none";
             gcs.style.display="flex";
             avisoIdade.style.display="none";
+            ndcTt.style.display="flex";
         }else{
             menores.style.display="none";
             maiores.style.display="flex";
             gcs.style.display="flex";
             avisoIdade.style.display="none";
+            ndcTt.style.display="flex";
         }
     }else{
         menores.style.display="none";
         maiores.style.display="none";
         gcs.style.display="none";
         avisoIdade.style.display="flex";
+        ndcTt.style.display="none";
     }
 
 }

@@ -286,6 +286,7 @@ input[type="radio"] {
     color: darkblue;
     size: medium;
     font-weight: bold;
+    display: none;
 }
 .md5a_tt
 {
