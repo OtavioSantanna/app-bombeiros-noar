@@ -67,6 +67,7 @@ function md5a(){
     var maiores = document.getElementById("maioresd5a");
     var gcs = document.getElementById("gcs");
     var avisoIdade = document.getElementById("avisoIdade");
+    var avisoIdade2 = document.getElementById("avisoIdade2");
     var ndcTt = document.getElementById("ndc");
 
     if(idade.value != ""){
@@ -75,12 +76,14 @@ function md5a(){
             maiores.style.display="none";
             gcs.style.display="flex";
             avisoIdade.style.display="none";
+            avisoIdade2.style.display="none";
             ndcTt.style.display="flex";
         }else{
             menores.style.display="none";
             maiores.style.display="flex";
             gcs.style.display="flex";
             avisoIdade.style.display="none";
+            avisoIdade2.style.display="none";
             ndcTt.style.display="flex";
         }
     }else{
@@ -88,6 +91,7 @@ function md5a(){
         maiores.style.display="none";
         gcs.style.display="none";
         avisoIdade.style.display="flex";
+        avisoIdade2.style.display="none";
         ndcTt.style.display="none";
     }
 

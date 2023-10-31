@@ -223,9 +223,11 @@ input[type="radio"] {
     border-left: none;
     border-right: none;
     height: 25px;
-    font-size: large;
+    font-size: medium;
     width: auto;
     background-color: transparent;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 }
 .input_text:focus{
     outline: none;
@@ -241,8 +243,10 @@ input[type="radio"] {
     border-left: none;
     border-right: none;
     height: 25px;
-    font-size: large;
+    font-size: medium;
     width: auto;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 }
 .input_number:focus{
     outline: none;
@@ -456,7 +460,7 @@ input[type="radio"] {
         outline: darkblue;
     }
     .textarea_obj:focus{
-        outline: 3px solid darkblue;
+        outline: 2px solid darkblue;
     }
     .input_obj_none{
         display: none;
@@ -586,7 +590,7 @@ input[type="radio"] {
         font-size: medium;
     }
     .searchbar_input:focus{
-        outline: 3px solid darkblue;
+        outline: 2px solid darkblue;
     }
     .searchbar_select{
         width: 40%;
@@ -601,7 +605,7 @@ input[type="radio"] {
         font-size: medium;
     }
     .searchbar_select:focus{
-        outline: 3px solid darkblue;
+        outline: 2px solid darkblue;
     }
     */
     

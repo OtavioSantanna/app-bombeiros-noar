@@ -44,9 +44,9 @@ body{
 }
 .input
 {
-  width: 100%;
+  width: auto;
   border: none;
-  height: 50px;
+  max-height: 50px;
   font-family: 'Nunito', sans-serif;
   font-size: larger;
   border-radius: 5px;
