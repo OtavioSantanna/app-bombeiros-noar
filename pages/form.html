@@ -398,83 +398,83 @@
                 <div></div>
                 <p class="form_tt">PROBLEMAS ENCONTRADOS SUSPEITOS</p>
                 <div>
-                    <div class="check center">✔</div>
+                    <div class="check center" id="jabuti_form5">✔</div>
                 </div>
             </button>
 
             <div class="bloco" id="5" onclick="blocoClicado(event)">
                 <form id="form5" name="form5">
                     <div class="checkbox_div2 bgcinza">
-                        <input type="checkbox">PSIQUIÁTRICO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form5')">PSIQUIÁTRICO</input>
                     </div>
                     <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                     <div class="checkbox_div2">
-                        <input type="checkbox" onclick="abrirPES(subdivPES1)">RESPIRATÓRIO</input>
+                        <input type="checkbox" onclick="abrirPES(subdivPES1)" onchange="verificarPreenchimento('form5')">RESPIRATÓRIO</input>
                         <div class="subcheckbox_div" id="subdivPES1">
                             <div class="checkbox_div3">
-                                <input type="checkbox">DPOC</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">DPOC</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">INALAÇÃO FUMAÇA</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">INALAÇÃO FUMAÇA</input>
                             </div>
                         </div>
                     </div>
                     <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                     <div class="checkbox_div2 bgcinza">
-                        <input type="checkbox" onclick="abrirPES(subdivPES2)">DIABETES</input>
+                        <input type="checkbox" onclick="abrirPES(subdivPES2)" onchange="verificarPreenchimento('form5')">DIABETES</input>
                         <div class="subcheckbox_div" id="subdivPES2">
                             <div class="checkbox_div3">
-                                <input type="checkbox">HIPERGLICEMIA</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">HIPERGLICEMIA</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">HIPOGLICEMIA</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">HIPOGLICEMIA</input>
                             </div>
                         </div>
                     </div>
                     <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                     <div class="checkbox_div2">
-                        <input type="checkbox">OUTROS: </input></input><input type="text" class="input_text"></input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form5')">OUTROS: </input></input><input type="text" class="input_text" onchange="verificarPreenchimento('form5')"></input>
                     </div>
                     <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                     <div class="checkbox_div2 bgcinza">
-                        <input type="checkbox" onclick="abrirPES(subdivPES3)">OBSTÉTRICO</input>
+                        <input type="checkbox" onclick="abrirPES(subdivPES3)" onchange="verificarPreenchimento('form5')">OBSTÉTRICO</input>
                         <div class="subcheckbox_div" id="subdivPES3">
                             <div class="checkbox_div3">
-                                <input type="checkbox">PARTO EMERGENCIAL</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">PARTO EMERGENCIAL</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">GESTANTE</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">GESTANTE</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">HEMOR, EXCESSIVA</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">HEMOR, EXCESSIVA</input>
                             </div>
                         </div>
                     </div>
                     <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                     <div class="checkbox_div2">
-                        <input type="checkbox" onclick="abrirPES(subdivPES4)">TRANSPORTE</input>
+                        <input type="checkbox" onclick="abrirPES(subdivPES4)" onchange="verificarPreenchimento('form5')">TRANSPORTE</input>
                         <div class="subcheckbox_div" id="subdivPES4">
                             <div class="checkbox_div3">
-                                <input type="checkbox">AÉREO</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">AÉREO</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">CLÍNICO</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">CLÍNICO</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">EMERGENCIAL</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">EMERGENCIAL</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">PÓS-TRAUMA</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">PÓS-TRAUMA</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">SAMU</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">SAMU</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">OUTROS:</input></input></input><input type="text"
-                                    class="input_text" style="width: 40%;"></input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">OUTROS:</input></input></input><input type="text"
+                                    class="input_text" style="width: 40%;" onchange="verificarPreenchimento('form5')"></input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">SEM REMOÇÃO</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form5')">SEM REMOÇÃO</input>
                             </div>
                         </div>
                     </div>
@@ -499,198 +499,198 @@
                 <div></div>
                 <p class="form_tt">SINAIS E SINTOMAS</p>
                 <div>
-                    <div class="check center">✔</div>
+                    <div class="check center" id="jabuti_form7">✔</div>
                 </div>
             </button>
             <div class="bloco" id="7" onclick="blocoClicado(event)">
                 <form id="form7" name="form8">
                     <div class="checkbox_div">
-                        <input type="checkbox">ABDOMEN SENSÍVEL OU RÍGIDO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">ABDOMEN SENSÍVEL OU RÍGIDO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">AFUNDAMENTO DE CRÂNIO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">AFUNDAMENTO DE CRÂNIO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">AGITAÇÃO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">AGITAÇÃO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">AMNÉSIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">AMNÉSIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">ANGINA DE PEITO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">ANGINA DE PEITO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">APNÉIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">APNÉIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">BRADICARDIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">BRADICARDIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">BRADIPNEIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">BRADIPNEIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">BRONCOASPIRANDO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">BRONCOASPIRANDO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">CEFALEIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">CEFALEIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">CIANOSE</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">CIANOSE</input>
                         <div class="subcheckbox_div" id="subdivPES2">
                             <div class="checkbox_div3">
-                                <input type="checkbox">LÁBIOS</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form7')">LÁBIOS</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">EXTREMIDADE</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form7')">EXTREMIDADE</input>
                             </div>
                         </div>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">CONVULSÃO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">CONVULSÃO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">DECORTICAÇÃO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">DECORTICAÇÃO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">DEFORMIDADE</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">DEFORMIDADE</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">DESCEREBRAÇÃO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">DESCEREBRAÇÃO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">DESMAIO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">DESMAIO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">DESVIO DE TRAQUÉIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">DESVIO DE TRAQUÉIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">DISPNÉIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">DISPNÉIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">DOR LOCAL</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">DOR LOCAL</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">EDEMA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">EDEMA</input>
                         <div class="subcheckbox_div" id="subdivPES2">
                             <div class="checkbox_div3">
-                                <input type="checkbox">GENERALIZADO</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form7')">GENERALIZADO</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">LOCALIZADO</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form7')">LOCALIZADO</input>
                             </div>
                         </div>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">ENFISEMA SUBCUTÂNEO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">ENFISEMA SUBCUTÂNEO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">ÊSTASE DE JUGULAR</input>
+                        <input type="checkbox"onchange="verificarPreenchimento('form7')">ÊSTASE DE JUGULAR</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">FACE PÁLIDA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">FACE PÁLIDA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">HEMORRAGIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">HEMORRAGIA</input>
                         <div class="subcheckbox_div" id="subdivPES2">
                             <div class="checkbox_div3">
-                                <input type="checkbox">INTERNA</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form7')">INTERNA</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">EXTERNA</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form7')">EXTERNA</input>
                             </div>
                         </div>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">HIPERTENSÃO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">HIPERTENSÃO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">HIPOTENSÃO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">HIPOTENSÃO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">NÁUSEAS E VÔMITO</input>
+                        <input type="checkbox"onchange="verificarPreenchimento('form7')">NÁUSEAS E VÔMITO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">NASORAGIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">NASORAGIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">ÓBITO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">ÓBITO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">OTORRÉIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">OTORRÉIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">OTORRAGIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">OTORRAGIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">OVACE</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">OVACE</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">PARADA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">PARADA</input>
                         <div class="subcheckbox_div" id="subdivPES2">
                             <div class="checkbox_div3">
-                                <input type="checkbox">CARDÍACA</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form8')">CARDÍACA</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">RESPIRATÓRIA</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form7')">RESPIRATÓRIA</input>
                             </div>
                         </div>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">PRIAPISMO</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">PRIAPISMO</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">PRURIDO NA PELE</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">PRURIDO NA PELE</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">PUPILAS</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">PUPILAS</input>
                         <div class="subcheckbox_div" id="subdivPES2">
                             <div class="checkbox_div3">
-                                <input type="checkbox">ANISOCÓRICAS</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form7')">ANISOCÓRICAS</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">ISOCÓRICAS</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form7')">ISOCÓRICAS</input>
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">MIDRÍSE</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form7')">MIDRÍSE</input>
                                 <div class="subcheckbox_div">
                                     <div class="checkbox_div3">
-                                        <input type="checkbox">REAGENTE</input>
+                                        <input type="checkbox" onchange="verificarPreenchimento('form7')">REAGENTE</input>
                                     </div>
                                     <div class="checkbox_div3">
-                                        <input type="checkbox">NÃO REAGENTE</input>
+                                        <input type="checkbox" onchange="verificarPreenchimento('form7')">NÃO REAGENTE</input>
                                     </div>
                                 </div>
 
                             </div>
                             <div class="checkbox_div3">
-                                <input type="checkbox">MIÓSE</input>
+                                <input type="checkbox" onchange="verificarPreenchimento('form7')">MIÓSE</input>
 
                             </div>
                         </div>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">SEDE</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">SEDE</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">SINAL DE BATTLE</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">SINAL DE BATTLE</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">SINAL DE GUAXINIM</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">SINAL DE GUAXINIM</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">SUDORESE</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">SUDORESE</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">TAQUIPNÉIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">TAQUIPNÉIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">TAQUICARDIA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">TAQUICARDIA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox">TONTURA</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')">TONTURA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox"></input><input type="text" class="input_text"></input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form7')"></input><input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
                     </div>
                 </form>
 
@@ -701,19 +701,21 @@
                 <div></div>
                 <p class="form_tt">FORMA DE CONDUÇÃO</p>
                 <div>
-                    <div class="check center">✔</div>
+                    <div class="check center" id="jabuti_form8">✔</div>
                 </div>
             </button>
             <div class="bloco" id="8" onclick="blocoClicado(event)">
-                <div class="checkbox_div">
-                    <input type="checkbox">DEITADA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">SEMI-SENTADA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">SENTADA</input>
-                </div>
+                <form id="form8">
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form8')">DEITADA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form8')">SEMI-SENTADA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form8')">SENTADA</input>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="form center" onclick="abrirBloco(9)">
@@ -728,20 +730,20 @@
             <div class="bloco" id="9" onclick="blocoClicado(event)">
                 <form id="form9" name="form9">
                     <div class="checkbox_div2">
-                        <input type="checkbox">CRÍTICO</input><img src="../img/2.png" class="img_transporte">
+                        <input type="checkbox" onchange="verificarPreenchimento('form9')">CRÍTICO</input><img src="../img/2.png" class="img_transporte">
                     </div>
                     <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                     <div class="checkbox_div2">
-                        <input type="checkbox">INSTÁVEL</input><img src="../img/4.png" class="img_transporte">
+                        <input type="checkbox" onchange="verificarPreenchimento('form9')">INSTÁVEL</input><img src="../img/4.png" class="img_transporte">
                     </div>
                     <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                     <div class="checkbox_div2">
-                        <input type="checkbox">POTENCIALMENTE INSTÁVEL</input><img src="../img/3.png"
+                        <input type="checkbox" onchange="verificarPreenchimento('form9')">POTENCIALMENTE INSTÁVEL</input><img src="../img/3.png"
                             class="img_transporte">
                     </div>
                     <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                     <div class="checkbox_div2">
-                        <input type="checkbox">ESTÁVEL</input><img src="../img/1.png" class="img_transporte">
+                        <input type="checkbox"onchange="verificarPreenchimento('form9')">ESTÁVEL</input><img src="../img/1.png" class="img_transporte">
                     </div>
                     <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                     <p class="gg_tt center">EQUIPE DE ATENDIMENTO</p>
@@ -771,40 +773,42 @@
                 <div></div>
                 <p class="form_tt">VÍTIMA ERA</p>
                 <div>
-                    <div class="check center">✔</div>
+                    <div class="check center" id="jabuti_form10">✔</div>
                 </div>
             </button>
             <div class="bloco" id="10" onclick="blocoClicado(event)">
-                <div class="checkbox_div">
-                    <input type="checkbox">CICLISTA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">CONDUTOR MOTO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">GESTANTE</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">PASSAGEIRO BANCO DA FRENTE</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">PASSAGEIRO MOTO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">CONDUTOR CARRO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">CLÍNICO</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">TRAUMA</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox">PASSAGEIRO BANCO DE TRÁS</input>
-                </div>
-                <div class="checkbox_div">
-                    <input type="checkbox" onchange="verificarPreenchimento('form4')">PEDESTRE</input>
-                </div>
+                <form id="form10">
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form10')">CICLISTA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form10')">CONDUTOR MOTO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form10')">GESTANTE</input>
+                    </div>
+                    <div class="checkbox_div" >
+                        <input type="checkbox" onchange="verificarPreenchimento('form10')">PASSAGEIRO BANCO DA FRENTE</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form10')">PASSAGEIRO MOTO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form10')" >CONDUTOR CARRO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form10')">CLÍNICO</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form10')">TRAUMA</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form10')">PASSAGEIRO BANCO DE TRÁS</input>
+                    </div>
+                    <div class="checkbox_div">
+                        <input type="checkbox" onchange="verificarPreenchimento('form10')">PEDESTRE</input>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="form center" onclick="abrirBloco(11)">
