@@ -23,6 +23,7 @@ body{
     justify-content: space-between;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     top: 0%;
+    z-index: 90000;
 }
 .pic_menu_sq{
     width: 60px;
@@ -626,4 +627,21 @@ input[type="radio"] {
         box-sizing: border-box;
         padding: 5px;
     }
-    
+    .add_ferimento{
+        display: flex;
+        flex-direction:column;
+        margin: 5px;
+        margin-top: 15px;
+        width: auto;
+        min-height: 50px;
+        background-color: lightgray;
+        border-radius: 8px;
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        justify-items: center;
+    }
+    .add_ferimento:active{
+        background-color: gray;
+    }
