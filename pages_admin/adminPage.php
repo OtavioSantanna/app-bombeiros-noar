@@ -50,7 +50,7 @@
 <main>
     <div class="main">
         <div class="titulo">Cadastrar Usuário</div>
-        <form method="post" action="../../php/inserts/inserir_usuario.php" id="form1">
+        <form class="form" method="post" action="../../php/inserts/inserir_usuario.php" id="form1">
             <div class="input-container">
                 <label for="matricula">Matrícula:</label>
                 <input type="number" id="matricula" name="matricula">
@@ -90,6 +90,7 @@
         </form>
     </div>
 </main>
+
 <script>
 function Cadastrar() {
     var dados = $('#form1').serialize(); // Este trecho de código depende do uso do jQuery.
