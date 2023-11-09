@@ -299,6 +299,7 @@ input[type="radio"] {
     font-family: 'Nunito', sans-serif;
     min-height: 30px;
     margin-bottom: 0%;
+    text-align: center;
 
 
 }
@@ -608,4 +609,21 @@ input[type="radio"] {
         outline: 2px solid darkblue;
     }
     */
+
+    .presunto{
+        position: relative;
+        width: 100%;
+    }
+
+    .ffelc_tt
+    {
+        background-color: darkblue;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        min-height: 30px;
+        margin-bottom: 0%;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 5px;
+    }
     
