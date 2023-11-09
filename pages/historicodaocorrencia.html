@@ -31,33 +31,71 @@
         <p class="title">HISTÓRICO DA OCORRÊNCIA</p>
     </div>
     <div class="forms center">
-        <div class="form center" onclick="abrirBloco(12)">
-            <p class="form_tt">PROCEDIMENTOS EFETUADOS</p>
-            <div class="bloco" id="12" onclick="blocoClicado(event)"></div>
-        </div>
         <div class="form center" onclick="abrirBloco(13)">
-            <p class="form_tt">MATERIAIS UTILIZADOS DESCARTÁVEL</p>
-            <div class="bloco" id="13" onclick="blocoClicado(event)"></div>
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">PROCEDIMENTOS EFETUADOS</p>
+                <div>
+                    <div class="check center" id="jabuti_form13">✔</div>
+                </div>
+            </button>
+            <div class="bloco" id="13" onclick="blocoClicado(event)">
+                <form id="form13" name="form13">
+
+                </form>
+            </div>
         </div>
         <div class="form center" onclick="abrirBloco(14)">
-            <p class="form_tt">MATERIAIS UTILIZADOS DEIXADO NO HOSPITAL</p>
-            <div class="bloco" id="14" onclick="blocoClicado(event)"></div>
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">MATERIAIS UTILIZADOS DESCARTÁVEL</p>
+                <div>
+                    <div class="check center" id="jabuti_form14">✔</div>
+                </div>
+            </button>
+            <div class="bloco" id="14" onclick="blocoClicado(event)">
+                <form id="form14" name="form14">
+
+                </form>
+            </div>
         </div>
         <div class="form center" onclick="abrirBloco(15)">
-            <p class="form_tt">TERMO DE RECUSA DE ATENDIMENTO E/OU TRANSPORTE</p>
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">MATERIAIS UTILIZADOS DEIXADO NO HOSPITAL</p>
+                <div>
+                    <div class="check center" id="jabuti_form15">✔</div>
+                </div>
+            </button>
+            
             <div class="bloco" id="15" onclick="blocoClicado(event)"></div>
         </div>
         <div class="form center" onclick="abrirBloco(16)">
             <button class="tt_row center">
                 <div></div>
-                <p class="form_tt">OBSERVAÇÕES IMPORTANTES</p>
+                <p class="form_tt">TERMO DE RECUSA DE ATENDIMENTO E/OU TRANSPORTE</p>
                 <div>
                     <div class="check center" id="jabuti_form16">✔</div>
                 </div>
             </button>
             
             <div class="bloco" id="16" onclick="blocoClicado(event)">
-                <form id="form16">
+                <form id="form16" name="form16">
+
+                </form>
+            </div>
+        </div>
+        <div class="form center" onclick="abrirBloco(17)">
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">OBSERVAÇÕES IMPORTANTES</p>
+                <div>
+                    <div class="check center" id="jabuti_form17">✔</div>
+                </div>
+            </button>
+            
+            <div class="bloco" id="17" onclick="blocoClicado(event)">
+                <form id="form17" name="form17">
                     <div class="textarea_obj_div">
                         <textarea placeholder="OBSERVAÇÕES..." class="textarea_obj"
                             onchange="verificarPreenchimento('form16')"></textarea>
@@ -66,29 +104,62 @@
 
             </div>
         </div>
-        <div class="form center" onclick="abrirBloco(17)">
-            <p class="form_tt">ANAMNESE DA EMERGÊNCIA MÉDICA</p>
-            <div class="bloco" id="17" onclick="blocoClicado(event)"></div>
-        </div>
         <div class="form center" onclick="abrirBloco(18)">
-            <p class="form_tt">ANAMNESE GESTACIONAL</p>
-            <div class="bloco" id="18" onclick="blocoClicado(event)"></div>
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">ANAMNESE DA EMERGÊNCIA MÉDICA</p>
+                <div>
+                    <div class="check center" id="jabuti_form18">✔</div>
+                </div>
+            </button>
+            
+            <div class="bloco" id="18" onclick="blocoClicado(event)">
+                <form id="form18" name="form18">
+
+                </form>
+            </div>
         </div>
         <div class="form center" onclick="abrirBloco(19)">
-            <p class="form_tt">AVALIAÇÃO DA CINEMÁTICA</p>
-            <div class="bloco" id="19" onclick="blocoClicado(event)"></div>
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">ANAMNESE GESTACIONAL</p>
+                <div>
+                    <div class="check center" id="jabuti_form19">✔</div>
+                </div>
+            </button>
+            
+            <div class="bloco" id="19" onclick="blocoClicado(event)">
+                <form id="form19" name="form19">
+
+                </form>
+            </div>
         </div>
         <div class="form center" onclick="abrirBloco(20)">
             <button class="tt_row center">
                 <div></div>
-                <p class="form_tt">RESPONSÁVEL PELO PREENCHIMENTO</p>
+                <p class="form_tt">AVALIAÇÃO DA CINEMÁTICA</p>
                 <div>
                     <div class="check center" id="jabuti_form20">✔</div>
                 </div>
             </button>
-            
+
             <div class="bloco" id="20" onclick="blocoClicado(event)">
-            <form id="form20">
+                <form id="form20" name="form20">
+                    
+                </form>
+            </div>
+        </div>
+        <div class="form center" onclick="abrirBloco(21)">
+            <button class="tt_row center">
+                <div></div>
+                <p class="form_tt">RESPONSÁVEL PELO PREENCHIMENTO</p>
+                <div>
+                    <div class="check center" id="jabuti_form21">✔</div>
+                </div>
+            </button>
+            
+            <div class="bloco" id="21" onclick="blocoClicado(event)">
+            <form id="form21" name="form21">
                 <div class="input_div">
                     FICHA:<input type="text" class="input_text" onchange="verificarPreenchimento('form20')">
                 </div>
