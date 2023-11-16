@@ -614,6 +614,7 @@ input[type="radio"] {
     .presunto{
         position: relative;
         width: 100%;
+        display: none;
     }
 
     .ffelc_tt
@@ -628,7 +629,7 @@ input[type="radio"] {
         padding: 5px;
     }
     .add_ferimento{
-        display: flex;
+        display: none;
         flex-direction:column;
         margin: 5px;
         margin-top: 15px;
@@ -644,4 +645,7 @@ input[type="radio"] {
     }
     .add_ferimento:active{
         background-color: gray;
+    }
+    .loc_img{
+        display: none;
     }
