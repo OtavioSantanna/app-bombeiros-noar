@@ -53,42 +53,48 @@
         <div class="titulo">Cadastrar Usuário</div>
         <div class="form">
             <form class="form" method="post" action="../../php/inserts/inserir_usuario.php" id="form1">
-                <div class="input-container">
-                    <label for="matricula">Matrícula:</label>
-                    <input type="number" id="matricula" name="matricula">
+                <div class="form-linha1">
+                    <div class="input-container">
+                        <label for="matricula">Matrícula:</label>
+                        <input type="number" id="matricula" name="matricula">
+                    </div>
+                    <div class="input-container">
+                        <label for="nome">Nome do Usuário:</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                    </div>
                 </div>
-                <div class="input-container">
-                    <label for="nome">Nome do Usuário:</label>
-                    <input type="text" id="nome" name="nome">
+                <div class="form-linha2">
+                    <div class="input-container">
+                        <label for="admin">Admin:</label>
+                        <input type="text" id="admin" name="admin">
+                    </div>
+                    <div class="input-container">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf">
+                    </div>
+                    <div class="input-container">
+                        <label for="senha">Senha:</label>
+                        <input type="text" id="senha" name="senha">
+                    </div>
                 </div>
-                <div class="input-container">
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email">
+                <div class="form-linha3">
+                    <div class="input-container">
+                        <label for="cargo">Cargo:</label>
+                        <select name="cargo" id="cargo">
+                            <option value="1">Socorrista</option>
+                            <option value="2">Motorista</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="cep">CEP:</label>
+                        <input type="number" id="cep" name="cep">
+                    </div>
+                    <div class="enviar"><input type="button" name="enviar" value="Enviar" onclick="Cadastrar();"/></div>
                 </div>
-                <div class="input-container">
-                    <label for="admin">Admin:</label>
-                    <input type="text" id="admin" name="admin">
-                </div>
-                <div class="input-container">
-                    <label for="cpf">CPF:</label>
-                    <input type="text" id="cpf" name="cpf">
-                </div>
-                <div class="input-container">
-                    <label for="senha">Senha:</label>
-                    <input type="text" id="senha" name="senha">
-                </div>
-                <div class="input-container">
-                    <label for="cargo">Cargo:</label>
-                    <select name="cargo" id="cargo">
-                        <option value="1">Socorrista</option>
-                        <option value="2">Motorista</option>
-                    </select>
-                </div>
-                <div class="input-container">
-                    <label for="cep">CEP:</label>
-                    <input type="number" id="cep" name="cep">
-                </div>
-                <input type="button" name="enviar" value="Enviar" onclick="Cadastrar();" />
             </form>
         </div>
     </div>
