@@ -614,7 +614,7 @@ input[type="radio"] {
     .presunto{
         position: relative;
         width: 100%;
-        display: none;
+        display: flex;
     }
 
     .ffelc_tt
