@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Pesquisar Ocorrência</title>
 </head>
 <body>
 
@@ -39,11 +39,11 @@
 <main>
 <nav class="nav-lateral">
     <ul class="nav-div">
-        <li class="item-menu">
+    <li class="item-menu">
             <a href="adminPage.php">Cadastrar Usuário</a>
         </li>
         <li class="item-menu">
-            <a href="#">Lista de Usuário</a>
+            <a href="searchUsuario.php">Pesquisa de Usuário</a>
         </li>
         <li class="item-menu">
             <a href="#">Histórico de Ocorrências</a>
@@ -103,22 +103,6 @@
     </div>
 </main>
 
-<script>
-function Cadastrar() {
-    var dados = $('#form1').serialize(); // Este trecho de código depende do uso do jQuery.
 
-    $.ajax({
-        type: "POST",
-        url: "../../php/inserts/inserir_usuario.php",
-        data: dados,
-        dataType: 'json',
-
-        success: function(meu_json) {
-            var nome = meu_json;
-            console.log(nome);
-        }
-    })
-}
-</script>
 </body>
 </html>
