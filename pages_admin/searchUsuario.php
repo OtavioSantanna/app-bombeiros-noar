@@ -61,7 +61,7 @@
                         <label for="info">Insira o dado aqui:</label>
                         <input type="text" id="info" name="info">
                     </div>
-                    <input type="button" name="pesquisar" value="Pesquisar" onclick="#();"/>
+                    <input type="submit" class="button" name="pesquisar" value="Pesquisar" onclick="#();"/>
                 </div>
             </form>
         </div>
@@ -80,6 +80,8 @@
                 <td> </td>
                 <td> </td>
                 <td> </td>
+                <th class="th-button"><input class="button-table" type="button" value="Excluir"></th>
+                <th class="th-button"><input class="button-table" type="button" value="Editar"></th>
             </tr>
         
         </tbody>
