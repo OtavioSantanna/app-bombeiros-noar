@@ -18,6 +18,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="adminPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -28,16 +31,16 @@
         <div class="column">
             <div class="titulo-header">Núcleo de Operações Aéreas e Resgate</div>
             <div class="sub">Assoc. de Serviços Sociais</div>
-            <div class="sub2">Voluntários</div>
+            <div class="sub">Voluntários</div>
         </div>
     </div>
 </header>
 
 <main>
 <nav class="nav-lateral">
-    <ul>
+    <ul class="nav-div">
         <li class="item-menu">
-            <a href="#">Cadastrar Usuário</a>
+            <a href="adminPage.php">Cadastrar Usuário</a>
         </li>
         <li class="item-menu">
             <a href="#">Lista de Usuário</a>
@@ -50,8 +53,8 @@
 
 
     <div class="main">
-        <div class="titulo">Cadastrar Usuário</div>
         <div class="form">
+            <h2 class="form-title">Cadastrar Usuário</h2>
             <form class="form" method="post" action="../../php/inserts/inserir_usuario.php" id="form1">
                 <div class="form-linha1">
                     <div class="input-container">

@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-/*    overflow: hidden;*/
+   overflow: hidden;
 }
 
 /* Estilos para o cabeçalho */
@@ -44,10 +44,14 @@ main{
     color: #F1F1F1;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Inter;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.sub{
+    font-size: 18px;
 }
 
 /* Estilos para a navegação lateral */
@@ -82,6 +86,15 @@ ul {
     align-items: center;
 }
 
+.form-title {
+    font-size: 50px;
+    color: #333; /* Cor desejada para o título */
+    margin-bottom: 20px; /* Adicione margem inferior para separar do restante do formulário */
+    width: 80%;
+    font-family: 'Nunito', sans-serif;
+}
+
+
 .form-linha1
 {
     display: flex;
@@ -114,41 +127,31 @@ label {
 input[type="text"],
 input[type="number"],
 select {
-    width: 180px;
-    padding: 5px;
-    margin: 5px 0;
+    width: 300px;
+    height: 30px;
+    /* padding: 5px;
+    margin: 5px 0; */
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.enviar{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    width: 206px;
-    float: right;
 }
 
 input[type="button"] {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
-    border: none;
     border-radius: 4px;
     cursor: pointer;
-    height: 50px;
-    width: 180px;
+    margin: 10px;
+    height: 60px;
+    width: 300px;
 }
 
-/* Estilos para a seção principal */
+
 .main {
-    z-index: 100;
     display: flex;
-    width: 70%;
-    height: 45vh;
+    width: 100%;
+    height: 80vh;
     flex-direction: column;
-    align-items: center; /* Isso centralizará os elementos horizontalmente */
-    margin: 20px; /* Ajuste as margens conforme necessário */
-    padding: 20px; /* Ajuste o preenchimento conforme necessário */
-    background-color: #001D3D;
+    align-items: center; 
+    align-self: center;
 }
