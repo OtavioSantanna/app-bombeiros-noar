@@ -1,49 +1,59 @@
-// LOCALIZAÇÃO DOS TRAUMAS
+var ImagemAtual = "seta.png";
 
-function imgSelect(x){
-    var symbol = document.getElementById('symbol');
-    var symb = x;
-    switch (symb){
-        case symbol1:
-            symbol.src="../img/1.png";
-            break;
-        
-        case symbol2:
-            symbol.src="../img/2.png";
-            break;
+function inserirImagem(event) {
+    var DivDasImagens = document.getElementById("div_traumas_localizados");
+    if (DivDasImagens.contains(event.target)) {
+        // Obtenha as coordenadas do clique do mouse em relação à div
+        var x = event.clientX - DivDasImagens.getBoundingClientRect().left;
+        var y = event.clientY - DivDasImagens.getBoundingClientRect().top;
 
-        case symbol3:
-            symbol.src="../img/3.png";
-            break;
+        // Crie uma nova imagem
+        var novaImagem = document.createElement("img");
+        novaImagem.src = ImagemAtual;
 
-        case symbol4:
-            symbol.src="../img/4.png";
-            break;
+        // Defina o tamanho da imagem
+        novaImagem.style.width = "40px"; // Defina a largura desejada
+
+        // Defina a posição da imagem exatamente onde o mouse foi clicado na div
+        novaImagem.style.position = "absolute"; // Use "absolute" para posicionar em relação à div pai (div_traumas_localizados)
+        novaImagem.style.left = x-11 + "px";
+        novaImagem.style.top = y-11 + "px";
+        novaImagem.style.zIndex = "1"; // Certifique-se de que o z-index seja maior
+
+        // Adicione a nova imagem à div de contêiner
+        DivDasImagens.appendChild(novaImagem);
+
+
+        // Adicionar um evento de clique para apagar a imagem
+        novaImagem.addEventListener('click', function () {
+            DivDasImagens.removeChild(novaImagem);
+        });
     }
-    
 }
-
-
-    // Seu código JavaScript aqui
-    function addSymbol(event) {
-        var symbol = document.getElementById('symbol');
-        
-        
-        // Cria uma cópia do símbolo
-        var newSymbol = symbol.cloneNode(true);
-
-        // Obtém as coordenadas do clique em relação à imagem de fundo
-        var rect = event.target.getBoundingClientRect();
-        
-        // Subtrai 10 pixels das coordenadas x e y
-        var x = event.clientX - rect.left - 25;
-        var y = event.clientY - rect.top - 25;
-
-        // Define a posição da cópia do símbolo
-        newSymbol.style.left = x + 'px';
-        newSymbol.style.top = y + 'px';
-
-        // Adiciona o símbolo ao contêiner
-        document.getElementById('container').appendChild(newSymbol);
-    }
-
+function MudarImagemFratura(){
+    ImagemAtual = "X.svg";
+}
+function MudarImagemFerimento(){
+    ImagemAtual = "jarro.png";
+}
+function MudarImagemHemorragia(){
+    ImagemAtual = "IMAGENS/Hemorragias.png";
+}
+function MudarImagemQueimadura1(){
+    ImagemAtual = "IMAGENS/Queimadura-de-1.png";
+}
+function MudarImagemQueimadura3(){
+    ImagemAtual = "IMAGENS/Queimadura-de-3.png";
+}
+function MudarImagemQueimadura2(){
+    ImagemAtual = "IMAGENS/Queimadura-de-2.png";
+}
+function MudarImagemEsviceracao(){
+    ImagemAtual = "IMAGENS/Esviceração.png";
+}
+function MudarImagemFABFAF(){
+    ImagemAtual = "IMAGENS/F.A.B-F.A.F.png";
+}
+function MudarImagemAmputacao(){
+    ImagemAtual = "IMAGENS/Amputação.png";
+}

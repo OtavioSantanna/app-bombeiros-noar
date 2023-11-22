@@ -493,53 +493,21 @@
             <div class="bloco" id="6" onclick="blocoClicado(event)">
                 <form id="form6" name="form6">
                     <p class="selec_idade center" id="avisoIdade2">INFORME A IDADE APROXIMADA DA VÍTIMA</p>
-                    <div id="container" >
-                        <img src="../img/corpo_maior.png" class="presunto" id="locusTrauma" onclick="addSymbol(event)">
-                        <img id="symbol" src="../img/" alt="Seu símbolo" style="width: 50px;">
 
-                        <img id="symbol1" src="../img/1.png" alt="Seu símbolo" style="width: 50px;" onclick="imgSelect(symbol1)">
-                        <img id="symbol2" src="../img/2.png" alt="Seu símbolo2" style="width: 50px;" onclick="imgSelect(symbol2)"> 
-                        <img id="symbol3" src="../img/3.png" alt="Seu símbolo3" style="width: 50px;" onclick="imgSelect(symbol3)">
-                        <img id="symbol4" src="../img/4.png" alt="Seu símbolo4" style="width: 50px;" onclick="imgSelect(symbol4)">
-                        
+                    <div class="fatima">
+                        <button type="button" id="botao" onclick="inserirImagem(event)"></button>
+                        <script src="javas.js"></script>
+                        </html>
+                        <div id="div_traumas_localizados" onclick="inserirImagem(event)" class="coluna centro" style="border-style:solid; border-color: #0667E8; width: 320px; height: 320px; position: relative;">
+                            <img src="../img/corpo_maior.png" style="width: 90%;" id="imagem_maior_trauma">
+                            <img src="IMAGENS/corpo-menor-5.png" style="width: 90%; display: none;" id="imagem_menor_trauma">
+                        </div>
+                        <button type="button" onclick="MudarImagemFratura()">Fraturas/Luxações</button>
+                        <button type="button" onclick="MudarImagemFerimento()">diego</button>
                     </div>
+
                     
-
-                    <div class="checkbox_div loc_img">
-                        FRATURAS / LUXAÇÕES/ ENTORSES
-                    </div>
-                    <div class="checkbox_div loc_img">
-                        FERIMENTOS DIVERSOS
-                    </div>
-                    <div class="checkbox_div loc_img">
-                        HEMORRAGIA
-                    </div>
-                    <div class="checkbox_div loc_img">
-                        EVICERAÇÃO
-                    </div>
-                    <div class="checkbox_div loc_img">
-                        ***ILEGÍVEL***
-                    </div>
-                    <div class="checkbox_div loc_img">
-                        AMPUTAÇÃO
-                    </div> 
-                    <div class="checkbox_div loc_img">
-                        QUEIMADURA 1º GRAU
-                    </div>
-                    <div class="checkbox_div loc_img">
-                        QUEIMADURA 2º GRAU
-                    </div>
-                    <div class="checkbox_div loc_img">
-                        QUEIMADURA 3º GRAU
-                    </div>
-                        <p class="ffelc_tt center loc_img">FERIMENTOS / FRATURAS / ENTORSES / LUXAÇÃO / CONTUSÃO</p>
-                        <div class="add_ferimento" onclick="vaiTerUmaFuncao()">
-                            <p class="img_obj_tt" id="tt_add">ADICIONAR FERIMENTO +</p>
-                        </div>
-                        <p class="ffelc_tt center loc_img">QUEIMADURAS</p>
-                        <div class="add_ferimento" onclick="vaiTerUmaFuncao()">
-                            <p class="img_obj_tt" id="tt_add">ADICIONAR FERIMENTO +</p>
-                        </div>
+ 
                 </form>
             </div>
         </div>
@@ -922,6 +890,12 @@
                     <div class="input_div">
                         CÓDIGO SIA/SUS:<input type="number" class="input_number"
                             onchange="verificarPreenchimento('form12')">
+                    </div>
+                    <div class="checkbox_div">
+                        CÓDIGO IR<input type="checkbox" onchange="verificarPreenchimento('form12')"></input>
+                    </div>
+                    <div class="checkbox_div">
+                        CÓDIGO PS<input type="checkbox" onchange="verificarPreenchimento('form12')"></input>
                     </div>
                 </form>
 
