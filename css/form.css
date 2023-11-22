@@ -248,6 +248,7 @@ input[type="radio"] {
     width: auto;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
+    background-color: transparent;
 }
 .input_number:focus{
     outline: none;
@@ -648,4 +649,37 @@ input[type="radio"] {
     }
     .loc_img{
         display: none;
+    }
+
+    .textarea_anamnese{
+        display: flex;
+        flex-direction:column;
+        padding: 10px;
+        min-height: 40px;
+        resize: vertical;
+        width: 100%;
+        background-color: lightgray;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 0px;
+        border: none;
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.3);
+        justify-items: center;
+        box-sizing: content-box border-box;
+        outline: darkblue;
+    }
+
+    .anamnese_tt{
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        MARGIN-bottom: -5px;
     }

@@ -144,7 +144,7 @@
                         <input type="checkbox" onchange="verificarPreenchimento('form13')">USO DE CÃNULA</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox" onchange="verificarPreenchimento('form13')">USO COLAR TAM:************</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form13')">USO COLAR TAM:<input type="number" class="input_number input_total_gcs" onchange="verificarPreenchimento('form13')"></input>
                     </div>
                     <div class="checkbox_div">
                         <input type="checkbox" onchange="verificarPreenchimento('form13')">USO KED</input>
@@ -156,10 +156,10 @@
                         <input type="checkbox" onchange="verificarPreenchimento('form13')">VENTILAÇÃO SUPORTE</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox" onchange="verificarPreenchimento('form13')">OXIGÊNIOTERAPIA***********LPM</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form13')">OXIGÊNIOTERAPIA<input type="number" class="input_number input_total_gcs" onchange="verificarPreenchimento('form13')"></input>LPM</input>
                     </div>
                     <div class="checkbox_div">
-                        <input type="checkbox" onchange="verificarPreenchimento('form13')">REANIMADOR***********LPM</input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form13')">REANIMADOR<input type="number" class="input_number input_total_gcs" onchange="verificarPreenchimento('form13')"></input>LPM</input>
                     </div>
                     <div class="checkbox_div">
                         <input type="checkbox" onchange="verificarPreenchimento('form13')">MEIOS AUXILIARES</input>
@@ -169,6 +169,20 @@
                     </div>
                     <div class="checkbox_div">
                         <input type="checkbox" onchange="verificarPreenchimento('form13')">POLÍCIA</input>
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form13')">CIVIL</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form13')">MINITAR</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form13')">PRE</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form13')">PRF</input>
+                            </div>
+                        </div>
                     </div>
                     <div class="checkbox_div">
                         <input type="checkbox" onchange="verificarPreenchimento('form13')">DEF. CIVIL</input>
@@ -178,6 +192,17 @@
                     </div>
                     <div class="checkbox_div">
                         <input type="checkbox" onchange="verificarPreenchimento('form13')">SAMU</input>
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form13')">USA</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form13')">USB</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form13')"><input type="text" class="input_text" onchange="verificarPreenchimento('form13')"></input>
+                            </div>
+                        </div>
                     </div>
                     <div class="checkbox_div">
                         <input type="checkbox" onchange="verificarPreenchimento('form13')">CIT</input>
@@ -195,7 +220,105 @@
             </button>
             <div class="bloco" id="14" onclick="blocoClicado(event)">
                 <form id="form14" name="form14">
+                    <div class="checkbox_div center">MATERIAIS</div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox" onchange="verificarPreenchimento('form14')">ATADURAS
+                            <input type="checkbox" onchange="verificarPreenchimento('form14')">6 </input>
+                            <input type="checkbox" onchange="verificarPreenchimento('form14')">12 </input>
+                            <input type="checkbox" onchange="verificarPreenchimento('form14')">20</input>
+                        </input>
 
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox" onclick="abrirPES(subdivPES1)" onchange="verificarPreenchimento('form14')">CATERET TP. ÓCULOS</input>
+                    </div>
+                    <div class="checkbox_div2">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox" onclick="abrirPES(subdivPES2)" onchange="verificarPreenchimento('form14')">COMPRESSA COMUM</input>
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox" onchange="verificarPreenchimento('form14')">KIT'S 
+                            <input type="checkbox" onchange="verificarPreenchimento('form14')">H </input>
+                            <input type="checkbox" onchange="verificarPreenchimento('form14')">Q </input>
+                            <input type="checkbox" onchange="verificarPreenchimento('form14')">P</input>
+                        </input>
+                    </div>
+                    <div class="checkbox_div2 ">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox" onclick="abrirPES(subdivPES3)" onchange="verificarPreenchimento('form14')">LUVAS DESC. (PARES)</input>
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox"  onchange="verificarPreenchimento('form14')">MÁSCARA DESC.</input>
+                    </div>
+                    <div class="checkbox_div2 ">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox" onchange="verificarPreenchimento('form14')">MANTA ALUMINIZADA</input>
+
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox"  onchange="verificarPreenchimento('form14')">PÁS DO DEA</input>
+                    </div>
+                    <div class="checkbox_div2">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox"  onchange="verificarPreenchimento('form14')">SONDA DE ASPIRAÇÃO</input>
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox" onchange="verificarPreenchimento('form14')">SORO SISIOLÓGICO</input>
+                        </input>
+                    </div>
+                    <div class="checkbox_div2 ">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox" onclick="abrirPES(subdivPES3)" onchange="verificarPreenchimento('form14')">TALAS PAP. 
+                            <input type="checkbox" onchange="verificarPreenchimento('form14')">P </input>
+                            <input type="checkbox" onchange="verificarPreenchimento('form14')">G </input>
+                        </input>
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox" onclick="abrirPES(subdivPES4)" onchange="verificarPreenchimento('form14')"><input type="text" class="input_text" onchange="verificarPreenchimento('form14')"></input></input>
+                    </div>
+                    <div class="checkbox_div2 ">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form14')"></input>
+                    </div>
                 </form>
             </div>
         </div>
@@ -208,7 +331,110 @@
                 </div>
             </button>
             
-            <div class="bloco" id="15" onclick="blocoClicado(event)"></div>
+            <div class="bloco" id="15" onclick="blocoClicado(event)">
+                <form id="form15" name="form15">
+                    <div class="checkbox_div center">MATERIAIS</div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox" onchange="verificarPreenchimento('form15')">BASE DO ESTABILIZADOR</input>
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox" onclick="abrirPES(subdivPES1)" onchange="verificarPreenchimento('form15')">COLAR
+                            <input type="checkbox" onchange="verificarPreenchimento('form15')">N </input>
+                            <input type="checkbox" onchange="verificarPreenchimento('form15')">PP </input>
+                            <input type="checkbox" onchange="verificarPreenchimento('form15')">P </input>
+                        </input>
+                    </div>
+                    <div class="checkbox_div2">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox" onclick="abrirPES(subdivPES1)" onchange="verificarPreenchimento('form15')">COLAR
+                        <input type="checkbox" onchange="verificarPreenchimento('form15')">M </input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form15')">G </input>
+                        <input type="checkbox" onchange="verificarPreenchimento('form15')"><input type="number" class="input_press_artereal input_number" onchange="verificarPreenchimento('form15')"></input> </input>
+                    </input>
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox" onchange="verificarPreenchimento('form15')">COXINS ESTABILIZADOR</input>
+                    </div>
+                    <div class="checkbox_div2 ">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox" onclick="abrirPES(subdivPES3)" onchange="verificarPreenchimento('form15')">KED
+                            <input type="checkbox" onchange="verificarPreenchimento('form15')">ADUL. </input>
+                            <input type="checkbox" onchange="verificarPreenchimento('form15')">INFA. </input>
+                        </input>
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox"  onchange="verificarPreenchimento('form15')">MÁSCARA RÍGIDA</input>
+                    </div>
+                    <div class="checkbox_div2 ">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox" onchange="verificarPreenchimento('form15')">T.T.F.
+                            <input type="checkbox" onchange="verificarPreenchimento('form15')">ADUL. </input>
+                            <input type="checkbox" onchange="verificarPreenchimento('form15')">INFA. </input>
+                        </input>
+
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox"  onchange="verificarPreenchimento('form15')">TIRANTE ARANHA</input>
+                    </div>
+                    <div class="checkbox_div2">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox"  onchange="verificarPreenchimento('form15')">TIRANTE DE CABEÇA</input>
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox" onchange="verificarPreenchimento('form15')">CÂNULA</input>
+                    </div>
+                    <div class="checkbox_div2 ">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2 bgcinza">
+                        <input type="checkbox"  onchange="verificarPreenchimento('form15')"><input type="text" class="input_text" onchange="verificarPreenchimento('form15')"></input></input>
+                    </div>
+                    <div class="checkbox_div2 bgcinza">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                    <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
+                    <div class="checkbox_div2">
+                        <input type="checkbox" onchange="verificarPreenchimento('form15')"><input type="text" class="input_text" onchange="verificarPreenchimento('form15')"></input></input>
+                    </div>
+                    <div class="checkbox_div2 ">
+                        QUANTIDADE:<input type="number" class="input_number" onchange="verificarPreenchimento('form15')"></input>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="form center" onclick="abrirBloco(16)">
             <button class="tt_row center">
@@ -255,6 +481,86 @@
             
             <div class="bloco" id="18" onclick="blocoClicado(event)">
                 <form id="form18" name="form18">
+                    <p class="anamnese_tt">O QUE ACONTECEU (SINAIS E SINTOMAS)</P>
+                    <div class="textarea_obj_div">
+                        
+                        <textarea placeholder="O QUE ACONTECEU..." class="textarea_anamnese"
+                            onchange="verificarPreenchimento('form18')"></textarea>
+                    </div>
+                    <div class="checkbox_div">
+                        ACONTECEU OUTRAS VEZES?</input>
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_div">
+                        A QUANTO TEMPO ACONTECEU?<input type="text" class="input_text" onchange="verificarPreenchimento('form18')">
+                    </div>
+                    <div class="checkbox_div">
+                        POSSÚI ALGUM PROBLEMA DE SAÚDE?</input>
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_div">
+                        QUAIS?<input type="text" class="input_text" onchange="verificarPreenchimento('form18')">
+                    </div>
+                    <div class="checkbox_div">
+                        FAZ USO DE MEDICAÇÃO?
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        HORÁRIO DA ULTIMA MEDICAÇÃO:<input type="time" onchange="verificarPreenchimento('form18')" style="border: none; margin-left: 5px;">
+                    </div>
+                    <div class="input_div">
+                        QUAIS?<input type="text" class="input_text" onchange="verificarPreenchimento('form18')">
+                    </div>
+                    
+                    <div class="checkbox_div">
+                        ALÉRGICO A ALGUMA COISA?
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_div">
+                        SE SIM, ESPECIFIQUE:<input type="text" class="input_text" onchange="verificarPreenchimento('form18')">
+                    </div>≥
+                    <div class="checkbox_div">
+                        INGERIU ALIMENTO OU LÍQUIDO ≥ 8 HORAS?
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        QUE HORAS?<input type="time" onchange="verificarPreenchimento('form18')" style="border: none; margin-left: 5px;">
+                    </div>
 
                 </form>
             </div>
@@ -270,7 +576,118 @@
             
             <div class="bloco" id="19" onclick="blocoClicado(event)">
                 <form id="form19" name="form19">
-
+                    <div class="input_div">
+                        PERÍODO DA GESTAÇÃO: <input type="text" class="input_text" onchange="verificarPreenchimento('form19')">
+                    </div>
+                    <div class="checkbox_div">
+                        FEZ PRÉ-NATAL?
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_div">
+                        NOME DE MÉDICO: <input type="text" class="input_text" onchange="verificarPreenchimento('form19')">
+                    </div>
+                    <div class="checkbox_div">
+                        EXISTE POSSIBILIDADE DA COMPLICAÇÕES?
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        É O PRIMEIRO FILHO?
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        QUANTOS? <input type="text" class="input_text" onchange="verificarPreenchimento('form19')">
+                    </div>
+                    <div class="checkbox_div">
+                        QUE HORAS INICIARAM AS CONTRAÇÕES?<input type="time" onchange="verificarPreenchimento('form19')" style="border: none; margin-left: 5px;">
+                    </div>
+                    <div class="input_div">
+                        TEMPO DAS CONTRAÇÕES:<BR>DURAÇÃO<input type="text" class="input_text" onchange="verificarPreenchimento('form19')" >INTERVALO<input type="text" class="input_text" onchange="verificarPreenchimento('form19')" >
+                    </div>
+                    <div class="checkbox_div">
+                        SENTE PRESSÃO NA REGIÃO DO QUADRIL OU VONTADE DE EVACUAR?
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        JÁ HOUVE RUPTURA DA BOLSA?
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        FOI FEITO INSPEÇÃO VISUAL?
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        PARTO REALIZADO?
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        HORA DO NASCIMENTO:<input type="time" onchange="verificarPreenchimento('form19')" style="border: none; margin-left: 5px;">
+                    </div>
+                    <div class="checkbox_div">
+                        SEXO DO BEBÊ:
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">FÊMEA</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form18')">MACHO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_div">
+                        NOME DO BEBÊ:<input type="text" class="input_text" onchange="verificarPreenchimento('form19')" >
+                    </div>
+                    
+                    
+                    
                 </form>
             </div>
         </div>
@@ -285,7 +702,83 @@
 
             <div class="bloco" id="20" onclick="blocoClicado(event)">
                 <form id="form20" name="form20">
-                    
+                    <div class="checkbox_div">
+                        DISTÚRBIO DE COMPORTAMENTO</input>
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        ENCONTRADO DE CAPACETE</input>
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        ENCONTRADO DE CINTO</input>
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        PARA BRISAS AVARIADO</input>
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        CAMINHANDO NA CENA</input>
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        PAINEL AVARIADO</input>
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox_div">
+                        VOLANTE TORCIDO</input>
+                        <div class="subcheckbox_div" >
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">SIM</input>
+                            </div>
+                            <div class="checkbox_div3">
+                                <input type="checkbox" onchange="verificarPreenchimento('form20')">NÃO</input>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
