@@ -69,8 +69,8 @@ function md5a(){
     var avisoIdade = document.getElementById("avisoIdade");
     var avisoIdade2 = document.getElementById("avisoIdade2");
     var ndcTt = document.getElementById("ndc");
-    var locusTrauma = document.getElementById("locusTrauma");
-    var locusTraumaIncommodis = document.getElementsByClassName("loc_img");
+    var locusTrauma = document.getElementById("imagem_maior_trauma");
+    var fatima = document.getElementById("fatima");
 
     if(idade.value != ""){
         if(idade.value <= 5){
@@ -79,6 +79,7 @@ function md5a(){
             gcs.style.display="flex";
             avisoIdade.style.display="none";
             avisoIdade2.style.display="none";
+            fatima.style.display="flex";
             ndcTt.style.display="flex";
             locusTrauma.style.display="flex";
             locusTrauma.src="../img/corpo_menor.png";
@@ -88,6 +89,7 @@ function md5a(){
             gcs.style.display="flex";
             avisoIdade.style.display="none";
             avisoIdade2.style.display="none";
+            fatima.style.display="flex";
             ndcTt.style.display="flex";
             locusTrauma.style.display="flex";
             locusTrauma.src="../img/corpo_maior.png";
@@ -98,6 +100,7 @@ function md5a(){
         gcs.style.display="none";
         avisoIdade.style.display="flex";
         avisoIdade2.style.display="flex";
+        fatima.style.display="none";
         ndcTt.style.display="none";
         locusTrauma.style.display="none";
     }

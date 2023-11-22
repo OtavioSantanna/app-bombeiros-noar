@@ -77,7 +77,6 @@ body{
     border-style: none;
     border-width: 3px;
     border-color: rgb(83, 189, 13);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 /*
 .form:active{
@@ -683,45 +682,4 @@ input[type="radio"] {
         box-sizing: border-box;
         padding: 10px;
         MARGIN-bottom: -5px;
-    }
-    .locustraumadiego{
-        border-style:solid; 
-        border-color: darkblue; 
-        border-radius: 8px;
-        width: 320px; 
-        height: 320px; 
-        position: relative;
-
-    }
-    .fatima{
-        display: none;
-        flex-direction: column;
-        width: auto;
-    }
-    .localiza_button{
-        display: flex;
-        text-align: left;
-        background-color: lightgray;
-        border-radius: 8px;
-        border: none;
-        width: 95%;
-        height: 40px;
-        box-sizing: border-box;
-        padding: 5px;
-        margin-top: 10px;
-        font-family: 'Nunito', sans-serif;
-        font-size: medium;
-        font-weight: bold;
-        justify-content: space-between;
-    }
-    .localiza_button:active{
-        background-color: gray;
-    }
-    .localiza_button:focus{
-        border: 2px solid darkblue;
-
-    }
-    .trauma_image{
-        width: 30px;
-        border-radius: 5px;
     }

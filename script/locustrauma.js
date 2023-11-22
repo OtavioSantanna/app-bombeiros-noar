@@ -1,4 +1,4 @@
-var ImagemAtual = "seta.png";
+var ImagemAtual = "";
 
 function inserirImagem(event) {
     var DivDasImagens = document.getElementById("div_traumas_localizados");
@@ -19,6 +19,8 @@ function inserirImagem(event) {
         novaImagem.style.left = x-11 + "px";
         novaImagem.style.top = y-11 + "px";
         novaImagem.style.zIndex = "1"; // Certifique-se de que o z-index seja maior
+        novaImagem.style.width = "30px";
+        novaImagem.style.borderRadius = "5px";
 
         // Adicione a nova imagem à div de contêiner
         DivDasImagens.appendChild(novaImagem);
@@ -31,29 +33,29 @@ function inserirImagem(event) {
     }
 }
 function MudarImagemFratura(){
-    ImagemAtual = "X.svg";
+    ImagemAtual = "../img/luxacoes.png";
 }
 function MudarImagemFerimento(){
-    ImagemAtual = "jarro.png";
+    ImagemAtual = "../img/diversos.png";
 }
 function MudarImagemHemorragia(){
-    ImagemAtual = "IMAGENS/Hemorragias.png";
+    ImagemAtual = "../img/hemoragias.png";
 }
 function MudarImagemQueimadura1(){
-    ImagemAtual = "IMAGENS/Queimadura-de-1.png";
+    ImagemAtual = "../img/queimadura1.png";
 }
 function MudarImagemQueimadura3(){
-    ImagemAtual = "IMAGENS/Queimadura-de-3.png";
+    ImagemAtual = "../img/queimadura3.png";
 }
 function MudarImagemQueimadura2(){
-    ImagemAtual = "IMAGENS/Queimadura-de-2.png";
+    ImagemAtual = "../img/queimadura2.png";
 }
 function MudarImagemEsviceracao(){
-    ImagemAtual = "IMAGENS/Esviceração.png";
+    ImagemAtual = "../img/eviceracoes.png";
 }
 function MudarImagemFABFAF(){
-    ImagemAtual = "IMAGENS/F.A.B-F.A.F.png";
+    ImagemAtual = "../img/fnaf.png";
 }
 function MudarImagemAmputacao(){
-    ImagemAtual = "IMAGENS/Amputação.png";
+    ImagemAtual = "../img/amputacao.png";
 }
