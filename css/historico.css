@@ -252,3 +252,31 @@ body{
     background-color: rgb(45, 99, 8);
     color: lightgrey;
 }
+
+.form_tt2{
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    text-align: center;
+    margin-top: 0%;
+    width: auto;
+}
+.edit_dados{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.caneta_azul_sq{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.caneta_azul_sq:active{
+    background-color: lightblue;
+}
