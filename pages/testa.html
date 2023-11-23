@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captura de Tela</title>
+</head>
+<body>
+
+<div id="minhaDiv" style="width: 300px; height: 200px; background-color: lightblue;">
+  <!-- Conteúdo da sua div -->
+  <p>Conteúdo da Div</p>
+</div>
+
+<button onclick="capturarTela()">Capturar Tela</button>
+
+<script>
+  function capturarTela() {
+    // Obtém a referência da div
+    const divParaCapturar = document.getElementById('minhaDiv');
+
+    // Cria um canvas temporário para desenhar o conteúdo da div
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+
+    // Define o tamanho do canvas igual ao tamanho da div
+    canvas.width = divParaCapturar.clientWidth;
+    canvas.height = divParaCapturar.clientHeight;
+
+    // Desenha o conteúdo da div no canvas
+    context.drawWindow(window, divParaCapturar.offsetLeft, divParaCapturar.offsetTop, divParaCapturar.clientWidth, divParaCapturar.clientHeight, 'rgb(255, 255, 255)');
+
+    // Converte o canvas para uma imagem
+    const imagemCapturada = new Image();
+    imagemCapturada.src = canvas.toDataURL('image/png');
+
+    // Abre a imagem em uma nova janela ou guia
+    const novaJanela = window.open('', '_blank');
+    novaJanela.document.write('<img src="' + imagemCapturada.src + '" alt="Captura de Tela">');
+  }
+</script>
+
+</body>
+</html>

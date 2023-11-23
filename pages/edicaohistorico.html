@@ -48,7 +48,7 @@
             <p class="form_tt2">EDITAR DADOS</p>
             <div class="edit_dados">
                 <p class="text_content">DATA</p>
-                <a href="editardado.html" class="caneta_azul_sq center"><img src="../img/pencil.png" style="width: 30px;"></a>
+                <div href="editardado.html" class="caneta_azul_sq center"><img src="../img/pencil.png" onclick="abrirPagina()" style="width: 30px;"></div>
             </div>
             <div class="edit_dados">
                 <p class="text_content">NOME</p>
@@ -74,14 +74,8 @@
 
 </body>
 <script>
-    function menu(){
-        var menu  = document.getElementById("menu")
-    if (menu.style.display === "flex") {
-        menu.style.display = "none";
-    } 
-    else {
-        menu.style.display = "flex";
-    }
+    function abrirPágina(){
+        window.open('editardado.html', '_blank');
     }
 </script>
 <script src="../script/imagemInput.js"></script>
