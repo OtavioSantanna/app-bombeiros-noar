@@ -126,6 +126,8 @@ body{
 .title_sq{
     height: 150px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .title{
     font-size: larger;
@@ -281,4 +283,95 @@ body{
 }
 .caneta_azul_sq:active{
     background-color: lightblue;
+}
+.titulo{
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 130px;
+    width: 100%;
+    color: darkblue;
+    text-align: center;
+
+}
+.dado{
+    width: 100%;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Nunito', sans-serif;
+    margin: 0%;
+}
+
+.titulo2{
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0px;
+    width: 100%;
+    color: darkblue;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.input_edicao{
+    background-color: lightgray;
+    width: 90%;
+    max-width: 700px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    padding: 10px;
+}
+.input_edicao:focus{
+    outline: 2px solid darkblue;
+}
+.botao_verde{
+    width: 90%;
+    min-height: 50px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: rgb(15, 182, 37);
+    color: white;
+    margin-bottom: 20px;
+}
+.botao_verde:active{
+    background-color: rgb(45, 99, 8);
+    color: lightgrey;
+}
+.botao_vermelho{
+    width: 90%;
+    min-height: 50px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: darkred;
+    color: white;
+    margin-bottom: 20px;
+}
+.botao_vermelho:active{
+    background-color: rgb(85, 0, 0);
+    color: lightgray;
+}
+.aviso_certeza{
+    color: red;
+    font: optional;
+    font-weight: bold;
+}
+.sasquat{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

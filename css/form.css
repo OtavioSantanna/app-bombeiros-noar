@@ -461,7 +461,6 @@ input[type="radio"] {
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.3);
         justify-items: center;
         box-sizing: content-box border-box;
-        outline: darkblue;
     }
     .textarea_obj:focus{
         outline: 2px solid darkblue;
