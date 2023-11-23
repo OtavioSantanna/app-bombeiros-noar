@@ -4,7 +4,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: '../php/requests/request_ocorrencia.php',
+            url:'../php/requests/request_ocorrencia.php',
             data: formData,
             dataType: 'json',
             success: function (response) {

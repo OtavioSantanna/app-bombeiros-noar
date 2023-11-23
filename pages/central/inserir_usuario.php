@@ -52,7 +52,7 @@
     <select name="cargo" id="cargo">
       <?php
         include("../../php/conecta.php");
-        $comando = $pdo->prepare("SELECT * from cargo");
+        $comando = $pdo->prepare("SELECT * from cargo");     
         $resultado = $comando->execute();
 
         while($linhas = $comando->fetch()) {
