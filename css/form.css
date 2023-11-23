@@ -725,3 +725,30 @@ input[type="radio"] {
         width: 30px;
         border-radius: 5px;
     }
+    .ferimento{
+        display: flex;
+        flex-direction:column;
+        margin: 5px;
+        margin-top: 15px;
+        padding: 10px;
+        width: auto;
+        min-height: 50px;
+        background-color: lightgray;
+        border-radius: 8px;
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .tt_locus_trauma_texto{
+        width: 100%;
+        min-height: 30px;
+        background-color: darkblue;
+        color: white;
+        margin-top: 20px;
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+    }
