@@ -249,8 +249,8 @@ body{
     margin-top: 10px;
     font-size: medium;
     font-family: 'Nunito', sans-serif;
-    font-weight: bold;
     color: white;
+    text-decoration: none;
 }
 .editar_historico_button:active{
     background-color: rgb(45, 99, 8);
@@ -277,7 +277,7 @@ body{
 .caneta_azul_sq{
     width: 30px;
     height: 30px;
-    background-color: blue;
+    background-color: rgb(63, 63, 251);
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
@@ -344,6 +344,9 @@ body{
     background-color: rgb(15, 182, 37);
     color: white;
     margin-bottom: 20px;
+    font-size: medium;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
 }
 .botao_verde:active{
     background-color: rgb(45, 99, 8);
@@ -358,9 +361,30 @@ body{
     background-color: darkred;
     color: white;
     margin-bottom: 20px;
+    font-size: medium;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
 }
 .botao_vermelho:active{
     background-color: rgb(85, 0, 0);
+    color: lightgray;
+}
+.botao_cinza{
+    width: 90%;
+    min-height: 50px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: lightgrey;
+    color: black;
+    margin-top: 20px;
+    font-size: medium;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+.botao_vermelho:active{
+    background-color: gray;
     color: lightgray;
 }
 .aviso_certeza{
@@ -370,7 +394,7 @@ body{
 }
 .sasquat{
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
