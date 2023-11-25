@@ -5,6 +5,8 @@ session_start();
 
 if(isset($_POST['salvar']))
 {
+    $matricula = $_POST['matricula'];
+
     $brands = $_POST['brands'];
     $serializedBrands = json_encode($brands);
 
@@ -37,19 +39,20 @@ if(isset($_POST['salvar']))
     $ocorrencia = $_POST['ocorrencia'];
     $serialized_ocorrencia = json_encode($ocorrencia);
 
-    $comando = $pdo->prepare("INSERT INTO info_ocorrencia (cabecalho, pre_hospitalar, glasgow, sinais_vitais, problemas_suspeitos, sinais_sintomas, conducao, decisao_trans, vitima_era,objeto,ocorrencia) 
-    VALUES (?,?,?,?,?,?,?,?,?,?,?)");
-    $comando->bindParam(1, $serializedBrands);
-    $comando->bindParam(2, $serializedPre_hospitalar);
-    $comando->bindParam(3, $serializedGlasgow);
-    $comando->bindParam(4, $serializedSinais_vitais);
-    $comando->bindParam(5, $serialized_probSus);
-    $comando->bindParam(6, $serialized_sinais);
-    $comando->bindParam(7, $serialized_conducao);
-    $comando->bindParam(8, $serilized_decisaoTrans);
-    $comando->bindParam(9, $serialized_vitima_era);
-    $comando->bindParam(10, $objeto);
-    $comando->bindParam(11, $serialized_ocorrencia);
+    $comando = $pdo->prepare("INSERT INTO info_ocorrencia (id_usuario, cabecalho, pre_hospitalar, glasgow, sinais_vitais, problemas_suspeitos, sinais_sintomas, conducao, decisao_trans, vitima_era,objeto,ocorrencia) 
+    VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+    $comando->bindParam(1, $matricula);
+    $comando->bindParam(2, $serializedBrands);
+    $comando->bindParam(3, $serializedPre_hospitalar);
+    $comando->bindParam(4, $serializedGlasgow);
+    $comando->bindParam(5, $serializedSinais_vitais);
+    $comando->bindParam(6, $serialized_probSus);
+    $comando->bindParam(7, $serialized_sinais);
+    $comando->bindParam(8, $serialized_conducao);
+    $comando->bindParam(9, $serilized_decisaoTrans);
+    $comando->bindParam(10, $serialized_vitima_era);
+    $comando->bindParam(11, $objeto);
+    $comando->bindParam(12, $serialized_ocorrencia);
 
     $resultado = $comando->execute();
 }

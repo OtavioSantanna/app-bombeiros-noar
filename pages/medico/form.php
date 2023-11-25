@@ -1,3 +1,15 @@
+<?php
+  //inicia a seção
+  session_start();
+  //print_r($_SESSION);
+  if((!isset($_SESSION['matricula']) == true ) and (!isset($_SESSION['senha']) == true))
+  {
+      unset($_SESSION['matricula']);
+      header('Location: login.html');
+  }
+  $logado = $_SESSION['matricula'];
+  $matricula = $_SESSION['matricula'];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -27,6 +39,7 @@
     <p class="title">FOLHA DE ATENDIMENTO</p>
 </div>
   <form id="form1" method="post" action="../../php/inserts/enviarInfoPaciente.php">
+    <input type="hidden" name="matricula" value="<?php echo $matricula?>">
     <div class="form center" onclick="abrirBloco(1)">
       <button type="button" class="tt_row center">
         <div></div>
