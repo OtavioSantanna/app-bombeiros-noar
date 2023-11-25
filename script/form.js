@@ -107,3 +107,17 @@ function md5a(){
 
 }
 
+function abrirMensagemEnvio() {
+    var envioDiv = document.getElementById("envioDiv");
+
+    if (envioDiv) {
+        if (envioDiv.style.display === "flex") {
+            envioDiv.style.display = "none";
+        } else {
+            envioDiv.style.display = "flex";
+        }
+    } else {
+        console.error("Elemento com ID 'envioDiv' não encontrado.");
+    }
+}
+
