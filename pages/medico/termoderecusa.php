@@ -53,8 +53,7 @@
             </button>
             
             <div class="bloco" id="16" onclick="blocoClicado(event)" style="display:flex; border: none;">
-                <form id="form16" name="form16">
-                    <form id="form11" name="form11">
+                    <form id="form11" method="post" action="../../php/inserts/termoRecusa_salvar.php" enctype="multipart/form-data">
                         <label for="imagemInput" class="input_imagem_obj_label">
                             <p class="img_obj_tt" id="tt_add">ADICIONAR IMAGEM +</p>
                             <div id="imagemDiv" class="img_div_obj center">
@@ -66,7 +65,8 @@
                             onchange="verificarPreenchimento('form16')">
                         <p class="img_obj_remover center" id="button_remover"
                             onclick="removerImagemObj();  verificarPreenchimento('form16')">REMOVER IMAGEM ✖</p>
-                </form>
+                        <button type="submit" name="enviar">Enviar</button>
+                    </form>
             </div>
     </div>
 
