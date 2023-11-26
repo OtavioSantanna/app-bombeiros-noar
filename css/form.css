@@ -40,12 +40,16 @@ body{
     width: 45px;
     height: 45px;
 }
+.pic:active{
+    outline: 2px solid white;
+}
 .menu_bt{
     width: 30px;
     height: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    font-size: 45px;
+    text-align: center;
 }
 .menu_dash{
     width: 100%;
@@ -528,6 +532,7 @@ input[type="radio"] {
     }
     .img_obj_remover:active{
         background-color: rgb(85, 0, 0);
+        color: lightgrey;
     }
     .none{
         display: none;
@@ -810,4 +815,43 @@ input[type="radio"] {
     .envio_ok_button:active{
         background-color: darkblue;
         color: lightgray;
+    }
+    .sair_href{
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        width: 90%;
+        height: 40px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        background-color: darkred;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .sair_href:active{
+        background-color: rgb(85, 0, 0);
+        color: lightgray;
+    }
+    .cancelar_button{
+        color: black;
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        width: 90%;
+        height: 40px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        border: 2px solid gray;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        background-color: transparent;
+
+    }
+    .cancelar_button:active{
+        border: 2px solid black;
+        color: black;
+        background-color: gray;
     }
