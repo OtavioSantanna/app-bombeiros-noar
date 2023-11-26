@@ -120,6 +120,7 @@ $matricula = $_SESSION['matricula'];
         echo("
         <div class='bloco_ocorrencia'>
           <p class='form_tt'>$nome</p>
+          <p class='text_content'>$data</p>
           <p class='text_content'>$local</p>
           <p class='text_content'>Pré-hospitalar: </p>
         ");
