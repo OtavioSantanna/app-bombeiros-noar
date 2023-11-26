@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alterar Dados</title>
-<link rel="stylesheet" href="../css/historico.css">
+<link rel="stylesheet" href="../../css/historico.css">
 </head>
 
 <body style="width: 100%; height: 100vh;">
