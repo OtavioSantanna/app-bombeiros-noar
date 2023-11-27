@@ -1,3 +1,15 @@
+<?php
+  //inicia a seção
+  session_start();
+  //print_r($_SESSION);
+  if((!isset($_SESSION['matricula']) == true ) and (!isset($_SESSION['senha']) == true))
+  {
+      unset($_SESSION['matricula']);
+      header('Location: login.html');
+  }
+  $logado = $_SESSION['matricula'];
+  $matricula = $_SESSION['matricula'];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,7 +18,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alterar Dados</title>
-<link rel="stylesheet" href="../../css/historico.css">
+<link rel="stylesheet" href="../../css/socorrista/historico.css">
 </head>
 
 <body style="width: 100%; height: 100vh;">
@@ -40,33 +52,132 @@
 
 
 <div class="forms center">
-    <?php
+      <?php
+      include("../../php/conecta.php");
+      
+      $id_ocorrencia = $_GET['id_ocorrencia'];
+      $comando = $pdo->prepare("SELECT * FROM info_ocorrencia WHERE id_usuario = $matricula AND id_ocorrencia = $id_ocorrencia");
+      $resutado = $comando->execute();
+  
+      if($resutado) {
+        while($row = $comando->fetch(PDO::FETCH_ASSOC)){
+          $causas = array();
+  
+          $id_ocorrencia = $row['id_ocorrencia'];
+          $cabecalhoArray = json_decode($row['cabecalho'], true);
+          $pre_hospitalarArray = json_decode($row['pre_hospitalar'], true);
+          $glasgowArray = json_decode($row['glasgow'], true);
+          $sinais_vitaisArray = json_decode($row['sinais_vitais'], true);
+          $problemas_suspeitosArray = json_decode($row['problemas_suspeitos'], true);
+          $sinais_sintomasArray = json_decode($row['sinais_sintomas'], true);
+          $conducaoArray = json_decode($row['conducao'], true);
+          $decisao_transArray = json_decode($row['decisao_trans'], true);
+          $vitima_eraArray = json_decode($row['vitima_era'], true);        
+          $ocorrenciaArray = json_decode($row['ocorrencia'], true);
+  
+          //Datos Cabecalho
+          $data = $cabecalhoArray[0];
+          $sexo = $cabecalhoArray[1];
+          $hospital = $cabecalhoArray[2];
+          $nome = $cabecalhoArray[3];
+          $idade = $cabecalhoArray[4];
+          $local = $cabecalhoArray[9];
+  
+          //Dados Pré-hospitalar
+  
+            if (is_array($pre_hospitalarArray)) {
+              // Loop através de todos os elementos do array
+              foreach ($pre_hospitalarArray as $index => $causa) {
+                // Adicione cada causa ao array de causas
+                $causas[] = $causa;
+              }
+            }
 
+            if(is_array($glasgowArray)) {
+              foreach($glasgowArray as $index => $glasgow) {
+                $glasgows[] = $glasgow;
+              }
+            }
+
+            $sinal1 = $sinais_vitaisArray[0];
+            $sinal2 = $sinais_vitaisArray[1];
+            $sinal3 = $sinais_vitaisArray[2];
+            $sinal4 = $sinais_vitaisArray[3];
+            $sinal5 = $sinais_vitaisArray[4];
+            $sinal6 = $sinais_vitaisArray[5];
+            $sinal7 = $sinais_vitaisArray[6];
+            
+          echo("
+            <div class='bloco_ocorrencia'>
+            <p class='form_tt2'>EDITAR DADOS</p>
+            <div class='edit_dados'>
+                <p class='text_content'>Data: $data</p>
+                <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' onclick='abrirPagina()' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+                <p class='text_content'>Nome: $nome</p>
+                <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+                <p class='text_content'>Idade: $idade</p>
+                <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+                <p class='text_content'>Local: $local</p>
+                <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+                <p class='text_content'>HOSPITAL: $hospital</p>
+                <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+                <p class='text_content'>Pré Hospitalar:</p>
+            </div>
+            ");
+          
+            foreach ($causas as $index => $causa) {
+              echo ("
+                <div class='edit_dados'>
+                  <ul class='text_content'> $causa</ul>
+                  <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+                </div>
+              ");
+            }
+            echo("
+            <div class='edit_dados'>
+                <p class='text_content'>Glasgow: </p>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>$glasgow</p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+            <p class='text_content'>Sinais vitais: </p>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>-Pressão arterial: </p>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>$sinal1</p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>$sinal2 mmHG</p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+
+          ");
+            
+            // foreach ($causas as $index => $causa) {
+            //   echo ("
+            //   <ul class='text_content'> $causa</ul>
+            //   ");
+            // }
+  
+          // ["2023-11-24","feminino","Sirio Libanes","Angela","25","93589824034","3835012144","Marcos","34","Itapoa"]
+        }
+      }
     ?>
-    <div class="bloco_ocorrencia">
-        <p class="form_tt2">EDITAR DADOS</p>
-        <div class="edit_dados">
-            <p class="text_content">DATA</p>
-            <a href="editardado.html" class="caneta_azul_sq center"><img src="../img/pencil.png" onclick="abrirPagina()" style="width: 30px;"></a>
-        </div>
-        <div class="edit_dados">
-            <p class="text_content">NOME</p>
-            <a href="editardado.html" class="caneta_azul_sq center"><img src="../img/pencil.png" style="width: 30px;"></a>
-        </div>
-        <div class="edit_dados">
-            <p class="text_content">IDADE</p>
-            <a href="editardado.html" class="caneta_azul_sq center"><img src="../img/pencil.png" style="width: 30px;"></a>
-        </div>
-        <div class="edit_dados">
-            <p class="text_content">ENDEREÇO</p>
-            <a href="editardado.html" class="caneta_azul_sq center"><img src="../img/pencil.png" style="width: 30px;"></a>
-        </div>
-        <div class="edit_dados">
-            <p class="text_content">HOSPITAL</p>
-            <a href="editardado.html" class="caneta_azul_sq center"><img src="../img/pencil.png" style="width: 30px;"></a>
-        </div>
-
-
     </div>
     <div class="container center">
         <a href="historico.html" class="botao_cinza center">VOLTAR</a>
