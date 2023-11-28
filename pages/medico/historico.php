@@ -42,7 +42,7 @@ $matricula = $_SESSION['matricula'];
             </div>
         </div>
   <div class="pic_menu_sq">
-            s<a class="menu_bt center" href="main.html">
+            s<a class="menu_bt center" href="main.php">
                 <ion-icon name="home" style="font-size: 50px; color: white;"></ion-icon>
             </a>
   </div>

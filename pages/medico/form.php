@@ -25,7 +25,7 @@
             <div class="envio center">
                 <p class="envio_p">OCORRÊNCIA ENVIADA COM SUCESSO!</p>
                 <p class="envio_p2">CLIQUE EM "OK" PARA VOLTAR PARA A PÁGINA INICIAL.</p>
-                <a href="main.html" class="envio_ok_button center">OK</a>
+                <a href="main.php" class="envio_ok_button center">OK</a>
             </div>
         </div>
         
@@ -36,7 +36,7 @@
             </div>
         </div>
   <div class="pic_menu_sq">
-    <a class="menu_bt center" href="main.html">
+    <a class="menu_bt center" href="main.php">
                 <ion-icon name="home" style="font-size: 50px; color: white;"></ion-icon>
     </a>
 </div>

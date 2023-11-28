@@ -36,7 +36,7 @@
     </div>
     <div class="header">
         <div class="pic_menu_sq" onclick="menu()">
-            <a class="menu_bt center" href="main.html">
+            <a class="menu_bt center" href="main.php">
                 <ion-icon name="home" style="font-size: 50px; color: white;"></ion-icon>
             </a>
         </div>
