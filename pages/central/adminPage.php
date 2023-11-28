@@ -1,16 +1,3 @@
-<?php
-//inicia a seção
-session_start();
-//print_r($_SESSION);
-/*if((!isset($_SESSION['matricula']) == true ) and (!isset($_SESSION['senha']) == true))
-  {
-      unset($_SESSION['matricula']);
-      header('Location: login.html');
-  }
-  $logado = $_SESSION['matricula'];
-  $matricula = $_SESSION['matricula'];*/
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +9,7 @@ session_start();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <title>Pesquisar Ocorrência</title>
+  <title>Inserir usuario</title>
 </head>
 
 <body>
@@ -73,7 +60,7 @@ session_start();
   <div class="main">
     <div class="form">
       <h2 class="form-title">Cadastrar Usuário</h2>
-      <form class="form" method="post" id="form1">
+      <form method="post" id="form1" class="form" action="../../php/inserts/insert-usuario.php">
         <div class="form-linha1">
           <div class="input-container">
             <label for="matricula">Matrícula:</label>
@@ -99,7 +86,10 @@ session_start();
           </div>
           <div class="input-container">
             <label for="admin">Admin:</label>
-            <input type="text" id="admin" name="admin">
+            <select name="admin" id="admin">
+              <option value="nao">Não</option>
+              <option value="sim">Sim</option>
+            </select>
           </div>
         </div>
         <div class="form-linha1">
@@ -113,7 +103,7 @@ session_start();
           </div>
           <div class="input-container">
             <label for="telefone">Telefone:</label>
-            <input type="text" id="teleone" name="telefone">
+            <input type="text" id="telefone" name="telefone">
           </div>
         </div>
         <div class="form-linha1">
@@ -125,7 +115,7 @@ session_start();
             <label for="cargo">Cargo:</label>
             <select name="cargo" id="cargo">
               <?php
-                include("../../");
+                include('../../php/conecta.php');
                 $comando = $pdo->prepare("SELECT * from cargo");
                 $resultado = $comando->execute();
 
@@ -141,9 +131,10 @@ session_start();
             </select>
           </div>
         </div>
-        <div class="form-linha1">
+        <!-- <div class="form-linha1">
           <div class="enviar"><input type="button" name="enviar" value="Enviar" onclick="Cadastrar();" /></div>
-        </div>
+        </div> -->
+        <button type="submit" name="enviar">Enviar</button>
       </div>
     </form>
   </div>

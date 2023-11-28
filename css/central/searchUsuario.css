@@ -185,4 +185,16 @@ th {
     border: 1px solid #102b70;
     border-radius: 4px;
     color: #F1F1F1;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    padding: 2px;
+}
+
+.button-table a {
+    background-color: #102b70;
+    border: 1px solid #102b70;
+    border-radius: 4px;
+    color: #F1F1F1;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
 }

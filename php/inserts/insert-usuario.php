@@ -11,26 +11,28 @@
   $cargo = $_POST["cargo"];
   $idade = $_POST["idade"];
   $num_casa = $_POST["num_casa"];
+  $admin = $_POST["admin"];
 
   $criptografada = md5($senha);
   $user_info = []; //Variável para guardar os dados acima no form
 
   // O trecho abaixo pode estar dentro de um WHILE para guardar a resposta de um SELECT por exemplo
   // O trecho abaixo pode estar dentro de um WHILE para guardar a resposta de um SELECT por exemplo
-  $resposta = 
-  [
-    "matricula" => $matricula,
-    "nome" => $nome
-  ];
-  array_push($user_info, $resposta);
-  //Até aqui ficaria dentro do WHILE
+  // $resposta = 
+  // [
+  //   "matricula" => $matricula,
+  //   "nome" => $nome
+  // ];
+  // array_push($user_info, $resposta);
+  // //Até aqui ficaria dentro do WHILE
   
-  try {
-  $sql = $pdo->prepare("INSERT into usuario (matricula, nome, senha) VALUES (?, ?, ?);");
+  // try {
+  $sql = $pdo->prepare("INSERT into usuario (matricula, nome, senha, adm) VALUES (?, ?, ?, ?);");
 
   $sql->bindParam(1, $matricula);
   $sql->bindParam(2, $nome);
   $sql->bindParam(3, $criptografada);
+  $sql->bindParam(4, $admin);
   
   $executar = $sql->execute();
 
@@ -48,12 +50,11 @@
 
   $executar = $sql->execute();
   
-  $json_texto = json_encode(["info" => $user_info]);
-  echo($json_texto);  // Será retornado para dentro do "success" do arquivo index.html
-  }
-  catch (PDOException $e){
-    echo "Erro no banco de dados: " . $e->getMessage();
-  }
-  /*header('Location: ../../pages/central/inserir_usuario.html');
-  ob_end_flush(); // Encerra o buffer de saída e envia a saída para o navegador*/
+  // $json_texto = json_encode(["info" => $user_info]);
+  // echo($json_texto);  // Será retornado para dentro do "success" do arquivo index.html
+  // }
+  // catch (PDOException $e){
+  //   echo "Erro no banco de dados: " . $e->getMessage();
+  // }
+  header('Location: ../../pages/central/adminPage.php');
 ?>
