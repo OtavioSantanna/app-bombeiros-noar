@@ -77,7 +77,7 @@
     </div>
 
 </body>
-<script src="../script/form.js"></script>
+<script src="../../script/form.js"></script>
 <script src="../../script/imagemInput.js"></script>
 
 </html>
