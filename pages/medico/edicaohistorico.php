@@ -153,30 +153,8 @@
                 <p class='text_content'>Glasgow: </p>
             </div>
             <div class='edit_dados'>
-              <p class='text_content'>$glasgow</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
-            </div>
-            <div class='edit_dados'>
-            <p class='text_content'>Sinais vitais: </p>
-            </div>
-            <div class='edit_dados'>
-              <p class='text_content'>-Pressão arterial: </p>
-            </div>
-            <div class='edit_dados'>
-              <p class='text_content'>Menor: $sinal1</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
-            </div>
-            <div class='edit_dados'>
-              <p class='text_content'>$sinal2 mmHG</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
-            </div>
-            <div class='edit_dados'>
-              <p class='text_content'>$sinal5 </p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
-            </div>
-            <div class='edit_dados'>
-              <p class='text_content'>$sinal6 ° </p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
+              <p class='text_content'>Escala de glasgow: $glasgow</p>
+              <a href='editarGlasgow.php?id_ocorrencia=$id_ocorrencia' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
             </div>
           ");
           echo ("
@@ -185,11 +163,11 @@
             </div>
             <div class='edit_dados'>
               <p class='text_content'>Estado paciente: $estado_paciente</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
+              <a href='editarEstadoPaciente.php?id_ocorrencia=$id_ocorrencia' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
               <p class='text_content'>Motorista: $motorista</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
+              <a href='editarMotorista.php?id_ocorrencia=$id_ocorrencia' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
               <p class='text_content'>Socorrista 1: $socorrista1</p>
