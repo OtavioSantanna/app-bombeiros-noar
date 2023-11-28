@@ -144,7 +144,7 @@
               echo ("
                 <div class='edit_dados'>
                   <ul class='text_content'> $causa</ul>
-                  <a href='editarCausa.php?id_ocorrencia=$id_ocorrencia?dado_antigo=$causa' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
+                  <a href='editarCausa.php?id_ocorrencia=$id_ocorrencia&dado_antigo=$causa' class='caneta_azul_sq center'><img src='../../img/pencil.png' style='width: 30px;'></a>
                 </div>
               ");
             }
