@@ -123,19 +123,19 @@
             </div>
             <div class='edit_dados'>
                 <p class='text_content'>Nome: $nome</p>
-                <a href='editarnome.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
+                <a href='editarnome.php?id_ocorrencia=$id_ocorrencia' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
                 <p class='text_content'>Idade: $idade</p>
-                <a href='editarIdade.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
+                <a href='editarIdade.php?id_ocorrencia=$id_ocorrencia' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
                 <p class='text_content'>Local: $local</p>
-                <a href='editarlocal.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
+                <a href='editarlocal.php?id_ocorrencia=$id_ocorrencia' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
                 <p class='text_content'>HOSPITAL: $hospital</p>
-                <a href='editarHospital.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
+                <a href='editarHospital.php?id_ocorrencia=$id_ocorrencia' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
                 <p class='text_content'>Pré Hospitalar:</p>
