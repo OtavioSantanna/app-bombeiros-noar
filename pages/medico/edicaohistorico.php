@@ -21,17 +21,9 @@
 <link rel="stylesheet" href="../../css/socorrista/historico.css">
 </head>
 
-<body style="width: 100%; height: 100vh;">
+<body style="width: 100%;>
 <div class="shadow center" id="menu">
-  <div class="menu" >
 
-    <p class="form_tt">FOLHA DE OCORRÊNCIA</p>
-
-    <p class="form_tt">FOLHA DE OCORRÊNCIA</p>
-
-    <p class="form_tt">FOLHA DE OCORRÊNCIA</p>
-
-  </div>
   <div></div>
 </div>
 <div class="header">
@@ -112,9 +104,17 @@
             $sinal5 = $sinais_vitaisArray[4];
             $sinal6 = $sinais_vitaisArray[5];
             $sinal7 = $sinais_vitaisArray[6];
+
+            $estado_paciente = $decisao_transArray[0];
+            $motorista = $decisao_transArray[1];
+            $socorrista1 = $decisao_transArray[2];
+            $socorrista2 = $decisao_transArray[3];
+            $socorrista3 = $decisao_transArray[4];
+            $demandante = $decisao_transArray[5];
+            $equipe = $decisao_transArray[6];
             
           echo("
-            <div class='bloco_ocorrencia'>
+            <div class='bloco_ocorrencia' style='margin-top=80px;'>
             <p class='form_tt2'>EDITAR DADOS</p>
             <div class='edit_dados'>
                 <p class='text_content'>Data: $data</p>
@@ -171,7 +171,47 @@
               <p class='text_content'>$sinal2 mmHG</p>
               <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
             </div>
-
+            <div class='edit_dados'>
+              <p class='text_content'>$sinal5 </p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>$sinal6 ° </p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+          ");
+          echo ("
+            <div class='edit_dados'>
+              <p class='text_content'>-Decisão de transporte: </p>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>Estado paciente: $estado_paciente</p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>Motorista: $motorista</p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>Socorrista 1: $socorrista1</p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>Socorrista 2: $socorrista2</p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>Socorrista 3: $socorrista3</p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>Demandante: $demandante</p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
+            <div class='edit_dados'>
+              <p class='text_content'>Equipe: $equipe</p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+            </div>
           ");
             
             // foreach ($causas as $index => $causa) {
