@@ -70,5 +70,31 @@ function abrirPES(x){
     //console.log("Depois de definir o estilo:", divJabuti.style.display);
 }
 
+function abrirMensagemEnvio() {
+    var envioDiv = document.getElementById("envioDiv");
 
+    if (envioDiv) {
+        if (envioDiv.style.display === "flex") {
+            envioDiv.style.display = "none";
+        } else {
+            envioDiv.style.display = "flex";
+        }
+    } else {
+        console.error("Elemento com ID 'envioDiv' não encontrado.");
+    }
+}
+
+function abrirMenuFoto() {
+    var menuFotoDiv = document.getElementById("menuFotoDiv");
+
+    if (menuFotoDiv) {
+        if (menuFotoDiv.style.display === "flex") {
+            menuFotoDiv.style.display = "none";
+        } else {
+            menuFotoDiv.style.display = "flex";
+        }
+    } else {
+        console.error("Elemento com ID 'menuFotoDiv' não encontrado.");
+    }
+}
 

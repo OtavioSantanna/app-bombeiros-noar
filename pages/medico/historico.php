@@ -35,6 +35,12 @@ $matricula = $_SESSION['matricula'];
   <div></div>
 </div>
 <div class="header">
+<div class="envio_div" id="menuFotoDiv">
+            <div class="envio center">
+                <a href="sair.php" class="sair_href center">SAIR  <ion-icon name="exit" style="margin-left: 5px;"></ion-icon></a>
+                <button type="button" class="cancelar_button" onclick="abrirMenuFoto()">CANCELAR</button>
+            </div>
+        </div>
   <div class="pic_menu_sq" onclick="menu()">
       <div class="menu_bt">
           <div class="menu_dash"></div>
@@ -46,7 +52,7 @@ $matricula = $_SESSION['matricula'];
       <img src="../img/logo_pequena.png" class="logo">
   </div>
   <div class="pic_menu_sq">
-      <div class="pic"></div>
+      <div class="pic" onclick="abrirMenuFoto()"></div>
   </div>
 
 
