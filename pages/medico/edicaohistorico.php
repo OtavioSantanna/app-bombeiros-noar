@@ -21,8 +21,9 @@
 <link rel="stylesheet" href="../../css/socorrista/historico.css">
 </head>
 
-<body style="width: 100%;>
-  <div class="shadow center" id="menu"></div>
+<body style="width: 100%;">
+  <div class="shadow center" id="menu">
+  </div>
 
   <div></div>
 </div>
@@ -118,7 +119,7 @@
             <p class='form_tt2'>EDITAR DADOS</p>
             <div class='edit_dados'>
                 <p class='text_content'>Data: $data</p>
-                <a href='editardata.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' onclick='abrirPagina()' style='width: 30px;'></a>
+                <a href='editardata.php?id_ocorrencia=$id_ocorrencia' class='caneta_azul_sq center'><img src='../../images/pencil.png' onclick='abrirPagina()' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
                 <p class='text_content'>Nome: $nome</p>

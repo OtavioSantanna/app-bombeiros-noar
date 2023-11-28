@@ -10,4 +10,5 @@ $comando->bindParam(1, $id_socorrista);
 $comando->bindParam(2, $imagem);
 $comando->execute();
 
+header("Location: ../../pages/medico/main.php");
 ?>

@@ -56,4 +56,6 @@ if(isset($_POST['salvar']))
 
     $resultado = $comando->execute();
 }
+
+header("Location: ../../pages/medico/main.php");
 ?>
