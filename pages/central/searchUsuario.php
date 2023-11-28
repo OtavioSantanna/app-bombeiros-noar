@@ -1,5 +1,4 @@
 <?php
-// ...
 include('../../php/conecta.php');
 // Verifica se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -73,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <label for="info">Insira o dado aqui:</label>
               <input type="text" id="info" name="info">
             </div>
-            <input type="submit" class="button" name="pesquisar" value="Pesquisar" onclick="#();" />
+            <input type="submit" class="button" name="pesquisar" value="Pesquisar"/>
           </div>
         </form>
       </div>
