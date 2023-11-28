@@ -59,7 +59,7 @@
         <?php
             include("../../php/conecta.php");
             
-            $dado_antigo = $_GET['dado_antigo'];
+            $dado_antigo = urldecode($_GET['dado_antigo']);
             $id_ocorrencia = $_GET['id_ocorrencia'];
         echo("
             <div class='sasquat'>
