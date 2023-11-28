@@ -59,7 +59,7 @@
             </div>
             <div class='container center'>
                 <p class='aviso_certeza'>AVISO: TENHA CERTEZA DA ALTERAÇÃO!</p>
-                <a href='edicaohistorico.html' class='botao_vermelho center'>CANCELAR</a>
+                <a href='edicaohistorico.php' class='botao_vermelho center'>CANCELAR</a>
                 <button type='submit' class='botao_verde center'>CONFIRMAR ALTERAÇÃO</button>
                 
             </div>
