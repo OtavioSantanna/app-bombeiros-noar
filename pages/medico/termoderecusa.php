@@ -35,7 +35,7 @@
             </a>
         </div>
         <div class="logo_sq center">
-            <img src="../img/logo_pequena.png" class="logo">
+            <img src="../../img/logo_pequena.png" class="logo">
         </div>
         <div class="pic_menu_sq">
             <div class="pic" onclick="abrirMenuFoto()"></div>
@@ -77,5 +77,6 @@
 </body>
 <script src="../../script/form.js"></script>
 <script src="../../script/imagemInput.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </html>

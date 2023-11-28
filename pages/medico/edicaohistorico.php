@@ -238,5 +238,6 @@ function abrirPágina(){
 </script>
 <script src="../script/imagemInput.js"></script>
 <script src="../../script/form.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </html>
