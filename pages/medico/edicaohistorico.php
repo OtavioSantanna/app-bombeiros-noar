@@ -22,7 +22,7 @@
 </head>
 
 <body style="width: 100%;>
-<div class="shadow center" id="menu">
+  <div class="shadow center" id="menu"></div>
 
   <div></div>
 </div>
@@ -118,23 +118,23 @@
             <p class='form_tt2'>EDITAR DADOS</p>
             <div class='edit_dados'>
                 <p class='text_content'>Data: $data</p>
-                <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' onclick='abrirPagina()' style='width: 30px;'></a>
+                <a href='editardata.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' onclick='abrirPagina()' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
                 <p class='text_content'>Nome: $nome</p>
-                <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+                <a href='editarnome.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
                 <p class='text_content'>Idade: $idade</p>
-                <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+                <a href='editarIdade.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
                 <p class='text_content'>Local: $local</p>
-                <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+                <a href='editarlocal.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
                 <p class='text_content'>HOSPITAL: $hospital</p>
-                <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+                <a href='editarHospital.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
                 <p class='text_content'>Pré Hospitalar:</p>
@@ -145,7 +145,7 @@
               echo ("
                 <div class='edit_dados'>
                   <ul class='text_content'> $causa</ul>
-                  <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+                  <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
                 </div>
               ");
             }
@@ -155,7 +155,7 @@
             </div>
             <div class='edit_dados'>
               <p class='text_content'>$glasgow</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
             <p class='text_content'>Sinais vitais: </p>
@@ -164,20 +164,20 @@
               <p class='text_content'>-Pressão arterial: </p>
             </div>
             <div class='edit_dados'>
-              <p class='text_content'>$sinal1</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <p class='text_content'>Menor: $sinal1</p>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
               <p class='text_content'>$sinal2 mmHG</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
               <p class='text_content'>$sinal5 </p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
               <p class='text_content'>$sinal6 ° </p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
           ");
           echo ("
@@ -186,31 +186,31 @@
             </div>
             <div class='edit_dados'>
               <p class='text_content'>Estado paciente: $estado_paciente</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
               <p class='text_content'>Motorista: $motorista</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
               <p class='text_content'>Socorrista 1: $socorrista1</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
               <p class='text_content'>Socorrista 2: $socorrista2</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
               <p class='text_content'>Socorrista 3: $socorrista3</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
               <p class='text_content'>Demandante: $demandante</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
             <div class='edit_dados'>
               <p class='text_content'>Equipe: $equipe</p>
-              <a href='editardado.html' class='caneta_azul_sq center'><img src='../img/pencil.png' style='width: 30px;'></a>
+              <a href='editardado.html' class='caneta_azul_sq center'><img src='../../images/pencil.png' style='width: 30px;'></a>
             </div>
           ");
             
