@@ -69,8 +69,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <a href="searchUsuario.php">Pesquisa de Usuário</a>
         </li>
         <li class="item-menu">
-          <a href="searchUsuario.php">Histórico de Ocorrências</a>
+          <a href="historico_ocorrencias.php">Histórico de Ocorrências</a>
         </li>
+        <li class="item-menu">
+        <a href="../../php/requests/sair_central.php">Sair do usuario</a>
+      </li>
       </ul>
     </nav>
 
@@ -109,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "<td>" . $usuario['matricula'] . "</td>";
                 echo "<td class='th-button'>
                   <a href='../../php/requests/excluir_user.php?id_usuario=" . $usuario['matricula'] . "' class='button-table'>Excluir</a>
-                  <a href='#' class='button-table'>Editar</a>
+                  <a href='editar_usuario.php?id_usuario=" . $usuario['matricula'] . "' class='button-table'>Editar</a>
                 </td>";
                 echo "</tr>";
               }

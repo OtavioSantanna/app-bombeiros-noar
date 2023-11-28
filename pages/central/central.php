@@ -111,26 +111,6 @@
                 <img src="../public/menos-linha-reta-horizontal.png" alt="Linha" width="300px" height="15px">
                 <div class="ver">Ver ficha completa</div>
             </div>
-
-            <div class="card">
-                <div class="text">
-                    <div class="nivel">Nível: 3</div>
-                    <br>
-                    <div class="resto">
-                        <div class="sangue">Tipo Sanguíneo: B-</div>
-                        <br>
-                        <div class="status">Status: Urgente</div>
-                        <br>
-                        <div class="tipo-acidente">Tipo do acidente: Acidente aéreo</div>
-                        <br>
-                        <div class="atendimento">Atendimento no local: RCP</div>
-                        <br>
-                    </div>
-                </div>
-                <img src="../public/menos-linha-reta-horizontal.png" alt="Linha" width="300px" height="15px">
-                <div class="ver">Ver ficha completa</div>
-            </div>
-            </div>
         </div>
         
     </div>

@@ -69,8 +69,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <a href="searchUsuario.php">Pesquisa de Usuário</a>
         </li>
         <li class="item-menu">
-          <a href="searchUsuario.php">Histórico de Ocorrências</a>
+          <a href="historico_ocorrencias.php">Histórico de Ocorrências</a>
         </li>
+        <li class="item-menu">
+        <a href="../../php/requests/sair_central.php">Sair do usuario</a>
+      </li>
       </ul>
     </nav>
 
@@ -91,36 +94,107 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <table>
         <thead>
           <tr>
-            <th>Nome</th>
-            <th>Matricula</th>
-            <th>Ações</th>
+            <th>Dado atual</th>
+            <th>Dado Novo</th>
+            <th>Salvar</th>
           </tr>
         </thead>
         <tbody>
           <?php
-            // Loop para exibir resultados
-            if (isset($resultados)) {
-              foreach ($resultados as $usuario) {
-                if ($usuario['matricula'] == 1) {
-                  continue; // Ignora o NOAR
-                }
-                echo "<tr>";
-                echo "<td>" . $usuario['nome'] . "</td>";
-                echo "<td>" . $usuario['matricula'] . "</td>";
-                echo "<td>" . $usuario['cpf'] . "</td>";
-                echo "<td>" . $usuario['idade'] . "</td>";
-                echo "<td>" . $usuario['email'] . "</td>";
-                echo "<td>" . $usuario['admin'] . "</td>";
-                echo "<td>" . $usuario['cep'] . "</td>";
-                echo "<td>" . $usuario['num_casa'] . "</td>";
-                echo "<td>" . $usuario['telefone'] . "</td>";
-                echo "<td>" . $usuario['cargo'] . "</td>";
-                echo "<td class='th-button'>
-                  <a href='../../php/requests/excluir_user.php?id_usuario=" . $usuario['matricula'] . "' class='button-table'>Excluir</a>
-                  <a href='#' class='button-table'>Editar</a>
-                </td>";
-                echo "</tr>";
-              }
+            include('../../php/conecta.php');
+
+            $id_usuario = $_GET['id_usuario'];
+            $comando = $pdo->prepare("SELECT usuario.*, info_usuario.*, cargo.nome_cargo
+            FROM usuario
+            INNER JOIN info_usuario ON usuario.matricula = info_usuario.matricula
+            INNER JOIN cargo ON info_usuario.cargo = cargo.id_cargo
+            WHERE usuario.matricula = $id_usuario;
+            ");
+            $comando->execute();
+
+            while ($linhas = $comando->fetch()) {
+              $matricula = $linhas['matricula'];
+              $nome = $linhas['nome'];
+              $cpf = $linhas['cpf'];
+              $idade = $linhas['idade'];
+              $email = $linhas['email'];
+              $telefone = $linhas['telefone'];
+              $cep = $linhas['cep'];
+              $nome_cargo = $linhas['nome_cargo'];
+              $cargo = $linhas['cargo'];
+
+              echo ("
+              <form method='post' action='../../php/inserts/mudarnome.php'>
+                <tr>
+                    <td>
+                        <p>Nome: $nome</p>
+                    </td>
+                    <td>
+                        <input type='text' name='novo_nome'>
+                    </td>
+                    <td>
+                        <input type='hidden' name='matricula' value='$matricula'>
+                        <input type='submit' name='salvar'>
+                    </td>
+                </tr>
+              </form>
+              <form method='post' action='../../php/inserts/mudaridade.php'>
+              <tr>
+                  <td>
+                      <p>Idade: $idade</p>
+                  </td>
+                  <td>
+                      <input type='number' name='nova_idade'>
+                  </td>
+                  <td>
+                      <input type='hidden' name='matricula' value='$matricula'>
+                      <input type='submit' name='salvar'>
+                  </td>
+              </tr>
+            </form>
+            <form method='post' action='../../php/inserts/mudarcpf.php'>
+            <tr>
+                <td>
+                    <p>CPF: $cpf</p>
+                </td>
+                <td>
+                    <input type='text' name='novo_cpf'>
+                </td>
+                <td>
+                    <input type='hidden' name='matricula' value='$matricula'>
+                    <input type='submit' name='salvar'>
+                </td>
+            </tr>
+          </form>
+          <form method='post' action='../../php/inserts/mudaremail.php'>
+          <tr>
+              <td>
+                  <p>Email: $email</p>
+              </td>
+              <td>
+                  <input type='text' name='novo_email'>
+              </td>
+              <td>
+                  <input type='hidden' name='matricula' value='$matricula'>
+                  <input type='submit' name='salvar'>
+              </td>
+          </tr>
+        </form>
+        <form method='post' action='../../php/inserts/mudartelefone.php'>
+        <tr>
+            <td>
+                <p>Email: $telefone</p>
+            </td>
+            <td>
+                <input type='text' name='novo_telefone'>
+            </td>
+            <td>
+                <input type='hidden' name='matricula' value='$matricula'>
+                <input type='submit' name='salvar'>
+            </td>
+        </tr>
+      </form>
+              ");
             }
           ?>
 

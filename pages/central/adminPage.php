@@ -65,7 +65,7 @@
         <a href="searchUsuario.php">Pesquisa de Usuário</a>
       </li>
       <li class="item-menu">
-        <a href="#">Histórico de Ocorrências</a>
+        <a href="historico_ocorrencias.php">Histórico de Ocorrências</a>
       </li>
       <li class="item-menu">
         <a href="../../php/requests/sair_central.php">Sair do usuario</a>

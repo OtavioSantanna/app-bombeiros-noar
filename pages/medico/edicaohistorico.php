@@ -203,7 +203,7 @@
     ?>
     </div>
     <div class="container center">
-        <a href="historico.html" class="botao_cinza center">VOLTAR</a>
+        <a href="historico.php" class="botao_cinza center">VOLTAR</a>
     </div>
 
 </div>

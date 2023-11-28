@@ -71,6 +71,7 @@ body{
     max-width: 700px;
     min-height: 50px;
     margin-top: 15px;
+    margin-left: 50%;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
