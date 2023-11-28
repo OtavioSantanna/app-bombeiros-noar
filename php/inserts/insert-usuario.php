@@ -56,5 +56,8 @@
   // catch (PDOException $e){
   //   echo "Erro no banco de dados: " . $e->getMessage();
   // }
+
+  $mensagem = "Cadastro foi concluído com sucesso!";
+
   header('Location: ../../pages/central/adminPage.php');
 ?>

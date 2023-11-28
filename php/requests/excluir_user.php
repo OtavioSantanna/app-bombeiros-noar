@@ -14,4 +14,6 @@
 
     $comando = $pdo->prepare("DELETE from usuario where matricula = $matricula");
     $comando->execute();
+
+    header("Location: ../../pages/central/searchUsuario.php");
 ?>
