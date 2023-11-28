@@ -6,15 +6,17 @@
     $matricula = $_POST["matricula"];
     $senha = md5($_POST["senha"]);
 
-    $validar = $pdo->prepare("SELECT * FROM usuario WHERE matricula = :matricula AND senha = :senha AND adm = sim");
-    $validar->bindParam(':matricula', $matricula);
-    $validar->bindParam(':senha', $senha);
-    $validar->execute();
+    $comando = $pdo->prepare("SELECT * FROM usuario WHERE matricula = ? AND senha = ? AND adm = 'sim';");
+    $comando->bindParam(1, $matricula);
+    $comando->bindParam(2, $senha);
+    $comando->execute();
+    
 
-    $pegar_id = $validar->fetch(PDO::FETCH_ASSOC);
-    $id_socorrista = $pegar_id['id_socorrista'];
+    $usuario_info = $comando->fetch(PDO::FETCH_ASSOC);
+    $_SESSION["usuario"] = $usuario_info["nome"];
 
-    if($validar->rowCount() == 0)
+
+    if($comando->rowCount() == 0)
     {
         echo
         ("
@@ -29,6 +31,6 @@
         $_SESSION["usuario"] = $usuario_info["usuario"];
         $_SESSION["matricula"] = $matricula;
         $_SESSION["id_socorrista"] = $id_socorrista;
-        header('Location: ../../pages/central/central.php');
+        header('Location: ../../pages/central/adminPage.php');
     }
 ?>

@@ -51,12 +51,12 @@
 
 
     </div>
-    <form method="post" action="../../php/requests/editarNome.php">
+    <form method="post" action="../../php/requests/editar_local.php">
         <div class="title_sq center">
             <p class="titulo">DADO A SER ALTERADO:</p>
         </div>
         <div class="dado center">
-            <p>nome</p>
+            <p>Idade</p>
         </div>
         <?php
             include("../../php/conecta.php");
@@ -66,7 +66,7 @@
             <div class='sasquat'>
             <div class='title_sq center'>
                 <p class='titulo2'>DADO QUE SUBSTITUIRÁ:</p>
-                <input type='name' name='novo_nome' class='input_edicao' placeholder='NOVO DADO...'>
+                <input type='text' name='novo_local' class='input_edicao' placeholder='NOVO DADO...'>
                 <input type='hidden' name='id_ocorrencia' value='$id_ocorrencia'>
             </div>
             <div class='container center'>
