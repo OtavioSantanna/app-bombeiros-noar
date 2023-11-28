@@ -149,5 +149,6 @@ $matricula = $_SESSION['matricula'];
 </body>
 <script src="../script/historico.js"></script>
 <script src="../script/imagemInput.js"></script>
+<script src="../../script/form.js"></script>
 
 </html>

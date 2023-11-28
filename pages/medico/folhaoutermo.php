@@ -80,5 +80,6 @@
     }
 </script>
 <script src="../script/imagemInput.js"></script>
+<script src="../../script/form.js"></script>
 
 </html>
