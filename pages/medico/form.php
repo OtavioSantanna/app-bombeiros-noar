@@ -36,14 +36,12 @@
             </div>
         </div>
   <div class="pic_menu_sq">
-    <div class="menu_bt">
-    <div class="menu_dash"></div>
-    <div class="menu_dash"></div>
-    <div class="menu_dash"></div>
-  </div>
+    <a class="menu_bt center" href="main.html">
+                <ion-icon name="home" style="font-size: 50px; color: white;"></ion-icon>
+    </a>
 </div>
 <div class="logo_sq center">
-  <img src="../img/logo_pequena.png" class="logo">
+  <img src="../../img/logo_pequena.png" class="logo">
 </div>
 <div class="pic_menu_sq">
   <div class="pic" onclick="abrirMenuFoto()"></div>
@@ -483,13 +481,13 @@
         <div class="bloco" id="6" onclick="blocoClicado(event)">
                 <p class="selec_idade center" id="avisoIdade2">INFORME A IDADE APROXIMADA DA VÍTIMA</p>
                 <div id="container" >
-                    <img src="../img/corpo_maior.png" class="presunto" id="locusTrauma" onclick="addSymbol(event)">
-                    <img id="symbol" src="../img/" alt="Seu símbolo" style="width: 50px;">
+                    <img src="../../img/corpo_maior.png" class="presunto" id="locusTrauma" onclick="addSymbol(event)">
+                    <img id="symbol" src="../../img/" alt="Seu símbolo" style="width: 50px;">
 
-                    <img id="symbol1" src="../img/1.png" alt="Seu símbolo" style="width: 50px;" onclick="imgSelect(symbol1)">
-                    <img id="symbol2" src="../img/2.png" alt="Seu símbolo2" style="width: 50px;" onclick="imgSelect(symbol2)"> 
-                    <img id="symbol3" src="../img/3.png" alt="Seu símbolo3" style="width: 50px;" onclick="imgSelect(symbol3)">
-                    <img id="symbol4" src="../img/4.png" alt="Seu símbolo4" style="width: 50px;" onclick="imgSelect(symbol4)">
+                    <img id="symbol1" src="../../img/1.png" alt="Seu símbolo" style="width: 50px;" onclick="imgSelect(symbol1)">
+                    <img id="symbol2" src="../../img/2.png" alt="Seu símbolo2" style="width: 50px;" onclick="imgSelect(symbol2)"> 
+                    <img id="symbol3" src="../../img/3.png" alt="Seu símbolo3" style="width: 50px;" onclick="imgSelect(symbol3)">
+                    <img id="symbol4" src="../../img/4.png" alt="Seu símbolo4" style="width: 50px;" onclick="imgSelect(symbol4)">
                     
                 </div>
                 
@@ -766,20 +764,20 @@
         
         <div class="bloco" id="9" onclick="blocoClicado(event)">
                 <div class="checkbox_div2">
-                    <input type="checkbox" name="descisao_trans[]" onchange="verificarPreenchimento('form9')">CRÍTICO</input><img src="../img/2.png" class="img_transporte">
+                    <input type="checkbox" name="descisao_trans[]" onchange="verificarPreenchimento('form9')">CRÍTICO</input><img src="../../img/2.png" class="img_transporte">
                 </div>
                 <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                 <div class="checkbox_div2">
-                    <input type="checkbox" name="descisao_trans[]" value="instavel" onchange="verificarPreenchimento('form9')">INSTÁVEL</input><img src="../img/4.png" class="img_transporte">
+                    <input type="checkbox" name="descisao_trans[]" value="instavel" onchange="verificarPreenchimento('form9')">INSTÁVEL</input><img src="../../img/4.png" class="img_transporte">
                 </div>
                 <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                 <div class="checkbox_div2">
-                    <input type="checkbox" name="descisao_trans[]" value="Potencialmente instavel" onchange="verificarPreenchimento('form9')">POTENCIALMENTE INSTÁVEL</input><img src="../img/3.png"
+                    <input type="checkbox" name="descisao_trans[]" value="Potencialmente instavel" onchange="verificarPreenchimento('form9')">POTENCIALMENTE INSTÁVEL</input><img src="../../img/3.png"
                         class="img_transporte">
                 </div>
                 <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                 <div class="checkbox_div2">
-                    <input type="checkbox" name="descisao_trans[]" value="Estavel" onchange="verificarPreenchimento('form9')">ESTÁVEL</input><img src="../img/1.png" class="img_transporte">
+                    <input type="checkbox" name="descisao_trans[]" value="Estavel" onchange="verificarPreenchimento('form9')">ESTÁVEL</input><img src="../../img/1.png" class="img_transporte">
                 </div>
                 <hr style="border: 1px solid darkblue; width: 100%; margin: 0%; padding: 0%;">
                 <p class="gg_tt center">EQUIPE DE ATENDIMENTO</p>

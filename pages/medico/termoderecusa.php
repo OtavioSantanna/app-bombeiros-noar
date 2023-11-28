@@ -30,11 +30,9 @@
             </div>
         </div>
         <div class="pic_menu_sq">
-            <div class="menu_bt">
-                <div class="menu_dash"></div>
-                <div class="menu_dash"></div>
-                <div class="menu_dash"></div>
-            </div>
+            <a class="menu_bt center" href="main.html">
+                <ion-icon name="home" style="font-size: 50px; color: white;"></ion-icon>
+            </a>
         </div>
         <div class="logo_sq center">
             <img src="../img/logo_pequena.png" class="logo">

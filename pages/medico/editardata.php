@@ -36,14 +36,12 @@
     </div>
     <div class="header">
         <div class="pic_menu_sq" onclick="menu()">
-            <div class="menu_bt">
-                <div class="menu_dash"></div>
-                <div class="menu_dash"></div>
-                <div class="menu_dash"></div>
-            </div>
+        <a class="menu_bt center" href="main.html">
+                <ion-icon name="home" style="font-size: 50px; color: white;"></ion-icon>
+            </a>
         </div>
         <div class="logo_sq center">
-            <img src="../img/logo_pequena.png" class="logo">
+            <img src="../../img/logo_pequena.png" class="logo">
         </div>
         <div class="pic_menu_sq">
             <div class="pic"></div>
