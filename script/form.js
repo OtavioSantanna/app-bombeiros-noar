@@ -1,10 +1,26 @@
-function abrirBloco(x)
-{
-    var bloco  = document.getElementById(x)
+//function abrirBloco(x)
+//{
+//    var bloco  = document.getElementById(x)
+//    if (bloco.style.display === "flex") {
+//        bloco.style.display = "none";
+//    } 
+//    else {
+//        bloco.style.display = "flex";
+//    }
+//}
+
+function abrirBloco(x) {
+    // Oculta todos os blocos
+    var todosBlocos = document.querySelectorAll('.bloco');
+    todosBlocos.forEach(function(bloco) {
+        bloco.style.display = "none";
+    });
+
+    // Exibe o bloco específico que foi clicado
+    var bloco = document.getElementById(x);
     if (bloco.style.display === "flex") {
         bloco.style.display = "none";
-    } 
-    else {
+    } else {
         bloco.style.display = "flex";
     }
 }
