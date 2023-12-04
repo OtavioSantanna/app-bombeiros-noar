@@ -10,17 +10,20 @@
 //}
 
 function abrirBloco(x) {
-    // Oculta todos os blocos
-    var todosBlocos = document.querySelectorAll('.bloco');
-    todosBlocos.forEach(function(bloco) {
-        bloco.style.display = "none";
-    });
-
-    // Exibe o bloco específico que foi clicado
+    // Pega o bloco específico que foi clicado
     var bloco = document.getElementById(x);
+
+    // Se o bloco clicado já estiver aberto, fecha-o
     if (bloco.style.display === "flex") {
         bloco.style.display = "none";
     } else {
+        // Oculta todos os blocos
+        var todosBlocos = document.querySelectorAll('.bloco');
+        todosBlocos.forEach(function(outroBloco) {
+            outroBloco.style.display = "none";
+        });
+
+        // Exibe o bloco clicado
         bloco.style.display = "flex";
     }
 }
