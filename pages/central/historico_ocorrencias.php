@@ -2,17 +2,16 @@
 //inicia a seção
 session_start();
 //print_r($_SESSION);
-if((!isset($_SESSION['matricula']) == true ) and (!isset($_SESSION['senha']) == true))
-{
-unset($_SESSION['matricula']);
-header('Location: login.html');
-}
-$logado = $_SESSION['matricula'];
-$matricula = $_SESSION['matricula'];
+// if((!isset($_SESSION['matricula']) == true ) and (!isset($_SESSION['senha']) == true))
+// {
+// unset($_SESSION['matricula']);
+// header('Location: login.html');
+// }
+// $logado = $_SESSION['matricula'];
+// $matricula = $_SESSION['matricula'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,7 +66,7 @@ $matricula = $_SESSION['matricula'];
         <p class="title">HISTÓRICO DE OCORRÊNCIAS</p>
         </div class="divao">
 
-        <div class="forms center">
+        <div class="forms-center">
         <div class="searchbar">
             <button type="button" id="searchButton" style="display: none;">Q</button>
             <input type="text" class="searchbar_input" placeholder="PESQUISAR..." id="searchInput" onfocus="searchButtonAppear()"></input>
@@ -153,6 +152,10 @@ $matricula = $_SESSION['matricula'];
                 }
 
                 echo("
+                <br>
+                <br>
+                <br>
+                <div class='container'>
                 <div class='bloco_ocorrencia'>
                 <p class='form_tt'>$nome</p>
                 <p class='text_content'>$data</p>
@@ -162,11 +165,13 @@ $matricula = $_SESSION['matricula'];
                 foreach ($causas as $index => $causa) {
                 echo ("
                 <ul class='text_content'> $causa</ul>
+                
                 ");
                 }
                 echo("
                     <a class='ver_mais_a' href='?'>VER MAIS ></a>
                     <a href='edicaohistorico.php?id_ocorrencia=$id_ocorrencia' class='editar_historico_button center'>EDITAR HISTÓRICO DA OCORRÊNCIA</a>
+                </div>
                 </div>
                 ");
 
