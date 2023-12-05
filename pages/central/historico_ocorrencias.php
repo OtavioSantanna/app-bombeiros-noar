@@ -1,14 +1,13 @@
 <?php
 //inicia a seção
 session_start();
-//print_r($_SESSION);
-// if((!isset($_SESSION['matricula']) == true ) and (!isset($_SESSION['senha']) == true))
-// {
-// unset($_SESSION['matricula']);
-// header('Location: login.html');
-// }
-// $logado = $_SESSION['matricula'];
-// $matricula = $_SESSION['matricula'];
+if((!isset($_SESSION['matricula']) == true ) and (!isset($_SESSION['senha']) == true))
+{
+unset($_SESSION['matricula']);
+ header('Location: login.html');
+ }
+$logado = $_SESSION['matricula'];
+$matricula = $_SESSION['matricula'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

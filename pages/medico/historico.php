@@ -37,7 +37,7 @@ $matricula = $_SESSION['matricula'];
 <div class="header">
 <div class="envio_div" id="menuFotoDiv">
             <div class="envio center">
-                <a href="sair.php" class="sair_href center">SAIR  <ion-icon name="exit" style="margin-left: 5px;"></ion-icon></a>
+                <a href="../../php/requests/sair_medico.php" class="sair_href center">SAIR  <ion-icon name="exit" style="margin-left: 5px;"></ion-icon></a>
                 <button type="button" class="cancelar_button" onclick="abrirMenuFoto()">CANCELAR</button>
             </div>
         </div>
