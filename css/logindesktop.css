@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+body{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+.logo
+{
+  width: 150px;
+  top: 50px;
+}
+.main
+{
+  width: 85%;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.h 
+{
+  font-size: x-large;
+  color: darkblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.input
+{
+  width: 100%;
+  max-width: 700px;
+  border: none;
+  height: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-size: larger;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(231, 231, 231);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  padding: 10px;
+  outline: 0;
+}
+.input:focus
+{
+  border: 2px solid darkblue;
+}
+.checkbox_div {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: gray;
+}
+.checkbox {
+  display: flex;
+  height: 100px;
+  width: 90px; 
+}
+
+.bt_entrar
+{
+  width: 100%;
+  max-width: 700px;
+  border: none;
+  height: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  background-color: rgb(15, 182, 37);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bt_entrar:active
+{
+  background-color: rgb(45, 99, 8);
+}
