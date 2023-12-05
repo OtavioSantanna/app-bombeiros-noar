@@ -479,6 +479,7 @@
         </button>
 
         <div class="bloco" id="6" onclick="blocoClicado(event)">
+<!--
                 <p class="selec_idade center" id="avisoIdade2">INFORME A IDADE APROXIMADA DA VÍTIMA</p>
                 <div id="container" >
                     <img src="../../img/corpo_maior.png" class="presunto" id="locusTrauma" onclick="addSymbol(event)">
@@ -490,7 +491,7 @@
                     <img id="symbol4" src="../../img/4.png" alt="Seu símbolo4" style="width: 50px;" onclick="imgSelect(symbol4)">
                     
                 </div>
-                
+-->
 
                 <div class="checkbox_div loc_img">
                     FRATURAS / LUXAÇÕES/ ENTORSES
