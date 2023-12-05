@@ -470,66 +470,64 @@
       </div>
       </div>
       <div class="form center" onclick="abrirBloco(6)">
-        <button type="button" class="tt_row center">
-            <div></div>
-            <p class="form_tt">LOCALIZAÇÃO DOS TRAUMAS</p>
-            <div>
-                <div class="check center">✔</div>
+            <button type="button" class="tt_row center">
+                <div></div>
+                <p class="form_tt">LOCALIZAÇÃO DOS TRAUMAS</p>
+                <div>
+                    <div class="check center">✔</div>
+                </div>
+            </button>
+
+            <div class="bloco" id="6" onclick="blocoClicado(event)">
+                    <p class="selec_idade center" id="avisoIdade2">INFORME A IDADE APROXIMADA DA VÍTIMA</p>
+
+
+
+                    <div class="tt_locus_trauma_texto center">FERIMENTOS</div>
+                    <div class="ferimento">
+                        <div class="input_div">
+                            LOCAL:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                        <div class="input_div">
+                            LADO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                        <div class="input_div">
+                            FACE:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                        <div class="input_div">
+                            TIPO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                    </div>
+                    <div class="ferimento">
+                        <div class="input_div">
+                            LOCAL:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                        <div class="input_div">
+                            LADO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                        <div class="input_div">
+                            FACE:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                        <div class="input_div">
+                            TIPO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                    </div>
+                    <div class="ferimento">
+                        <div class="input_div">
+                            LOCAL:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                        <div class="input_div">
+                            LADO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                        <div class="input_div">
+                            FACE:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                        <div class="input_div">
+                            TIPO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
+                        </div>
+                    </div>
             </div>
-        </button>
-
-        <div class="bloco" id="6" onclick="blocoClicado(event)">
-<!--
-                <p class="selec_idade center" id="avisoIdade2">INFORME A IDADE APROXIMADA DA VÍTIMA</p>
-                <div id="container" >
-                    <img src="../../img/corpo_maior.png" class="presunto" id="locusTrauma" onclick="addSymbol(event)">
-                    <img id="symbol" src="../../img/" alt="Seu símbolo" style="width: 50px;">
-
-                    <img id="symbol1" src="../../img/1.png" alt="Seu símbolo" style="width: 50px;" onclick="imgSelect(symbol1)">
-                    <img id="symbol2" src="../../img/2.png" alt="Seu símbolo2" style="width: 50px;" onclick="imgSelect(symbol2)"> 
-                    <img id="symbol3" src="../../img/3.png" alt="Seu símbolo3" style="width: 50px;" onclick="imgSelect(symbol3)">
-                    <img id="symbol4" src="../../img/4.png" alt="Seu símbolo4" style="width: 50px;" onclick="imgSelect(symbol4)">
-                    
-                </div>
--->
-
-                <div class="checkbox_div loc_img">
-                    FRATURAS / LUXAÇÕES/ ENTORSES
-                </div>
-                <div class="checkbox_div loc_img">
-                    FERIMENTOS DIVERSOS
-                </div>
-                <div class="checkbox_div loc_img">
-                    HEMORRAGIA
-                </div>
-                <div class="checkbox_div loc_img">
-                    EVICERAÇÃO
-                </div>
-                <div class="checkbox_div loc_img">
-                    ***ILEGÍVEL***
-                </div>
-                <div class="checkbox_div loc_img">
-                    AMPUTAÇÃO
-                </div> 
-                <div class="checkbox_div loc_img">
-                    QUEIMADURA 1º GRAU
-                </div>
-                <div class="checkbox_div loc_img">
-                    QUEIMADURA 2º GRAU
-                </div>
-                <div class="checkbox_div loc_img">
-                    QUEIMADURA 3º GRAU
-                </div>
-                    <p class="ffelc_tt center loc_img">FERIMENTOS / FRATURAS / ENTORSES / LUXAÇÃO / CONTUSÃO</p>
-                    <div class="add_ferimento" onclick="vaiTerUmaFuncao()">
-                        <p class="img_obj_tt" id="tt_add">ADICIONAR FERIMENTO +</p>
-                    </div>
-                    <p class="ffelc_tt center loc_img">QUEIMADURAS</p>
-                    <div class="add_ferimento" onclick="vaiTerUmaFuncao()">
-                        <p class="img_obj_tt" id="tt_add">ADICIONAR FERIMENTO +</p>
-                    </div>
         </div>
-    </div>
     <div class="form center" onclick="abrirBloco(7)">
         <button type="button" class="tt_row center">
             <div></div>
