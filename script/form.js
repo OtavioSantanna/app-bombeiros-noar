@@ -1,3 +1,4 @@
+/*
 function abrirBloco(x)
 {
     var bloco  = document.getElementById(x)
@@ -5,6 +6,26 @@ function abrirBloco(x)
         bloco.style.display = "none";
     } 
     else {
+        bloco.style.display = "flex";
+    }
+}
+*/
+
+function abrirBloco(x) {
+    // Pega o bloco específico que foi clicado
+    var bloco = document.getElementById(x);
+
+    // Se o bloco clicado já estiver aberto, fecha-o
+    if (bloco.style.display === "flex") {
+        bloco.style.display = "none";
+    } else {
+        // Oculta todos os blocos
+        var todosBlocos = document.querySelectorAll('.bloco');
+        todosBlocos.forEach(function(outroBloco) {
+            outroBloco.style.display = "none";
+        });
+
+        // Exibe o bloco clicado
         bloco.style.display = "flex";
     }
 }
