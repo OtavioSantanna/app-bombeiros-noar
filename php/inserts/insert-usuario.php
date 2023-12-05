@@ -48,6 +48,7 @@
   $sql->bindParam(8, $num_casa);
   $sql->bindParam(9, $telefone);    
 
+
   $executar = $sql->execute();
   
   // $json_texto = json_encode(["info" => $user_info]);
