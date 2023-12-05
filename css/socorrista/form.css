@@ -3,7 +3,6 @@ body{
     background-color: white;
     padding: 0%;
     margin: 0%;
-
 }
 .center{
     display: flex;
@@ -23,7 +22,6 @@ body{
     justify-content: space-between;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     top: 0%;
-    z-index: 90000;
 }
 .pic_menu_sq{
     width: 60px;
@@ -40,16 +38,12 @@ body{
     width: 45px;
     height: 45px;
 }
-.pic:active{
-    outline: 2px solid white;
-}
 .menu_bt{
     width: 30px;
     height: 30px;
     display: flex;
     flex-direction: column;
-    font-size: 45px;
-    text-align: center;
+    justify-content: space-between;
 }
 .menu_dash{
     width: 100%;
@@ -71,10 +65,10 @@ body{
 .form{
     background-color: darkblue;
     width: 90%;
-    max-width: 700px;
     min-height: 50px;
+    margin-left: 5%;
     margin-top: 15px;
-    border-radius: 8px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -92,8 +86,6 @@ body{
     width: 100%;
     height: 100%;
     margin: 0%;
-    display: flex;
-    flex-direction: column;
 }
 .form_tt{
     color: white;
@@ -102,17 +94,17 @@ body{
     text-align: center;
 }
 .forms_buttons{
-    width: 100%;
+    width: 90%;
     height: 50px;
+    margin-left: 5%;
     margin-top: 15px;
     margin-bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
 }
 .button{
-    width: 90%;
-    max-width: 700px;
+    width: 100%;
     height: 100%;
     border: none;
     font-family: 'Nunito', sans-serif;
@@ -120,7 +112,7 @@ body{
     font-weight: bold;
     background-color: rgb(15, 182, 37);
     color: white;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 .button:active{
@@ -140,14 +132,13 @@ body{
     font-weight: bold;
     color: darkblue;
     margin-top: 130px;
-    text-align: center;
 }
 .bloco{
     width: 100%;
     min-height: 60px;
     background-color: white;
     border: 3px solid darkblue;
-    border-radius: 8px;
+    border-radius: 5px;
     box-sizing: border-box;
     display: none;
     flex-direction: column;
@@ -229,11 +220,9 @@ input[type="radio"] {
     border-left: none;
     border-right: none;
     height: 25px;
-    font-size: medium;
+    font-size: large;
     width: auto;
     background-color: transparent;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
 }
 .input_text:focus{
     outline: none;
@@ -249,11 +238,8 @@ input[type="radio"] {
     border-left: none;
     border-right: none;
     height: 25px;
-    font-size: medium;
+    font-size: large;
     width: auto;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    background-color: transparent;
 }
 .input_number:focus{
     outline: none;
@@ -297,7 +283,6 @@ input[type="radio"] {
     color: darkblue;
     size: medium;
     font-weight: bold;
-    display: none;
 }
 .md5a_tt
 {
@@ -306,7 +291,6 @@ input[type="radio"] {
     font-family: 'Nunito', sans-serif;
     min-height: 30px;
     margin-bottom: 0%;
-    text-align: center;
 
 
 }
@@ -438,324 +422,7 @@ input[type="radio"] {
         height: 80px;
         margin: 10px;
     }
-    .textarea_obj_div{
-        display: flex;
-        width: auto;
-        height: min-content;
-        margin: 5px;
-        margin-top: 15px;
 
-    }
-    .textarea_obj{
-        display: flex;
-        flex-direction:column;
-        padding: 10px;
-        min-height: 150px;
-        resize: vertical;
-        width: 100%;
-        background-color: lightgray;
-        border-top-right-radius: 8px;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 0px;
-        border: none;
-        font-family: 'Nunito', sans-serif;
-        font-size: medium;
-        font-weight: bold;
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.3);
-        justify-items: center;
-        box-sizing: content-box border-box;
-    }
-    .textarea_obj:focus{
-        outline: 2px solid darkblue;
-    }
-    .input_obj_none{
-        display: none;
-    }
-    .input_imagem_obj_label{
-        display: flex;
-        flex-direction:column;
-        margin: 5px;
-        margin-top: 15px;
-        width: auto;
-        min-height: 50px;
-        background-color: lightgray;
-        border-radius: 8px;
-        font-family: 'Nunito', sans-serif;
-        font-size: medium;
-        font-weight: bold;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-        justify-items: center;
-
-    }
-    input_imagem_obj_label:active{
-        background-color: gray;
-    }
-
-    .imagem_obj{
-        width: 100%;
-        max-width: 500px;
-        border-radius: 10px;
-        display: none;
-    }
-
-    .img_div_obj{
-        width: auto;
-        box-sizing: border-box;
-        margin: 5px;
-    }
-
-    .img_obj_tt{
-        width: 100%;
-        text-align: center;
-        height: 10px;
-    }
-    .img_obj_remover{
-        width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction:column;
-        margin: 5px;
-        margin-top: 15px;
-        width: auto;
-        height: 50px;
-        background-color: darkred;
-        border-radius: 8px;
-        font-family: 'Nunito', sans-serif;
-        font-size: medium;
-        font-weight: bold;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-        color: white;
-    }
-    .img_obj_remover:hover{
-        cursor: pointer;
-    }
-    .img_obj_remover:active{
-        background-color: rgb(85, 0, 0);
-        color: lightgrey;
-    }
-    .none{
-        display: none;
-    }
-
-    .menores{
-        display: none;
-        flex-direction: column;
-    }
-    .maiores{
-        display: none;
-        flex-direction: column;
-    }
-
-    .selec_idade{
-        display: flex;
-        flex-direction:column;
-        margin: 5px;
-        margin-top: 15px;
-        padding: 10px;
-        width: auto;
-        min-height: 50px;
-        background-color: lightgray;
-        border-radius: 8px;
-        font-family: 'Nunito', sans-serif;
-        font-size: medium;
-        font-weight: bold;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-        box-sizing: border-box;
-        justify-items: center;
-        color: red;
-        text-align: center;
-    }
-
-    /* barra de pesquisa
-    .searchbar{
-        background-color: lightgray;
-        width: 90%;
-        max-width: 700px;
-        height: 50px;
-        margin-top: 15px;
-        border-radius: 8px;
-        display: flex;
-        flex-direction: row;
-        border: none;
-        font-family: 'Nunito', sans-serif;
-
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.3);
-        padding: 0%;
-    }
-    .searchbar_input{
-        width: 60%;
-        height: auto;
-        margin: 0%;
-        border: none;
-        background-color: transparent;
-        box-sizing: border-box;
-        padding: 10px;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-        font-family: 'Nunito', sans-serif;
-        font-weight: bold;
-        font-size: medium;
-    }
-    .searchbar_input:focus{
-        outline: 2px solid darkblue;
-    }
-    .searchbar_select{
-        width: 40%;
-        border: none;
-        background-color: transparent;
-        box-sizing: border-box;
-        padding: 10px;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        font-family: 'Nunito', sans-serif;
-        font-weight: bold;
-        font-size: medium;
-    }
-    .searchbar_select:focus{
-        outline: 2px solid darkblue;
-    }
-    */
-
-    .presunto{
-        position: relative;
-        width: 100%;
-        display: flex;
-    }
-
-    .ffelc_tt
-    {
-        background-color: darkblue;
-        color: white;
-        font-family: 'Nunito', sans-serif;
-        min-height: 30px;
-        margin-bottom: 0%;
-        text-align: center;
-        box-sizing: border-box;
-        padding: 5px;
-    }
-    .add_ferimento{
-        display: none;
-        flex-direction:column;
-        margin: 5px;
-        margin-top: 15px;
-        width: auto;
-        min-height: 50px;
-        background-color: lightgray;
-        border-radius: 8px;
-        font-family: 'Nunito', sans-serif;
-        font-size: medium;
-        font-weight: bold;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-        justify-items: center;
-    }
-    .add_ferimento:active{
-        background-color: gray;
-    }
-    .loc_img{
-        display: none;
-    }
-
-    .textarea_anamnese{
-        display: flex;
-        flex-direction:column;
-        padding: 10px;
-        min-height: 40px;
-        resize: vertical;
-        width: 100%;
-        background-color: lightgray;
-        border-top-right-radius: 8px;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 0px;
-        border: none;
-        font-family: 'Nunito', sans-serif;
-        font-size: medium;
-        font-weight: bold;
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.3);
-        justify-items: center;
-        box-sizing: content-box border-box;
-        outline: darkblue;
-    }
-
-    .anamnese_tt{
-        font-family: 'Nunito', sans-serif;
-        font-size: medium;
-        font-weight: bold;
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-        padding: 10px;
-        MARGIN-bottom: -5px;
-    }
-    .locustraumadiego{
-        border-style:solid; 
-        border-color: darkblue; 
-        border-radius: 8px;
-        width: 320px; 
-        height: 320px; 
-        position: relative;
-
-    }
-    .fatima{
-        display: none;
-        flex-direction: column;
-        width: auto;
-    }
-    .localiza_button{
-        display: flex;
-        text-align: left;
-        background-color: lightgray;
-        border-radius: 8px;
-        border: none;
-        width: 95%;
-        height: 40px;
-        box-sizing: border-box;
-        padding: 5px;
-        margin-top: 10px;
-        font-family: 'Nunito', sans-serif;
-        font-size: medium;
-        font-weight: bold;
-        justify-content: space-between;
-    }
-    .localiza_button:active{
-        background-color: gray;
-    }
-    .localiza_button:focus{
-        border: 2px solid darkblue;
-
-    }
-    .trauma_image{
-        width: 30px;
-        border-radius: 5px;
-    }
-    .ferimento{
-        display: flex;
-        flex-direction:column;
-        margin: 5px;
-        margin-top: 15px;
-        padding: 10px;
-        width: auto;
-        min-height: 50px;
-        background-color: lightgray;
-        border-radius: 8px;
-        font-family: 'Nunito', sans-serif;
-        font-size: medium;
-        font-weight: bold;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-        box-sizing: border-box;
-        text-align: left;
-    }
-    .tt_locus_trauma_texto{
-        width: 100%;
-        min-height: 30px;
-        background-color: darkblue;
-        color: white;
-        margin-top: 20px;
-        font-family: 'Nunito', sans-serif;
-        font-size: medium;
-        font-weight: bold;
-    }
     .envio_div{
         width: 100%;
         height: 100vh;
@@ -853,5 +520,42 @@ input[type="radio"] {
     .cancelar_button:active{
         border: 2px solid black;
         color: black;
+        background-color: gray;
+    }
+
+    .ferimento{
+        display: flex;
+        flex-direction:column;
+        margin: 5px;
+        margin-top: 15px;
+        padding: 10px;
+        width: auto;
+        min-height: 50px;
+        background-color: lightgray;
+        border-radius: 8px;
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .add_ferimento{
+        display: none;
+        flex-direction:column;
+        margin: 5px;
+        margin-top: 15px;
+        width: auto;
+        min-height: 50px;
+        background-color: lightgray;
+        border-radius: 8px;
+        font-family: 'Nunito', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        justify-items: center;
+    }
+    .add_ferimento:active{
         background-color: gray;
     }

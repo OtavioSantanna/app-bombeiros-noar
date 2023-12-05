@@ -470,64 +470,60 @@
       </div>
       </div>
       <div class="form center" onclick="abrirBloco(6)">
-            <button type="button" class="tt_row center">
-                <div></div>
-                <p class="form_tt">LOCALIZAÇÃO DOS TRAUMAS</p>
-                <div>
-                    <div class="check center">✔</div>
-                </div>
-            </button>
-
-            <div class="bloco" id="6" onclick="blocoClicado(event)">
-                    <p class="selec_idade center" id="avisoIdade2">INFORME A IDADE APROXIMADA DA VÍTIMA</p>
-
-
-
-                    <div class="tt_locus_trauma_texto center">FERIMENTOS</div>
-                    <div class="ferimento">
-                        <div class="input_div">
-                            LOCAL:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                        <div class="input_div">
-                            LADO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                        <div class="input_div">
-                            FACE:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                        <div class="input_div">
-                            TIPO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                    </div>
-                    <div class="ferimento">
-                        <div class="input_div">
-                            LOCAL:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                        <div class="input_div">
-                            LADO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                        <div class="input_div">
-                            FACE:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                        <div class="input_div">
-                            TIPO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                    </div>
-                    <div class="ferimento">
-                        <div class="input_div">
-                            LOCAL:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                        <div class="input_div">
-                            LADO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                        <div class="input_div">
-                            FACE:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                        <div class="input_div">
-                            TIPO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')"></input>
-                        </div>
-                    </div>
+        <button type="button" class="tt_row center">
+            <div></div>
+            <p class="form_tt">LOCALIZAÇÃO DOS TRAUMAS</p>
+            <div>
+                <div class="check center">✔</div>
             </div>
+        </button>
+
+        <div class="bloco" id="6" onclick="blocoClicado(event)">
+            <div class="ferimento">
+                        <div class="input_div">
+                            LOCAL:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                        <div class="input_div">
+                            LADO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                        <div class="input_div">
+                            FACE:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                        <div class="input_div">
+                            TIPO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                    </div>
+                    <div class="ferimento">
+                        <div class="input_div">
+                            LOCAL:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                        <div class="input_div">
+                            LADO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                        <div class="input_div">
+                            FACE:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                        <div class="input_div">
+                            TIPO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                    </div>
+                    <div class="ferimento">
+                        <div class="input_div">
+                            LOCAL:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                        <div class="input_div">
+                            LADO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                        <div class="input_div">
+                            FACE:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                        <div class="input_div">
+                            TIPO:<input type="text" class="input_text" onchange="verificarPreenchimento('form7')" name="ferimento[]"></input>
+                        </div>
+                    </div>
+
         </div>
+    </div>
     <div class="form center" onclick="abrirBloco(7)">
         <button type="button" class="tt_row center">
             <div></div>

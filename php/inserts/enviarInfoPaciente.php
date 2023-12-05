@@ -39,8 +39,11 @@ if(isset($_POST['salvar']))
     $ocorrencia = $_POST['ocorrencia'];
     $serialized_ocorrencia = json_encode($ocorrencia);
 
-    $comando = $pdo->prepare("INSERT INTO info_ocorrencia (id_usuario, cabecalho, pre_hospitalar, glasgow, sinais_vitais, problemas_suspeitos, sinais_sintomas, conducao, decisao_trans, vitima_era,objeto,ocorrencia) 
-    VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+    $ferimento = $_POST['ferimento'];
+    $serialized_ferimento = json_encode($ferimento);
+
+    $comando = $pdo->prepare("INSERT INTO info_ocorrencia (id_usuario, cabecalho, pre_hospitalar, glasgow, sinais_vitais, problemas_suspeitos, sinais_sintomas, conducao, decisao_trans, vitima_era,objeto,ocorrencia, ferimento) 
+    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
     $comando->bindParam(1, $matricula);
     $comando->bindParam(2, $serializedBrands);
     $comando->bindParam(3, $serializedPre_hospitalar);
@@ -53,6 +56,7 @@ if(isset($_POST['salvar']))
     $comando->bindParam(10, $serialized_vitima_era);
     $comando->bindParam(11, $objeto);
     $comando->bindParam(12, $serialized_ocorrencia);
+    $comando->bindParam(13, $serialized_ferimento);
 
     $resultado = $comando->execute();
 }
