@@ -61,30 +61,55 @@ $matricula = $_SESSION['matricula'];
 </div>
 
 <div class="forms center">
-  <div class="searchbar">
-      <button type="button" id="searchButton" style="display: none;">Q</button>
-      <input type="text" class="searchbar_input" placeholder="PESQUISAR..." id="searchInput" onfocus="searchButtonAppear()"></input>
-      <hr style="border: 1px solid gray;">
-      <select class="searchbar_select">
-          <option>
-              DATA
-          </option>
-          <option>
-              NOME
-          </option>
-          <option>
-              CIDADE
-          </option>
-          <option>
-              Opção 4
-          </option>
-      </select>
-  </div>
+<div class="searchbar">
+            <button type="button" id="searchButton" style="display: none;">Q</button>
+            <input type="text" class="searchbar_input" placeholder="PESQUISAR..." id="searchInput" onfocus="searchButtonAppear()"></input>
+            <hr style="border: 1px solid gray;">
+            <select class="searchbar_select" id="pesquisar">
+                <option value="0">
+                    Selecione
+                </option>
+                <option value="1">
+                    Nome do Paciente
+                </option>
+                <option value="2">
+                    Hospital
+                </option>
+                <option value="3">
+                    Opção 4
+                </option>
+            </select>
+            <button onclick="Pesquisar();">Pesquiar</button>
+        </div>
   <?php
-    include("../../php/conecta.php");
+                include("../../php/conecta.php");
+                if(isset($_GET['op'])){
+                  if($_GET['op'] != 0){
+                    $op = $_GET['op'];
+                    $txt = $_GET['txt'];
     
-    $comando = $pdo->prepare("SELECT * FROM info_ocorrencia WHERE id_usuario = $matricula");
-    $resutado = $comando->execute();
+                    if($op == 1) {
+                      $comando = $pdo->prepare("SELECT * FROM info_ocorrencia WHERE JSON_UNQUOTE(JSON_EXTRACT(cabecalho, '$[3]'))
+                      like '%$txt%';");  
+                    } 
+                    if($op == 2) {
+                      $comando = $pdo->prepare("SELECT * FROM info_ocorrencia WHERE JSON_UNQUOTE(JSON_EXTRACT(cabecalho, '$[2]')) 
+                      like '%$txt%';");
+                    }
+                    if($op == 3) {
+                      $comando = $pdo->prepare("SELECT * FROM info_ocorrencia");  
+                    }
+                  } else {
+                    $comando = $pdo->prepare("SELECT * FROM info_ocorrencia");  
+                  }
+    
+                
+    
+                } else {
+                  $comando = $pdo->prepare("SELECT * FROM info_ocorrencia");
+                }
+    
+                $resutado = $comando->execute();
 
     if($resutado) {
       while($row = $comando->fetch(PDO::FETCH_ASSOC)){
@@ -150,5 +175,13 @@ $matricula = $_SESSION['matricula'];
 <script src="../script/imagemInput.js"></script>
 <script src="../../script/form.js"></script>
 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script>
+  function Pesquisar(){
+    var txt = searchInput.value;
+    var op = pesquisar.value;
 
+    window.open("historico.php?txt="+ txt +"&op="+ op,"_self")
+  }
+
+</script>
 </html>
