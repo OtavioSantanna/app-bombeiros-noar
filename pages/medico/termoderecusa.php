@@ -69,7 +69,9 @@
                             onchange="verificarPreenchimento('form16')">
                         <p class="img_obj_remover center" id="button_remover"
                             onclick="removerImagemObj();  verificarPreenchimento('form16')">REMOVER IMAGEM ✖</p>
-                        <button type="submit" name="enviar">Enviar</button>
+                        <button type="submit" name="enviar" class="button center">
+                            <p class="form_tt">ENVIAR</p>
+                        </button>
                     </form>
             </div>
     </div>
