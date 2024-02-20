@@ -1,0 +1,222 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    overflow: hidden;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    color: #000;
+    font-family: Nunito Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+header {
+    width: 100%;
+    height: 20vh;
+    flex-shrink: 0;
+    background-color: #001D3D;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+    width: 140px;
+    height: 140px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 8px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.titulo-header {
+    width: 800px;
+    height: 25px;
+    margin-bottom: 10px;
+    color: #F1F1F1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sub{
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Estilos para a navegação lateral */
+.nav-lateral {
+    width: 15%;
+    height: 100vh;
+    background-color: #224366;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+
+}
+.item-menu {
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+.main {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center; 
+    align-self: center;
+}
+
+.titulo
+{
+width: 424px;
+height: 15px;
+flex-shrink: 0;
+color: #F1F1F1;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: 'Nunito', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.fora
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+
+}
+.title
+{
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.pendentes {
+    width:200px;
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+ }
+.pendente-title
+{
+    width: 80%;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px
+
+}
+.frame
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card
+{
+    width: 300px;
+    height: 370px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(45000000px); 
+    margin-right: 40px;
+    margin-bottom: 15px;
+    justify-content: center;   
+}
+.text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.resto
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: baseline;
+    align-content: center;
+}
+.ver
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    margin-bottom: 10px;  
+}
