@@ -149,7 +149,7 @@
         <!-- <div class="form-linha1">
           <div class="enviar"><input type="button" name="enviar" value="Enviar" onclick="Cadastrar();" /></div>
         </div> -->
-        <button type="submit" name="enviar">Enviar</button>
+        <button class="btn-enviar" type="submit" name="enviar">Enviar</button>
       </div>
     </form>
   </div>

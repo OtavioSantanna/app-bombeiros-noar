@@ -75,9 +75,6 @@ $matricula = $_SESSION['matricula'];
                 <option value="2">
                     Hospital
                 </option>
-                <option value="3">
-                    Opção 4
-                </option>
             </select>
             <button onclick="Pesquisar();">Pesquiar</button>
         </div>
@@ -95,9 +92,6 @@ $matricula = $_SESSION['matricula'];
                     if($op == 2) {
                       $comando = $pdo->prepare("SELECT * FROM info_ocorrencia WHERE JSON_UNQUOTE(JSON_EXTRACT(cabecalho, '$[2]')) 
                       like '%$txt%';");
-                    }
-                    if($op == 3) {
-                      $comando = $pdo->prepare("SELECT * FROM info_ocorrencia");  
                     }
                   } else {
                     $comando = $pdo->prepare("SELECT * FROM info_ocorrencia");  
@@ -149,7 +143,7 @@ $matricula = $_SESSION['matricula'];
         <div class='bloco_ocorrencia'>
           <p class='form_tt'>$nome</p>
           <p class='text_content'>$data</p>
-          <p class='text_content'>$local</p>
+          <a href='https://www.google.com/maps/search/?api=1&query=$local'>$local</a>
           <p class='text_content'>Pré-hospitalar: </p>
         ");
         foreach ($causas as $index => $causa) {
