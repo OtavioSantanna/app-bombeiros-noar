@@ -54,7 +54,7 @@
             <p class="titulo">DADO A SER ALTERADO:</p>
         </div>
         <div class="dado center">
-            <p>nome</p>
+            <p>Data</p>
         </div>
         <?php
             include("../../php/conecta.php");

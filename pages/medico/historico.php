@@ -159,7 +159,7 @@ $matricula = $_SESSION['matricula'];
         }
           echo("
             <a class='ver_mais_a' href='?'>VER MAIS ></a>
-            <a href='../../php/inserts/excluirocorrencia.php?id_ocorrencia=$id_ocorrencia' class='editar_historico_button center' style='background-color: red;'>EDITAR HISTÓRICO DA OCORRÊNCIA</a>
+            <a href='../../php/inserts/excluirocorrencia.php?id_ocorrencia=$id_ocorrencia' class='editar_historico_button center' style='background-color: red;'>EXCLUIR OCORRENCIA</a>
             <a href='edicaohistorico.php?id_ocorrencia=$id_ocorrencia' class='editar_historico_button center'>EDITAR HISTÓRICO DA OCORRÊNCIA</a>
           </div>
         ");
